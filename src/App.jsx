@@ -5,7 +5,7 @@ import "./App.css";
 function App() {
   return (
     <>
-      <h1>AstroFusion Project</h1>
+      <h1>AstroFusion 222Project</h1>
     </>
   );
 }
