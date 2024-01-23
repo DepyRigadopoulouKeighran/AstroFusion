@@ -1,13 +1,9 @@
-import { useState } from "react";
+import { useState } from 'react';
 
-import "./App.css";
+import './App.css';
 
 function App() {
-  return (
-    <>
-      <h1>AstroFusion Project</h1>
-    </>
-  );
+  return <></>;
 }
 
 export default App;
