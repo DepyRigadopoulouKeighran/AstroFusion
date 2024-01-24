@@ -2,7 +2,7 @@
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
-  background-color: black;
+  background-image: url(../src/images/nightSky.gif);
 }
 html {
   height: -webkit-fill-available;
@@ -12,7 +12,7 @@ body {
 }
 .cardHeaderFront {
   text-align: center;
-  margin: 8rem 0 2rem 0;
+  margin: 5rem 0 2rem 0;
   color: aliceblue;
   font-family: 'Nasalization', sans-serif;
 }
@@ -22,12 +22,16 @@ body {
   width: 1000px;
   height: 700px;
 }
+
 .cardImageFront:hover {
   transform: perspective(600px) rotate(-180deg);
 }
 .cardHeaderBack:hover {
   transform: perspective(600px) rotateY(0deg);
 }
+
+
+
 .cardHeaderBack {
   text-align: center;
   margin: 5rem 0 2rem 0;
@@ -43,12 +47,28 @@ body {
   margin-bottom: 1.5rem;
   color: aliceblue;
 }
+
 .navLi {
+
+
+.navLiSolar {
+
   font-family: 'Nasalization', sans-serif;
 }
 .cardImageBack {
   display: flex;
 }
+
+
+.cardImageFront:hover {
+  transform: perspective(600px) rotate(-180deg);
+}
+
+.cardHeaderBack:hover {
+  transform: perspective(600px) rotateY(0deg);
+}
+
+
 .cardSection {
   display: flex;
   flex-direction: column;
@@ -64,20 +84,28 @@ body {
   color: #b4b1b8;
   border: 2px solid rgb(14, 14, 14);
   border-radius: 10px;
+  background-image: none;
   background-color: rgb(14, 14, 14);
   padding: 1rem 1rem 1rem 1rem;
   width: 45%;
   text-align: justify;
 }
+
 .card-container {
   perspective: 1000px;
+
+
+
   transform-style: preserve-3d;
   transition: transform 4s;
   cursor: pointer;
 }
+
 .card-container.flipped {
   transform: rotateY(160deg);
 }
+
+
 .card {
   width: 100%;
   height: 100%;
@@ -87,6 +115,7 @@ body {
 .cardFront {
   transform: rotateY(0);
 }
+
 .cardBack {
   transform: rotateY(180deg);
 }

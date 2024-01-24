@@ -1,0 +1,84 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url(../src/images/nightSky.gif);
+}
+
+html {
+  height: -webkit-fill-available;
+}
+
+body {
+  height: -webkit-fill-available;
+}
+
+.cardHeaderFrontSolar {
+  text-align: center;
+  margin: 5rem 0 2rem 0;
+  color: aliceblue;
+  font-family: 'Nasalization', sans-serif;
+  font-size: 5rem;
+}
+
+.cardImageFrontSolar {
+  display: flex;
+  padding-bottom: 5rem;
+  width: 1000px;
+  height: 700px;
+}
+
+.cardHeaderBackSolar {
+  text-align: center;
+  margin: 5rem 0 2rem 0;
+  color: aliceblue;
+  font-family: 'Nasalization', sans-serif;
+}
+
+.cardNavSolar a {
+  color: aliceblue;
+}
+
+.navUlSolar {
+  display: flex;
+  list-style-type: none;
+  margin-bottom: 1.5rem;
+  color: aliceblue;
+}
+
+.navLiSolar {
+  font-family: 'Nasalization', sans-serif;
+
+  border-radius: 10px;
+  background-image: none;
+  background-color: rgb(20, 20, 20);
+  padding: 1rem;
+}
+
+.cardImageBackSolar {
+  display: flex;
+}
+
+.cardSectionSolar {
+  display: flex;
+  flex-direction: column;
+  font-family: 'a•space', sans-serif;
+}
+
+.cardTitlesSolar {
+  border: 2px solid black;
+  color: #e9e8ee;
+  margin-top: 2rem;
+  width: 45%;
+}
+
+.cardTextSolar {
+  color: #e9e8ee;
+  border: 2px solid rgb(14, 14, 14);
+  border-radius: 10px;
+  background-image: none;
+  background-color: rgb(36, 34, 34);
+  padding: 1rem 1rem 1rem 1rem;
+  width: 45%;
+  text-align: justify;
+}
