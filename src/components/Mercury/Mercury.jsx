@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './mercury.css';
-import satelite from '../../images/earth-satelite.gif';
-import earth from '../../images/earth1.gif';
+import mercuryFront from '../../images/MercuryFront.gif';
+import mercuryBack from '../../images/MercuryBack.gif';
 
 const Mercury = () => {
   const [showFront, setShowFront] = useState(true);
@@ -15,131 +15,331 @@ const Mercury = () => {
         onClick={handleSide}
       >
         <div className="card cardFront">
-          <h1 className="cardHeaderFront">Mercury</h1>
-          <nav className="cardNav">
-            <ul className="navUl">
-              <li className="navLi">
-                <a href="#size">Size</a>
-              </li>
-              <li className="navLi">
+          <h1 className="cardHeaderFrontMercury">Mercury</h1>
+          <nav className="cardNavMercury">
+            <ul className="navUlMercury">
+              <li className="navLiMercury">
                 <a href="#distance">Distance from the Sun</a>
               </li>
-              <li className="navLi">
+              <li className="navLiMercury">
+                <a href="#size">Size</a>
+              </li>
+              <li className="navLiMercury">
                 <a href="#characteristics">Key Characteristics</a>
               </li>
             </ul>
           </nav>
-          <img className="cardImageFront" src={satelite} alt="" />
+          <img
+            className="cardImageFrontMercury"
+            src={mercuryFront}
+            alt="planet Mercury"
+          />
+
+          <section className="cardSectionBackMercury">
+            <h2 className="cardTitlesBackMercury">
+              MERCURY - THE SWIFT MESSENGER OF THE SOLAR SYSTEM
+            </h2>
+            <p className="cardTextBackMercury">
+              Mercury, the smallest and innermost planet, holds a unique allure
+              in our solar system. Positioned as the closest planet to the Sun,
+              Mercury stands out with its own distinctive features and
+              characteristics.
+              <br />
+              <br />
+              The surface of Mercury is a rugged expanse, marked by vast plains,
+              impact craters, and towering cliffs. Extreme temperature
+              variations are a defining trait, with scorching temperatures
+              during the day and frigid coldness at night. Despite its proximity
+              to the Sun, some craters near Mercury's poles remain in permanent
+              shadow, harboring the possibility of frozen water ice.
+              <br />
+              <br />
+              With minimal atmosphere and no protective magnetic field, Mercury
+              faces the unrelenting solar wind, resulting in a harsh space
+              environment. The lack of a substantial atmosphere also means that
+              Mercury's surface is heavily cratered, bearing the scars of
+              countless collisions with celestial bodies.
+              <br />
+              <br />
+              Mercury's dayside temperatures can soar to scorching highs, hot
+              enough to melt some metals. Meanwhile, its nightside experiences
+              extreme cold due to the absence of a thick atmosphere to retain
+              heat. The planet's rotation is peculiar, with a slow rotation
+              period and a unique 3:2 spin-orbit resonance.
+              <br />
+              <br />
+              Named after the Roman messenger god, Mercury has inspired
+              fascination throughout history. Its fleeting appearances on the
+              horizon during dawn and dusk have contributed to its portrayal as
+              a swift messenger in mythology. The lack of a substantial
+              atmosphere means that Mercury lacks the protective shield that
+              contributes to the dynamic atmospheres of larger planets.
+              <br />
+              <br />
+              While Mercury may not resemble Earth in terms of habitability, it
+              stands as a testament to the diverse nature of worlds within our
+              solar system. As we continue to explore and study this enigmatic
+              planet, Mercury beckons scientists to uncover the secrets of its
+              origin, evolution, and the broader processes shaping the inner
+              realms of our cosmic neighborhood.
+            </p>
+          </section>
         </div>
+
+        {/* From here starts the Back Card */}
         <div className="card cardBack">
-          <h1 className="cardHeaderBack">Mercury</h1>
-          <nav className="cardNav">
-            <ul className="navUl">
-              <li className="navLi">
-                <a href="#size">Size</a>
-              </li>
-              <li className="navLi">
+          <h1 className="cardHeaderBackMercury">Mercury</h1>
+          <nav className="cardNavMercury">
+            <ul className="navUlMercury">
+              <li className="navLiMercury">
                 <a href="#distance">Distance from the Sun</a>
               </li>
-              <li className="navLi">
+              <li className="navLiMercury">
+                <a href="#size">Size</a>
+              </li>
+              <li className="navLiMercury">
                 <a href="#characteristics">Key Characteristics</a>
               </li>
             </ul>
           </nav>
-          <img className="cardImageBack" src={earth} alt="" />
-          <section className="cardSection">
-            <h2 className="cardTitles">Fun facts about Mercury</h2>
-            <p className="cardText">
-              1 Earth is not actually round While this sounds like an elaborate
-              joke, we are actually serious. Earth it is not flat, but it is not
-              perfectly round either. Earth rotation causes the planet to bulge
-              at the equator and flatten at the poles, while the distribution of
-              mass on Earth (which is not perfectly uniform) causes small
-              variations in the gravitational pull at different locations on the
-              planet. These variations are too small to be seen in pictures of
-              Earth from space, so it appears round to the human eye
-            </p>
-            <p className="cardText">
-              2 Earth has a squishy interior Earth’s interior is not solid, but
-              rather has a semi-solid or ‘squishy’ consistency owing to high
-              temperatures and pressures. This squishy consistency allows the
-              mantle to flow and move over geological timescales, which is
-              responsible for phenomena such as plate tectonics, volcanic
-              activity and earthquakes. One consequence of this squishy interior
-              is a process known as post-glacial rebound. During the last ice
-              age, large portions of Earth's surface were covered by glaciers,
-              causing the underlying mantle to deform and sink.
-            </p>
-            <p className="cardText">
-              3 Atacama is the driest place on Earth The Atacama Desert, located
-              in South America, is widely considered to be the driest place on
-              Earth, outside of the Antarctic dry valleys. This vast expanse of
-              land spans over 100 000 sq km and receives an average of less than
-              1 mm of rainfall per year. Atacama Desert Atacama Desert The harsh
-              climate of the Atacama is due to a combination of factors
-              including its location in a rain shadow caused by the Andes
-              mountains, the presence of the cold Humboldt Current offshore and
-              a lack of moisture-bearing winds. Despite its arid conditions, the
-              Atacama is home to a number of unique species of plants and
-              animals that have adapted to survive in this harsh environment
+          <img
+            className="cardImageBackMercury"
+            src={mercuryBack}
+            alt="planet Mercury"
+          />
+          <section className="cardSectionBackMercury">
+            <h2 className="cardTitlesBackMercury">FUN FACTS ABOUT MERCURY</h2>
+            <p className="cardTextBackMercury">
+              <span className="spanMercury">Orbital Oddity: </span>
+              <br />
+              Mercury boasts a peculiar orbit, characterized by a 3:2 spin-orbit
+              resonance. This means it rotates on its axis three times for every
+              two orbits around the Sun, creating a unique pattern of day and
+              night.
+              <br />
+              <br />
+              <span className="spanMercury">Extreme Temperatures: </span>
+              <br /> Mercury experiences extreme temperature fluctuations due to
+              its lack of a substantial atmosphere. Daytime temperatures can
+              soar to a blistering 800 degrees Fahrenheit (430 degrees Celsius),
+              while nighttime temperatures plummet to a chilling -290 degrees
+              Fahrenheit (-180 degrees Celsius).
+              <br />
+              <br />
+              <span className="spanMercury">Compact Companion: </span>
+              <br /> As the smallest planet in our solar system, Mercury has a
+              diameter of only about 4,880 kilometers (3,032 miles), making it
+              just slightly larger than Earth's Moon.
+              <br />
+              <br />
+              <span className="spanMercury">Metallic Core: </span>
+              <br /> Mercury's core sets it apart. Comprising about 60% of the
+              planet's mass, the core is rich in iron and is believed to be
+              partially molten. This unique composition contributes to Mercury's
+              unusually high density.
+              <br />
+              <br />
+              <span className="spanMercury">Scarred Surface: </span>
+              <br /> Mercury's surface is marked by a multitude of impact
+              craters, evidence of its exposure to countless collisions with
+              asteroids and comets. The largest crater, Caloris Basin, is
+              approximately 1,550 kilometers (963 miles) in diameter.
+              <br />
+              <br />
+              <span className="spanMercury">Thin Atmosphere: </span>
+              <br /> Mercury has an exospheric atmosphere, an extremely thin
+              layer of gases like helium and hydrogen. This lack of a
+              substantial atmosphere results in challenges for retaining heat
+              and contributes to the stark temperature differences.
+              <br />
+              <br />
+              <span className="spanMercury">Hasty Heliocentric Traveler: </span>
+              <br /> With an average orbital speed of about 47.87 kilometers per
+              second (29.74 miles per second), Mercury is the fastest planet in
+              our solar system. It completes an orbit around the Sun in just
+              about 88 Earth days.
+              <br />
+              <br />
+              <span className="spanMercury">Sparse Exploration: </span>
+              <br /> Despite its proximity to Earth, Mercury remains relatively
+              unexplored. Only two spacecraft, Mariner 10 and MESSENGER, have
+              ventured close enough to capture detailed images and data about
+              this enigmatic planet.
+              <br />
+              <br />
+              <span className="spanMercury">
+                Solar System's Closest Neighbor:{' '}
+              </span>
+              <br />
+              Mercury is the closest planet to the Sun, orbiting at an average
+              distance of about 57.9 million kilometers (36 million miles). Its
+              proximity exposes it to intense solar radiation.
+              <br />
+              <br />
+              <span className="spanMercury">Mythological Namesake: </span>
+              <br /> In Roman mythology, Mercury is named after the swift
+              messenger god, known for his speed and agility. The planet's rapid
+              movements across the sky contributed to its association with this
+              mythological figure.
             </p>
 
-            <h2 className="cardTitles">Historical Events</h2>
-            <p className="cardText">
-              Many dramatic changes to the Earth’s climate have occurred over
-              the planet’s 4.5-billion-year history. Long periods of stability,
-              or equilibrium, are occasionally disrupted by periods of change
-              that vary in length and intensity. Climatic shifts are
-              destructive, and some even caused mass extinction events that
-              wiped out high percentages of species. Despite these extinctions,
-              life has always rebounded, allowing new species to dominate the
-              landscape.
-            </p>
-            <p className="cardText">
-              770 million years ago - Snowball Earth Scientists believe that
-              there may have been several times when the entire Earth was frozen
-              over with ice. There is no consensus as to what exactly caused
-              these frigid events. One theory holds that a number of large
-              volcanic eruptions sent sulfur gas particles into the atmosphere
-              that reacted with solar radiation to produce a cooling effect.
-              Some scientists speculate that snowball conditions facilitated an
-              explosion of multicellular organisms.
+            <h2 className="cardTitlesBackMercury">HISTORICAL EVENTS</h2>
+
+            <p className="cardTextBackMercury">
+              <span className="spanMercury">
+                Mariner 10's Pioneering Encounter (1974-1975):
+              </span>
+              <br />
+              Mariner 10, NASA's robotic space probe, embarked on a historic
+              mission, becoming the first spacecraft to visit Mercury. It
+              conducted three flybys, capturing the first close-up images of the
+              planet's surface and gathering valuable data on its geological
+              features.
+              <br />
+              <br />
+              <span className="spanMercury">
+                MESSENGER Mission (2004-2015):{' '}
+              </span>
+              <br /> MESSENGER (MErcury Surface, Space ENvironment,
+              GEochemistry, and Ranging) was a NASA mission dedicated to the
+              comprehensive study of Mercury. Launched in 2004, it orbited
+              Mercury for over four years, providing detailed insights into the
+              planet's composition, magnetic field, and geologic history.
+              <br />
+              <br />
+              <span className="spanMercury">
+                BepiColombo Mission (2018–Present):{' '}
+              </span>
+              <br /> BepiColombo, a joint mission by the European Space Agency
+              (ESA) and the Japan Aerospace Exploration Agency (JAXA), aims to
+              further our understanding of Mercury. Launched in 2018, it is set
+              to arrive at Mercury in the coming years, carrying a suite of
+              instruments to explore various aspects of the planet.
+              <br />
+              <br />
+              <span className="spanMercury">Mercury's Unusual Orbit:</span>
+              <br />
+              Mercury's orbit around the Sun is highly elliptical, and its
+              rotation is in a 3:2 resonance with its orbit, meaning it rotates
+              three times for every two orbits around the Sun. This unique
+              spin-orbit resonance contributes to extreme temperature variations
+              on the planet's surface.
+              <br />
+              <br />
+              <span className="spanMercury">
+                Caloris Basin - Giant Impact Structure:
+              </span>
+              <br />
+              Caloris Basin, one of Mercury's most prominent features, is a
+              large impact basin created by a powerful asteroid strike. This
+              basin's formation has influenced the planet's geological
+              characteristics and surface features.
+              <br />
+              <br />
+              <span className="spanMercury">MESSENGER's Ice Discoveries:</span>
+              Despite Mercury's proximity to the Sun, MESSENGER's observations
+              revealed the presence of water ice in permanently shadowed regions
+              near the planet's poles. The discovery of volatile elements
+              challenges previous assumptions about the conditions on this
+              innermost planet.
+              <br />
+              <span className="spanMercury">Extreme Temperature Extremes:</span>
+              <br /> Mercury experiences some of the most significant
+              temperature variations in our solar system. Daytime temperatures
+              can soar over 800 degrees Fahrenheit (427 degrees Celsius), while
+              nighttime temperatures plummet to -290 degrees Fahrenheit (-179
+              degrees Celsius).
+              <br />
+              <br />
+              <span className="spanMercury">
+                BepiColombo's Ongoing Investigations:
+              </span>
+              <br /> The BepiColombo mission, currently in progress, continues
+              to investigate Mercury's surface, magnetosphere, and exosphere.
+              The data collected aims to enhance our understanding of Mercury's
+              composition and evolution.
+              <br />
+              <br />
+              <span className="spanMercury">
+                Mercury's Elongated Orbit and Tidal Forces:
+              </span>
+              <br /> Mercury's elongated orbit exposes it to strong tidal forces
+              from the Sun, influencing its rotation and contributing to its
+              unique spin-orbit resonance. This interaction has implications for
+              the planet's geological history.
+              <br />
+              <br />
+              <span className="spanMercury">Shrinking Planet:</span>
+              <br /> Observations from Earth-based telescopes and space missions
+              suggest that Mercury is gradually contracting due to the cooling
+              and solidification of its interior. This phenomenon has led to the
+              formation of cliffs and ridges on the planet's surface.
             </p>
 
-            <h2 className="cardTitles">Space Phenomena</h2>
-            <p className="cardText">
-              1 Asteroid A broad and diverse group of rocks in space that were
-              little studied by astronomers until the mid-twentieth century. A
-              major ‘belt’ of asteroids exists between Mars and Jupiter, and
-              divides the solar system into the terrestrial group of planets and
-              the gasseous giants.
+            <h2 className="cardTitlesBackMercury">SPACE PHENOMENA</h2>
+
+            <p className="cardTextBackMercury">
+              Mercury, the closest planet to the Sun, experiences unique
+              phenomena shaped by its proximity to our star and its distinctive
+              characteristics.
               <br />
               <br />
-              2 Black Hole A large, massive star that has run out of fuel and
-              collapsed in on itself. The remnant core or sphere is so densely
-              packed that light and other objects cannot escape its
-              gravitational pull.
+              <span className="spanMercury">
+                Extreme Temperature Extremes:{' '}
+              </span>
               <br />
-              <br />3 Comet These “dirty snowballs” were once believed to be
-              harbingers of doom or fortune. Unlocking their secrets helped
-              scientists of the renaissance era to hone and prove their
-              mathematical models.
+              Mercury has an extreme temperature range due to its lack of a
+              significant atmosphere to retain heat. Daytime temperatures can
+              soar to around 800 degrees Fahrenheit (427 degrees Celsius), while
+              nighttime temperatures plummet to approximately -290 degrees
+              Fahrenheit (-179 degrees Celsius).
               <br />
-              <br />4 Dark Matter Scientists believe that small (and possibly
-              exotic) particles account for motions of stars and galaxies that
-              cannot otherwise be explained. Dark matter, to this point, has
-              eluded detection and can not be seen with technologies that known
-              particles and matter can.
               <br />
-              <br />5 Exoplanet Planets located in solar systems and orbiting
-              stars other than our own. There have been a substantial number of
-              exoplanets discovered in the past few years by astronomers,
-              utilizing improved detection methods and telescopes
+              <span className="spanMercury">
+                Rapid Rotation and Slow Orbit:
+              </span>
               <br />
-              <br /> 6 Galaxy Enormous structures in space that are home to
-              millions upon millions of stars and solar systems. They come in
-              different shapes and varieties, and are among the most beautiful
-              astronmoical phenomena to be seen.
+              Mercury is known for its peculiar rotation and orbit patterns. It
+              rotates on its axis very slowly, taking about 59 Earth days for
+              one complete rotation, but it has a relatively fast orbital period
+              around the Sun, completing an orbit in approximately 88 Earth
+              days.
+              <br />
+              <span className="spanMercury">Unusual Orbit Resonance: </span>
+              <br /> Mercury's orbit exhibits a resonance known as a 3:2
+              spin-orbit resonance. This means that for every three orbits
+              around the Sun, Mercury rotates on its axis twice. This resonance
+              is a result of gravitational interactions with the Sun.
+              <br />
+              <br />
+              <span className="spanMercury">
+                Scarce Atmosphere and Magnetosphere:{' '}
+              </span>
+              <br /> Mercury has a tenuous atmosphere primarily composed of
+              oxygen, sodium, and hydrogen. However, it's too thin to support
+              weather patterns. Additionally, Mercury possesses a weak global
+              magnetic field, a unique feature among rocky planets.
+              <br />
+              <br />
+              <span className="spanMercury">Dynamic Surface Features: </span>
+              <br />
+              Mercury is surprisingly dense, with a composition consisting of a
+              large iron-nickel core. This high density suggests that Mercury's
+              interior has undergone significant geological processes, possibly
+              involving the cooling and contraction of its core.
+              <br />
+              <br />
+              <span className="spanMercury">
+                Elongated Orbit and Eccentricity:{' '}
+              </span>
+              Olympus Mons is the largest volcano in the solar system, located
+              on Mars. It stands about 13.6 miles (22 kilometers) high, making
+              it nearly three times the height of Mount Everest.
+              <br />
+              Observing and understanding these phenomena provide valuable
+              insights into the formation and evolution of Mercury, shedding
+              light on the complex processes that have shaped this fascinating
+              celestial body.
             </p>
           </section>
         </div>

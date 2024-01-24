@@ -22,8 +22,8 @@ function App() {
       {/* <SolarSystem /> */}
 
       {/* <Jupiter /> */}
-
-      <Mars />
+      <Mercury />
+      {/* <Mars /> */}
       <EarthProvider>
         <h1>AstroFusion Project</h1>
         {/* <Earth /> */}

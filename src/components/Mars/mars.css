@@ -78,6 +78,8 @@ body {
   border-radius: 5px;
   color: white;
   margin-top: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   width: 45%;
 }
 
@@ -96,7 +98,7 @@ body {
 }
 
 .spanMars {
-  color: orange;
+  color: rgb(255, 132, 0);
   background-image: none;
   background-color: rgb(17, 16, 16);
   text-shadow: orange;
