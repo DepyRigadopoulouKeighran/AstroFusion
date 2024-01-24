@@ -16,22 +16,17 @@ import './App.css';
 import SolarSystem from './components/SolarSystem/SolarSystem';
 // import { Component } from 'react';
 
-
 function App() {
   return (
     <>
+      {/* <SolarSystem /> */}
 
-      <SolarSystem />
-     
-   
-    
+      {/* <Jupiter /> */}
 
       <EarthProvider>
         <h1>AstroFusion Project</h1>
         <Earth />
-      
       </EarthProvider>
-
     </>
   );
 }

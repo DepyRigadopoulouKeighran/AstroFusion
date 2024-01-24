@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './jupiter.css';
-import satelite from '../../images/earth-satelite.gif';
-import earth from '../../images/earth1.gif';
+import jupiter1 from '../../images/jupiterFront.gif';
+import jupiter2 from '../../images/jupiterBack.gif';
 
 const Jupiter = () => {
   const [showFront, setShowFront] = useState(true);
@@ -15,77 +15,129 @@ const Jupiter = () => {
         onClick={handleSide}
       >
         <div className="card cardFront">
-          <h1 className="cardHeaderFront">Jupiter</h1>
-          <nav className="cardNav">
-            <ul className="navUl">
-              <li className="navLi">
-                <a href="#size">Size</a>
+          <h1 className="cardHeaderFrontJupiter">Jupiter</h1>
+          <nav className="cardNavJupiter">
+            <ul className="navUlJupiter">
+              <li className="navLiJupiter">
+                <a href="#size">Distance from the Sun</a>
               </li>
-              <li className="navLi">
-                <a href="#distance">Distance from the Sun</a>
+              <li className="navLiJupiter">
+                <a href="#distance">Size</a>
               </li>
-              <li className="navLi">
+              <li className="navLiJupiter">
                 <a href="#characteristics">Key Characteristics</a>
               </li>
             </ul>
           </nav>
-          <img className="cardImageFront" src={satelite} alt="" />
-        </div>
-        <div className="card cardBack">
-          <h1 className="cardHeaderBack">Jupiter</h1>
-          <nav className="cardNav">
-            <ul className="navUl">
-              <li className="navLi">
-                <a href="#size">Size</a>
-              </li>
-              <li className="navLi">
-                <a href="#distance">Distance from the Sun</a>
-              </li>
-              <li className="navLi">
-                <a href="#characteristics">Key Characteristics</a>
-              </li>
-            </ul>
-          </nav>
-          <img className="cardImageBack" src={earth} alt="" />
-          <section className="cardSection">
-            <h2 className="cardTitles">Fun facts about Jupiter</h2>
-            <p className="cardText">
-              1 Earth is not actually round While this sounds like an elaborate
-              joke, we are actually serious. Earth it is not flat, but it is not
-              perfectly round either. Earth rotation causes the planet to bulge
-              at the equator and flatten at the poles, while the distribution of
-              mass on Earth (which is not perfectly uniform) causes small
-              variations in the gravitational pull at different locations on the
-              planet. These variations are too small to be seen in pictures of
-              Earth from space, so it appears round to the human eye
-            </p>
-            <p className="cardText">
-              2 Earth has a squishy interior Earth’s interior is not solid, but
-              rather has a semi-solid or ‘squishy’ consistency owing to high
-              temperatures and pressures. This squishy consistency allows the
-              mantle to flow and move over geological timescales, which is
-              responsible for phenomena such as plate tectonics, volcanic
-              activity and earthquakes. One consequence of this squishy interior
-              is a process known as post-glacial rebound. During the last ice
-              age, large portions of Earth's surface were covered by glaciers,
-              causing the underlying mantle to deform and sink.
-            </p>
-            <p className="cardText">
-              3 Atacama is the driest place on Earth The Atacama Desert, located
-              in South America, is widely considered to be the driest place on
-              Earth, outside of the Antarctic dry valleys. This vast expanse of
-              land spans over 100 000 sq km and receives an average of less than
-              1 mm of rainfall per year. Atacama Desert Atacama Desert The harsh
-              climate of the Atacama is due to a combination of factors
-              including its location in a rain shadow caused by the Andes
-              mountains, the presence of the cold Humboldt Current offshore and
-              a lack of moisture-bearing winds. Despite its arid conditions, the
-              Atacama is home to a number of unique species of plants and
-              animals that have adapted to survive in this harsh environment
+          <img className="cardImageFrontJupiter" src={jupiter1} alt="" />
+          <section className="cardSectionJupiter">
+            <h2 className="cardTitlesJupiter">JUPITER - THE GIANT PLANET</h2>
+            <p className="cardTextJupiter">
+              Jupiter is the fifth planet from our Sun and is, by far, the
+              largest planet in the solar system, more than twice as massive as
+              all the other planets combined.
+              <br />
+              <br />
+              Jupiter's stripes and swirls are actually cold, windy clouds of
+              ammonia and water, floating in an atmosphere of hydrogen and
+              helium. Jupiter’s iconic Great Red Spot is a giant storm bigger
+              than Earth that has raged for hundreds of years. Jupiter is named
+              for the king of the ancient Roman gods.​
             </p>
 
-            <h2 className="cardTitles">Historical Events</h2>
-            <p className="cardText">
+            <h2 className="cardTitlesJupiter">POTENTIAL FOR LIFE</h2>
+            <p className="cardTextJupiter">
+              Jupiter's conditions are likely inhospitable for life as we
+              understand it, given the extreme temperatures, pressures, and
+              materials prevalent on the planet, making adaptation for organisms
+              challenging.
+              <br />
+              <br />
+              While Jupiter itself is an improbable environment for sustaining
+              life, the same cannot be said for some of its numerous moons.
+              Europa stands out as one of the most promising locations for
+              potential extraterrestrial life within our solar system.
+              Substantial evidence suggests the presence of an expansive ocean
+              beneath its icy surface, providing a conceivable habitat for life.
+            </p>
+          </section>
+        </div>
+
+        {/* From here starts the Back Card */}
+        <div className="card cardBack">
+          <h1 className="cardHeaderBackJupiter">Jupiter</h1>
+          <nav className="cardNavJupiter">
+            <ul className="navUlJupiter">
+              <li className="navLiJupiter">
+                <a href="#size">Distance from the Sun </a>
+              </li>
+              <li className="navLiJupiter">
+                <a href="#distance">Size</a>
+              </li>
+              <li className="navLiJupiter">
+                <a href="#characteristics">Key Characteristics</a>
+              </li>
+            </ul>
+          </nav>
+          <img className="cardImageBackJupiter" src={jupiter2} alt="" />
+          <section className="cardSectionJupiter">
+            <h2 className="cardTitlesJupiter">FUN FACTS ABOUT JUPITER</h2>
+            <p className="cardTextJupiter">
+              Giant of the Solar System: Jupiter is the largest planet in our
+              solar system. It is more than twice as massive as all the other
+              planets combined.
+            </p>
+            <p className="cardTextJupiter">
+              Rapid Rotation: Jupiter has the shortest day of any planet,
+              completing one rotation on its axis in just about 10 hours. This
+              fast rotation causes the planet to have an oblate shape.
+            </p>
+            <p className="cardTextJupiter">
+              Massive Magnetic Field: Jupiter has a powerful magnetic field,
+              approximately 16 to 54 times stronger than Earth's. This magnetic
+              field creates intense radiation belts and spectacular auroras.
+            </p>
+            <p className="cardTextJupiter">
+              Great Red Spot: Jupiter's Great Red Spot is a massive storm that
+              has been raging for at least 300 years. It is twice the size of
+              Earth and is a prominent feature in the planet's atmosphere.
+            </p>
+            <p className="cardTextJupiter">
+              Many Moons: Jupiter has a whopping 95 officially recognized moons.
+              The four largest, known as the Galilean moons, are Io, Europa,
+              Ganymede, and Callisto.
+            </p>
+            <p className="cardTextJupiter">
+              Rings of Jupiter: Although not as prominent as Saturn's, Jupiter
+              also has a ring system. Discovered by the Voyager 1 spacecraft in
+              1979, these rings are mainly composed of dust particles.
+            </p>
+            <p className="cardTextJupiter">
+              Jovian Atmosphere: Jupiter's atmosphere is composed mostly of
+              hydrogen and helium. It displays distinct cloud bands, zones, and
+              belts, creating a colorful and dynamic appearance.
+            </p>
+            <p className="cardTextJupiter">
+              Fast-Moving Storms: Jupiter experiences incredibly fast winds,
+              with some reaching speeds of up to 335 miles per hour (539
+              kilometers per hour) at the equator. The planet is marked by
+              numerous storms and cyclones.
+            </p>
+            <p className="cardTextJupiter">
+              Europa's Ocean: One of Jupiter's moons, Europa, is believed to
+              have a subsurface ocean beneath its icy crust. This has led
+              scientists to consider Europa as a potential location for
+              extraterrestrial life.{' '}
+            </p>
+            <p className="cardTextJupiter">
+              Spacecraft Exploration: Nine spacecraft have visited Jupiter.
+              Notable missions include Pioneer 10, Pioneer 11, Voyager 1,
+              Voyager 2, Galileo, and the more recent Juno mission, which
+              arrived at Jupiter in 2016.{' '}
+            </p>
+
+            <h2 className="cardTitlesJupiter">Historical Events</h2>
+            <p className="cardTextJupiter">
               Many dramatic changes to the Earth’s climate have occurred over
               the planet’s 4.5-billion-year history. Long periods of stability,
               or equilibrium, are occasionally disrupted by periods of change
@@ -95,7 +147,7 @@ const Jupiter = () => {
               life has always rebounded, allowing new species to dominate the
               landscape.
             </p>
-            <p className="cardText">
+            <p className="cardTextJupiter">
               770 million years ago - Snowball Earth Scientists believe that
               there may have been several times when the entire Earth was frozen
               over with ice. There is no consensus as to what exactly caused
@@ -106,8 +158,8 @@ const Jupiter = () => {
               explosion of multicellular organisms.
             </p>
 
-            <h2 className="cardTitles">Space Phenomena</h2>
-            <p className="cardText">
+            <h2 className="cardTitlesJupiter">Space Phenomena</h2>
+            <p className="cardTextJupiter">
               1 Asteroid A broad and diverse group of rocks in space that were
               little studied by astronomers until the mid-twentieth century. A
               major ‘belt’ of asteroids exists between Mars and Jupiter, and

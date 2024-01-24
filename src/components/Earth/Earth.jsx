@@ -15,49 +15,43 @@ const Earth = () => {
         onClick={handleSide}
       >
         <div className="card cardFront">
-          <h1 className="cardHeaderFront">Earth</h1>
-          <nav className="cardNav">
-            <ul className="navUl">
-              <li className="navLi">
+          <h1 className="cardHeaderFrontEarth">Earth</h1>
+          <nav className="cardNavEarth">
+            <ul className="navUlEarth">
+              <li className="navLiEarth">
                 <a href="#size">Size</a>
               </li>
-              <li className="navLi">
+              <li className="navLiEarth">
                 <a href="#distance">Distance from the Sun</a>
               </li>
-              <li className="navLi">
+              <li className="navLiEarth">
                 <a href="#characteristics">Key Characteristics</a>
               </li>
             </ul>
           </nav>
-          <img className="cardImageFront" src={satelite} alt="" />
+          <img className="cardImageFrontEarth" src={satelite} alt="" />
         </div>
+        {/* From here starts the Back Card */}
         <div className="card cardBack">
+          <h1 className="cardHeaderBackEarth">Earth</h1>
 
-          <h1 className="cardHeaderBack">Jupiter</h1>
-
-          <h1 className="cardHeaderBack">Earth</h1>
-
-          <nav className="cardNav">
-            <ul className="navUl">
-              <li className="navLi">
+          <nav className="cardNavEarth">
+            <ul className="navUlEarth">
+              <li className="navLiEarth">
                 <a href="#size">Size</a>
               </li>
-              <li className="navLi">
+              <li className="navLiEarth">
                 <a href="#distance">Distance from the Sun</a>
               </li>
-              <li className="navLi">
+              <li className="navLiEarth">
                 <a href="#characteristics">Key Characteristics</a>
               </li>
             </ul>
           </nav>
-          <img className="cardImageBack" src={earth} alt="" />
-          <section className="cardSection">
-
-            <h2 className="cardTitles">Fun facts about Jupiter</h2>
-
-            <h2 className="cardTitles">Fun facts about Earth</h2>
-
-            <p className="cardText">
+          <img className="cardImageBackEarth" src={earth} alt="" />
+          <section className="cardSectionBackEarth">
+            <h2 className="cardTitlesBackEarth">Fun facts about Jupiter</h2>
+            <p className="cardTextBackEarth">
               1 Earth is not actually round While this sounds like an elaborate
               joke, we are actually serious. Earth it is not flat, but it is not
               perfectly round either. Earth rotation causes the planet to bulge
@@ -67,7 +61,19 @@ const Earth = () => {
               planet. These variations are too small to be seen in pictures of
               Earth from space, so it appears round to the human eye
             </p>
-            <p className="cardText">
+            <h2 className="cardTitlesBackEarth">Fun facts about Earth</h2>
+
+            <p className="cardTextBackEarth">
+              1 Earth is not actually round While this sounds like an elaborate
+              joke, we are actually serious. Earth it is not flat, but it is not
+              perfectly round either. Earth rotation causes the planet to bulge
+              at the equator and flatten at the poles, while the distribution of
+              mass on Earth (which is not perfectly uniform) causes small
+              variations in the gravitational pull at different locations on the
+              planet. These variations are too small to be seen in pictures of
+              Earth from space, so it appears round to the human eye
+            </p>
+            <p className="cardTextBackEarth">
               2 Earth has a squishy interior Earth’s interior is not solid, but
               rather has a semi-solid or ‘squishy’ consistency owing to high
               temperatures and pressures. This squishy consistency allows the
@@ -75,14 +81,10 @@ const Earth = () => {
               responsible for phenomena such as plate tectonics, volcanic
               activity and earthquakes. One consequence of this squishy interior
               is a process known as post-glacial rebound. During the last ice
-
               age, large portions of Earths surface were covered by glaciers,
-
-             
-
               causing the underlying mantle to deform and sink.
             </p>
-            <p className="cardText">
+            <p className="cardTextBackEarth">
               3 Atacama is the driest place on Earth The Atacama Desert, located
               in South America, is widely considered to be the driest place on
               Earth, outside of the Antarctic dry valleys. This vast expanse of
@@ -96,8 +98,8 @@ const Earth = () => {
               animals that have adapted to survive in this harsh environment
             </p>
 
-            <h2 className="cardTitles">Historical Events</h2>
-            <p className="cardText">
+            <h2 className="cardTitlesBackEarth">Historical Events</h2>
+            <p className="cardTextBackEarth">
               Many dramatic changes to the Earth’s climate have occurred over
               the planet’s 4.5-billion-year history. Long periods of stability,
               or equilibrium, are occasionally disrupted by periods of change
@@ -107,7 +109,7 @@ const Earth = () => {
               life has always rebounded, allowing new species to dominate the
               landscape.
             </p>
-            <p className="cardText">
+            <p className="cardTextBackEarth">
               770 million years ago - Snowball Earth Scientists believe that
               there may have been several times when the entire Earth was frozen
               over with ice. There is no consensus as to what exactly caused
@@ -118,8 +120,8 @@ const Earth = () => {
               explosion of multicellular organisms.
             </p>
 
-            <h2 className="cardTitles">Space Phenomena</h2>
-            <p className="cardText">
+            <h2 className="cardTitlesBackEarth">Space Phenomena</h2>
+            <p className="cardTextBackEarth">
               1 Asteroid A broad and diverse group of rocks in space that were
               little studied by astronomers until the mid-twentieth century. A
               major ‘belt’ of asteroids exists between Mars and Jupiter, and

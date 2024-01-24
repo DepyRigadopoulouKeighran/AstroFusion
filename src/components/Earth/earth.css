@@ -10,77 +10,61 @@ html {
 body {
   height: -webkit-fill-available;
 }
-.cardHeaderFront {
+.cardHeaderFrontEarth {
   text-align: center;
   margin: 5rem 0 2rem 0;
   color: aliceblue;
   font-family: 'Nasalization', sans-serif;
 }
-.cardImageFront {
+.cardImageFrontEarth {
   display: flex;
   padding-bottom: 5rem;
   width: 1000px;
   height: 700px;
 }
 
-.cardImageFront:hover {
+.cardImageFrontEarth:hover {
   transform: perspective(600px) rotate(-180deg);
 }
-.cardHeaderBack:hover {
+.cardImageBackEarth:hover {
   transform: perspective(600px) rotateY(0deg);
 }
 
-
-
-.cardHeaderBack {
+.cardHeaderBackEarth {
   text-align: center;
   margin: 5rem 0 2rem 0;
   color: aliceblue;
   font-family: 'Nasalization', sans-serif;
 }
-.cardNav a {
+.cardNavEarth a {
   color: aliceblue;
 }
-.navUl {
+.navUlEarth {
   display: flex;
   list-style-type: none;
   margin-bottom: 1.5rem;
   color: aliceblue;
 }
 
-.navLi {
-
-
-.navLiSolar {
-
+.navLiEarth {
   font-family: 'Nasalization', sans-serif;
 }
-.cardImageBack {
+.cardImageBackEarth {
   display: flex;
 }
 
-
-.cardImageFront:hover {
-  transform: perspective(600px) rotate(-180deg);
-}
-
-.cardHeaderBack:hover {
-  transform: perspective(600px) rotateY(0deg);
-}
-
-
-.cardSection {
+.cardSectionBackEarth {
   display: flex;
   flex-direction: column;
   font-family: 'a•space', sans-serif;
 }
-.cardTitles {
+.cardTitlesBackEarth {
   border: 2px solid black;
   color: #e9e8ee;
   margin-top: 1.5rem;
   width: 45%;
 }
-.cardText {
+.cardTextBackEarth {
   color: #b4b1b8;
   border: 2px solid rgb(14, 14, 14);
   border-radius: 10px;
@@ -94,8 +78,6 @@ body {
 .card-container {
   perspective: 1000px;
 
-
-
   transform-style: preserve-3d;
   transition: transform 4s;
   cursor: pointer;
@@ -104,7 +86,6 @@ body {
 .card-container.flipped {
   transform: rotateY(160deg);
 }
-
 
 .card {
   width: 100%;
