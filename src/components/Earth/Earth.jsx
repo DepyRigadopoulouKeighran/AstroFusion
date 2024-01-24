@@ -32,7 +32,11 @@ const Earth = () => {
           <img className="cardImageFront" src={satelite} alt="" />
         </div>
         <div className="card cardBack">
+
+          <h1 className="cardHeaderBack">Jupiter</h1>
+
           <h1 className="cardHeaderBack">Earth</h1>
+
           <nav className="cardNav">
             <ul className="navUl">
               <li className="navLi">
@@ -48,7 +52,11 @@ const Earth = () => {
           </nav>
           <img className="cardImageBack" src={earth} alt="" />
           <section className="cardSection">
+
+            <h2 className="cardTitles">Fun facts about Jupiter</h2>
+
             <h2 className="cardTitles">Fun facts about Earth</h2>
+
             <p className="cardText">
               1 Earth is not actually round While this sounds like an elaborate
               joke, we are actually serious. Earth it is not flat, but it is not
@@ -67,7 +75,11 @@ const Earth = () => {
               responsible for phenomena such as plate tectonics, volcanic
               activity and earthquakes. One consequence of this squishy interior
               is a process known as post-glacial rebound. During the last ice
-              age, large portions of Earth's surface were covered by glaciers,
+
+              age, large portions of Earths surface were covered by glaciers,
+
+             
+
               causing the underlying mantle to deform and sink.
             </p>
             <p className="cardText">
