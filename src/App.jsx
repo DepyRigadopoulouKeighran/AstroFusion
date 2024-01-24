@@ -6,19 +6,21 @@ import Earth from './components/Earth/Earth';
 import planetsData from './data/Data';
 
 import './App.css';
+import SolarSystem from './components/SolarSystem/SolarSystem';
 // import { Component } from 'react';
 
 function App() {
   return (
     <>
-      <EarthProvider>
-        {/* <Earth />
+      <SolarSystem />
+      {/* <EarthProvider> */}
+      {/* <Earth />
         <Jupiter />
         <Moon />
         <Mercury /> */}
-        <h1>AstroFusion Project</h1>
-        <Earth />
-      </EarthProvider>
+      <h1>AstroFusion Project</h1>
+      {/* <Earth /> */}
+      {/* </EarthProvider> */}
     </>
   );
 }
