@@ -2,7 +2,7 @@
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
-  background-image: url(../src/images/nightSky.gif);
+  background-color: black;
 }
 
 html {
@@ -15,7 +15,7 @@ body {
 
 .cardHeaderFront {
   text-align: center;
-  margin: 5rem 0 2rem 0;
+  margin: 8rem 0 2rem 0;
   color: aliceblue;
   font-family: 'Nasalization', sans-serif;
 }
@@ -25,6 +25,14 @@ body {
   padding-bottom: 5rem;
   width: 1000px;
   height: 700px;
+}
+
+.cardImageFront:hover {
+  transform: perspective(600px) rotate(-180deg);
+}
+
+.cardHeaderBack:hover {
+  transform: perspective(600px) rotateY(0deg);
 }
 
 .cardHeaderBack {
@@ -45,20 +53,12 @@ body {
   color: aliceblue;
 }
 
-.navLiSolar {
+.navLi {
   font-family: 'Nasalization', sans-serif;
 }
 
 .cardImageBack {
   display: flex;
-}
-
-.cardImageFront:hover {
-  transform: perspective(600px) rotate(-180deg);
-}
-
-.cardHeaderBack:hover {
-  transform: perspective(600px) rotateY(0deg);
 }
 
 .cardSection {
@@ -78,7 +78,6 @@ body {
   color: #b4b1b8;
   border: 2px solid rgb(14, 14, 14);
   border-radius: 10px;
-  background-image: none;
   background-color: rgb(14, 14, 14);
   padding: 1rem 1rem 1rem 1rem;
   width: 45%;
