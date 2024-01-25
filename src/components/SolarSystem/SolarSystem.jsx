@@ -6,8 +6,6 @@ import solarSystem2 from '../../images/solarSystem1.gif';
 // import solarImage4 from '../../images/solarSystem4.gif';
 import '../../components/SolarSystem/solarSystem.css';
 
-import DropDownPlanets from '../DropDown/DropDownPlanets';
-
 import { NavLink } from 'react-router-dom';
 
 const SolarSystem = () => {
@@ -17,11 +15,13 @@ const SolarSystem = () => {
 
       <nav className="cardNavSolar">
         <ul className="navUlSolar">
+
           {/* <li className="navLiSolar">
             <DropDownPlanets />
           </li> */}
 
           <li className="navLiSolar"></li>
+
 
           <li className="navLiSolar">
             <NavLink className="distance" to="/sun">
@@ -65,16 +65,19 @@ const SolarSystem = () => {
       <nav className="cardNavSolar">
         <ul className="navUlSolar">
           <li className="navLiSolar">
-            <a href="#size">Planets</a>
+            <NavLink className="distance" to="/sun">
+              Sun
+            </NavLink>
           </li>
           <li className="navLiSolar">
-            <a href="#distance">Sun</a>
+            <NavLink className="characteristics" to="/particles">
+              Particles
+            </NavLink>
           </li>
           <li className="navLiSolar">
-            <a href="#characteristics">Moon</a>
-          </li>
-          <li className="navLiSolar">
-            <a href="#characteristics">Particles</a>
+            <NavLink className="characteristics" to="/moon">
+              Moon
+            </NavLink>
           </li>
         </ul>
       </nav>
