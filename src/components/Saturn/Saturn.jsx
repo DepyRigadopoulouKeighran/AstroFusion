@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import './saturn.css';
-import saturnBackImage from '../../images/saturn-back.jpg';
+import saturnFront from '../../images/saturnFront.gif';
+import saturnBack from '../../images/saturnBack.gif';
 
 const Saturn = () => {
   const [showFront, setShowFront] = useState(true);
-
   const handleSide = () => {
     setShowFront(!showFront);
   };
@@ -16,66 +16,318 @@ const Saturn = () => {
         onClick={handleSide}
       >
         <div className="card cardFront">
-          <h1 className="cardHeaderFront">Saturn</h1>
-          <nav className="cardNav">
-            <ul className="navUl">
-              <li className="navLi">
+          <h1 className="cardHeaderFrontSaturn">Saturn</h1>
+          <nav className="cardNavSaturn">
+            <ul className="navUlSaturn">
+              <li className="navLiSaturn">
                 <a href="#size">Size</a>
               </li>
-              <li className="navLi">
-                <a href="#distance">Distance from the Sun</a>
-              </li>
-              <li className="navLi">
+              <li className="navLiSaturn">
                 <a href="#characteristics">Key Characteristics</a>
+              </li>
+              <li className="navLiSaturn">
+                <a href="#distance">Distance from the Sun</a>
               </li>
             </ul>
           </nav>
-          <img className="cardImageFront" src="" alt="Saturn Front" />
+          <img
+            className="cardImageFront"
+            src={saturnFront}
+            alt="planet Saturn"
+          />
+
+          <section className="cardSectionBackSaturn">
+            <h2 className="cardTitlesBackSaturn">EARTH - THE BLUE PLANET</h2>
+            <p className="cardTextBackSaturn">
+              Earth is the third planet from our Sun and holds the distinction
+              of being the only known celestial body to support life. It is a
+              diverse and vibrant world, teeming with a myriad of ecosystems and
+              a rich tapestry of life forms.
+              <br />
+              <br />
+              Earth's landscapes are a testament to its geological history, with
+              majestic mountains, sprawling plains, and vast oceans that cover
+              about 71% of its surface. The planet's atmosphere, primarily
+              composed of nitrogen and oxygen, sustains life as we know it,
+              providing the necessary elements for a complex web of ecosystems.
+              <br />
+              <br />
+              Unlike the turbulent storms on Jupiter, Earth experiences a
+              variety of weather patterns, from gentle breezes to powerful
+              hurricanes. The dynamic climate allows for the existence of
+              diverse habitats, from the icy poles to the lush rainforests near
+              the equator.
+              <br />
+              <br />
+              One of Earth's most iconic features is the Great Barrier Reef, a
+              vast underwater ecosystem that rivals the grandeur of any
+              celestial storm. The planet's natural wonders, including the
+              Amazon Rainforest and the Grand Canyon, showcase the beauty and
+              geological diversity that Earth has nurtured over millions of
+              years.
+              <br />
+              <br />
+              Earth is named after ancient Germanic and Old English words for
+              "ground" or "soil," reflecting its connection to the elements that
+              support life. Unlike Jupiter's massive size, Earth's relatively
+              moderate dimensions provide a perfect balance for a stable climate
+              and the flourishing of life.
+              <br />
+              <br />
+              As we look at Earth from space, the swirling clouds and patterns
+              of its atmosphere remind us of the delicate interconnectedness of
+              life on this pale blue dot, a home to billions of organisms,
+              including the remarkably adaptable human species.
+            </p>
+          </section>
         </div>
+        {/* From here starts the Back Card */}
         <div className="card cardBack">
-          <h1 className="cardHeaderBack">Saturn</h1>
-          <nav className="cardNav">
-            <ul className="navUl">
-              <li className="navLi">
-                <a href="#size">Size</a>
-              </li>
-              <li className="navLi">
+          <h1 className="cardHeaderBackSaturn">Saturn</h1>
+          <nav className="cardNavSaturn">
+            <ul className="navUlSaturn">
+              <li className="navLiSaturn">
                 <a href="#distance">Distance from the Sun</a>
               </li>
-              <li className="navLi">
+              <li className="navLiSaturn">
+                <a href="#size">Size</a>
+              </li>
+              <li className="navLiSaturn">
                 <a href="#characteristics">Key Characteristics</a>
               </li>
             </ul>
           </nav>
           <img
-            className="cardImageBack"
-            src={saturnBackImage}
-            alt="Saturn Back"
+            className="cardImageBackSaturn"
+            src={saturnBack}
+            alt="planet Saturn"
           />
-          <section className="cardSection">
-            <h2 className="cardTitles">Fun facts about Saturn</h2>
-            <p className="cardText">
-              Saturn is the sixth planet from the Sun and the second-largest in
-              our solar system, known for its stunning ring system.
+          <section className="cardSectionBackSaturn">
+            <h2 className="cardTitlesBackSaturn">FUN FACTS ABOUT EARTH</h2>
+            <p className="cardTextBackSaturn">
+              <span className="spanSaturn">Blue Planet: </span>
+              <br /> Earth is often referred to as the "Blue Planet" due to the
+              high percentage of water on its surface, giving it a distinct blue
+              appearance from space.
+              <br />
+              <br />
+              <span className="spanSaturn">Only Known Habitable Planet: </span>
+              <br /> As of our current understanding, Earth is the only planet
+              in our solar system known to support life. Its conditions are
+              ideal for a diverse range of organisms.
+              <br />
+              <br />
+              <span className="spanSaturn">Unique Moon:</span>
+              <br /> Earth's moon, Luna, is relatively large compared to the
+              planet it orbits. The Moon's gravitational influence plays a
+              crucial role in stabilizing Earth's axial tilt and impacting
+              tides.
+              <br />
+              <br />
+              <span className="spanSaturn">70% Water: </span>
+              <br /> Approximately 70% of Earth's surface is covered by oceans.
+              The remaining 30% consists of continents, islands, and other
+              landforms.
+              <br />
+              <br />
+              <span className="spanSaturn">Oxygen-Rich Atmosphere: </span>
+              <br /> Earth's atmosphere is composed of about 78% nitrogen, 21%
+              oxygen, and trace amounts of other gases. This oxygen-rich
+              atmosphere is crucial for supporting life.
+              <br />
+              <br />
+              <span className="spanSaturn">Diverse Ecosystems:</span>
+              <br /> Earth boasts a wide variety of ecosystems, from tropical
+              rainforests to polar ice caps. This biodiversity allows for a rich
+              tapestry of plant and animal life.
+              <br />
+              <br />
+              <span className="spanSaturn">Continental Drift: </span>
+              <br /> Earth's continents are not fixed; they drift over
+              geological time scales. The theory of plate tectonics explains the
+              movement of Earth's lithospheric plates.
+              <br />
+              <br />
+              <span className="spanSaturn">Highest and Lowest Points: </span>
+              <br /> The highest point on Earth is Mount Everest, located in the
+              Himalayas, while the lowest point is the Challenger Deep in the
+              Mariana Trench, found in the Pacific Ocean.
+              <br />
+              <br />
+              <span className="spanSaturn">Rotation and Orbit: </span>
+              <br /> Earth rotates on its axis, completing one full rotation
+              approximately every 24 hours, leading to day and night. It orbits
+              the Sun, completing one orbit roughly every 365.25 days, resulting
+              in a year.
+              <br />
+              <br />
+              <span className="spanSaturn">Magnetic Field: </span>
+              <br /> Earth has a magnetic field that is generated by its
+              iron-nickel core. This field protects the planet from the solar
+              wind and cosmic rays.
             </p>
-            <p className="cardText">
-              The rings of Saturn are made up of ice particles, rock debris, and
-              dust. These rings are divided into several major ring groups.
+
+            <h2 className="cardTitlesBackSaturn">HISTORICAL EVENTS</h2>
+
+            <p className="cardTextBackSaturn">
+              Creating a brief summary of Earth's historical events poses a
+              challenge due to the extensive timespan and the multitude of
+              impactful incidents. Nonetheless, here are several noteworthy
+              events that have shaped Earth's geological and biological history:
+              <br />
+              <br />
+              <span className="spanSaturn">
+                Formation of Earth (4.5 billion years ago):{' '}
+              </span>
+              <br />
+              Earth formed from the dust and gas surrounding the young Sun,
+              coalescing into a molten mass that eventually cooled to become our
+              planet.
+              <br />
+              <br />
+              <span className="spanSaturn">
+                Origin of Life (3.5 to 4 billion years ago):{' '}
+              </span>
+              <br /> Life is believed to have originated in the form of simple,
+              single-celled organisms in Earth's early oceans.
+              <br />
+              <br />
+              <span className="spanSaturn">
+                Oxygenation of the Atmosphere (2.4 to 2 billion years ago):
+              </span>
+              <br /> Cyanobacteria, through photosynthesis, started releasing
+              oxygen into the atmosphere, gradually changing its composition.
+              <br />
+              <br />
+              <span className="spanSaturn">
+                Formation of Continents (2.5 billion years ago to present):{' '}
+              </span>
+              <br /> Over millions of years, tectonic processes led to the
+              formation of continents through the collision and separation of
+              landmasses.
+              <br />
+              <br />
+              <span className="spanSaturn">Mass Extinctions: </span>
+              <br />
+              Several mass extinctions have occurred throughout Earth's history,
+              with notable events such as the Permian-Triassic Extinction
+              (around 252 million years ago) and the Cretaceous-Paleogene
+              Extinction (around 66 million years ago), which led to the demise
+              of dinosaurs.
+              <br />
+              <br />
+              <span className="spanSaturn">
+                Development of Multicellular Life (around 1 billion years ago):{' '}
+              </span>
+              Complex multicellular organisms began to evolve, diversifying into
+              various forms over time.
+              <br />
+              <span className="spanSaturn">
+                Cambrian Explosion (541 million years ago):{' '}
+              </span>
+              <br /> A rapid diversification of life forms occurred during the
+              Cambrian period, leading to the emergence of various animal phyla.
+              <br />
+              <br />
+              <span className="spanSaturn">
+                Ice Ages (multiple occurrences):{' '}
+              </span>
+              <br /> Earth experienced several ice ages, during which glaciers
+              advanced and retreated, shaping the landscape and influencing the
+              evolution of species.
+              <br />
+              <br />
+              <span className="spanSaturn">
+                Evolution of Humans (2 million years ago to present):{' '}
+              </span>
+              <br /> Homo sapiens, the modern human species, emerged in Africa
+              and gradually spread across the globe, developing complex
+              societies and cultures.
+              <br />
+              <br />
+              <span className="spanSaturn">
+                Industrial Revolution (18th to 19th centuries):{' '}
+              </span>
+              <br /> The widespread use of steam engines and other innovations
+              marked the Industrial Revolution, transforming human societies and
+              leading to significant environmental changes.
+              <span className="spanSaturn">
+                Space Exploration (20th century to present):
+              </span>
+              <br /> Humans achieved space travel, with notable events including
+              the first human on the Moon in 1969 and the ongoing exploration of
+              Mars and other celestial bodies.
+              <br />
+              <br />
+              These events provide a glimpse into Earth's rich and dynamic
+              history, shaped by geological, climatic, and biological processes
+              over billions of years.
             </p>
-            <p className="cardText">
-              Saturn has a unique hexagonal cloud pattern at its north pole,
-              which was discovered by the Cassini spacecraft.
-            </p>
-            <h2 className="cardTitles">Historical Events</h2>
-            <p className="cardText">
-              Saturn has been observed since ancient times and was named after
-              the Roman god of agriculture and wealth.
-            </p>
-            <h2 className="cardTitles">Space Phenomena</h2>
-            <p className="cardText">
-              Saturn's moon Titan is the second-largest moon in the solar system
-              and has a thick atmosphere. It is the only moon with a significant
-              atmosphere.
+
+            <h2 className="cardTitlesBackSaturn">SPACE PHENOMENA</h2>
+
+            <p className="cardTextBackSaturn">
+              While Earth may not boast the same giant storms and gas
+              compositions as Jupiter, it exhibits its own mesmerizing space
+              phenomena. From celestial displays to magnetic wonders, Earth
+              showcases a unique cosmic dance in its corner of the solar system.
+              <br />
+              <br />
+              <span className="spanSaturn">Auroras :</span>
+              <br />
+              Earth's polar regions come alive with vibrant displays of auroras,
+              also known as the Northern and Southern Lights. These breathtaking
+              light shows result from charged particles from the Sun interacting
+              with the Earth's magnetic field and atmosphere, creating colorful
+              displays that dance across the night sky.
+              <br />
+              <br />
+              <span className="spanSaturn">
+                Magnetic field and Van Allen Belts :
+              </span>
+              <br />
+              Earth's magnetic field plays a crucial role in protecting the
+              planet from harmful solar radiation. The Van Allen radiation
+              belts, named after scientist James Van Allen, are regions within
+              this magnetic field that trap charged particles. They contribute
+              to Earth's space weather and impact technologies in space.
+              <br />
+              <span className="spanSaturn">Meteor showers</span>
+              <br /> Earth encounters debris from comets and asteroids in its
+              orbit, leading to spectacular meteor showers. As these fragments
+              burn up upon entering the Earth's atmosphere, they create streaks
+              of light, captivating observers during celestial events like the
+              Perseids and Geminids.
+              <br />
+              <br />
+              <span className="spanSaturn">Eclipses :</span>
+              <br /> Earth experiences solar and lunar eclipses, captivating
+              skywatchers. A solar eclipse occurs when the Moon passes between
+              the Sun and Earth, casting a shadow on the planet. Conversely, a
+              lunar eclipse transpires when the Earth comes between the Sun and
+              the Moon, resulting in a reddish tint during totality.
+              <br />
+              <br />
+              <span className="spanSaturn">Gravity Assist </span>
+              <br />
+              Earth's gravitational force is harnessed by spacecraft for gravity
+              assists. This technique utilizes a planet's gravity to alter a
+              spacecraft's speed and trajectory. Earth has played a pivotal role
+              in numerous space missions, providing gravity assists for
+              spacecraft venturing into the depths of the solar system.
+              <br />
+              <br />
+              <span className="spanSaturn">Magnetosphere interactions</span>
+              Earth's magnetosphere interacts dynamically with solar winds,
+              creating dynamic and ever-changing phenomena. The magnetosphere
+              protects the planet from the solar wind, forming a boundary that
+              shields against the charged particles constantly emitted by the
+              Sun.
+              <br />
+              While Earth may not have the colossal storms and vast gas expanses
+              seen on other planets, its own set of space phenomena adds to the
+              celestial tapestry, making it a fascinating subject for
+              exploration and observation.
             </p>
           </section>
         </div>
@@ -84,4 +336,3 @@ const Saturn = () => {
   );
 };
 export default Saturn;
-};

@@ -1,10 +1,10 @@
-import solarSystem1 from '../../images/solarSystem2.gif';
-import solarSystem2 from '../../images/solarSystem1.gif';
-import solarImage1 from '../../images/solarSystem.webp';
-import solarImage2 from '../../images/solarSystem.avif';
-import solarImage3 from '../../images/solarSystem3.gif';
-import solarImage4 from '../../images/solarSystem4.gif';
-import '../../components/SolarSystem/solarsystem.css';
+// import solarSystem1 from '../images/solarSystem2.gif';
+// import solarSystem2 from '../images/solarSystem1.gif';
+// import solarImage1 from '../images/solarSystem.webp';
+// import solarImage2 from '../images/solarSystem.avif';
+// import solarImage3 from '../images/solarSystem3.gif';
+// import solarImage4 from '../images/solarSystem4.gif';
+// import '../components/SolarSystem/solarsystem.css';
 
 const SolarSystem = () => {
   return (
