@@ -14,24 +14,22 @@ import Uranus from './components/Uranus/Uranus';
 import './App.css';
 
 import SolarSystem from './components/SolarSystem/SolarSystem';
+import Galaxy from './components/Galaxy/Galaxy';
 // import { Component } from 'react';
-
 
 function App() {
   return (
     <>
+      {/* <SolarSystem /> */}
+      <Galaxy />
 
-      <SolarSystem />
-     
-   
-    
-
+      {/* <Jupiter /> */}
+      {/* <Mercury /> */}
+      {/* <Mars /> */}
       <EarthProvider>
         <h1>AstroFusion Project</h1>
-        <Earth />
-      
+        {/* <Earth /> */}
       </EarthProvider>
-
     </>
   );
 }
