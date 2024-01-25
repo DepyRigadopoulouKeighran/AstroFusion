@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './mars.css';
 import marsFront from '../../images/marsFront.gif';
 import marsBack from '../../images/marsBack.gif';
+import { NavLink } from 'react-router-dom';
 
 const Mars = () => {
   const [showFront, setShowFront] = useState(true);
@@ -15,7 +16,8 @@ const Mars = () => {
         onClick={handleSide}
       >
         <div className="card cardFront">
-          <h1 className="cardHeaderFrontMars">Mars</h1>
+          <h1 className="cardHeaderFrontMercury">Mars</h1>
+
           <nav className="cardNavMars">
             <ul className="navUlMars">
               <li className="navLiMars">

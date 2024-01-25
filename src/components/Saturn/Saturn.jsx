@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import './saturn.css';
+
 import saturnFront from '../../images/saturnFront.gif';
 import saturnBack from '../../images/saturnBack.gif';
+
 
 const Saturn = () => {
   const [showFront, setShowFront] = useState(true);
@@ -32,6 +34,10 @@ const Saturn = () => {
           </nav>
           <img
             className="cardImageFront"
+            
+            
+          
+
             src={saturnFront}
             alt="planet Saturn"
           />
@@ -80,6 +86,7 @@ const Saturn = () => {
               including the remarkably adaptable human species.
             </p>
           </section>
+
         </div>
         {/* From here starts the Back Card */}
         <div className="card cardBack">
