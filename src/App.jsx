@@ -15,14 +15,16 @@ import './App.css';
 
 import SolarSystem from './components/SolarSystem/SolarSystem';
 import Galaxy from './components/Galaxy/Galaxy';
-// import { Component } from 'react';
+import { Component } from 'react';
 
 function App() {
   return (
     <>
       {/* <SolarSystem /> */}
-      <Galaxy />
-
+      {/* <Neptune /> */}
+      {/* <Uranus /> */}
+      {/* <Venus /> */}
+      {/* <Galaxy /> */}
       {/* <Jupiter /> */}
       {/* <Mercury /> */}
       {/* <Mars /> */}

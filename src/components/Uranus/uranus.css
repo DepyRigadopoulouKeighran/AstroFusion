@@ -2,7 +2,7 @@
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
-  background-color: black;
+  background-image: url(../src/images/nightSky.gif);
 }
 
 html {
@@ -13,75 +13,96 @@ body {
   height: -webkit-fill-available;
 }
 
-.cardHeaderFront {
+.cardHeaderFrontUranus {
   text-align: center;
-  margin: 8rem 0 2rem 0;
+  margin: 4rem 0 2rem 0;
   color: aliceblue;
   font-family: 'Nasalization', sans-serif;
+  font-size: 6rem;
 }
 
-.cardImageFront {
+.cardImageFrontUranus {
   display: flex;
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
+  margin-top: 5rem;
   width: 1000px;
   height: 700px;
 }
 
-.cardImageFront:hover {
-  transform: perspective(600px) rotate(-180deg);
-}
-
-.cardHeaderBack:hover {
-  transform: perspective(600px) rotateY(0deg);
-}
-
-.cardHeaderBack {
+.cardHeaderBackUranus {
   text-align: center;
-  margin: 5rem 0 2rem 0;
+  margin: 4rem 0 2rem 0;
   color: aliceblue;
   font-family: 'Nasalization', sans-serif;
+  font-size: 6rem;
 }
 
-.cardNav a {
+.cardNavUranus a {
   color: aliceblue;
+  background-image: none;
+  font-size: 1.5rem;
+  text-decoration: none;
+  border: 2px solid rgb(26, 26, 26);
+  background-color: rgb(26, 26, 26);
+  border-radius: 10px;
+  padding: 0.5rem;
+  box-shadow: -20px -20px 60px #bebebe, 20px 20px 60px #ffffff;
 }
 
-.navUl {
+.navUlUranus {
   display: flex;
   list-style-type: none;
   margin-bottom: 1.5rem;
-  color: aliceblue;
-}
-
-.navLi {
   font-family: 'Nasalization', sans-serif;
 }
 
-.cardImageBack {
-  display: flex;
+.navLiNavUranus {
+  font-family: 'Nasalization', sans-serif;
 }
 
-.cardSection {
+.cardImageBackUranus {
+  display: flex;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+.cardSectionBackUranus {
   display: flex;
   flex-direction: column;
   font-family: 'a•space', sans-serif;
 }
 
-.cardTitles {
-  border: 2px solid black;
-  color: #e9e8ee;
-  margin-top: 1.5rem;
+.cardTitlesBackUranus {
+  background-image: none;
+  background-color: rgb(26, 26, 26);
+  border: 1px solid rgb(26, 26, 26);
+  border-radius: 5px;
+  color: white;
+  margin-top: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   width: 45%;
 }
 
-.cardText {
-  color: #b4b1b8;
-  border: 2px solid rgb(14, 14, 14);
+.cardTextBackUranus {
+  color: white;
+  border: 2px solid white;
   border-radius: 10px;
-  background-color: rgb(14, 14, 14);
-  padding: 1rem 1rem 1rem 1rem;
+  background-image: none;
+  background-color: rgb(17, 16, 16);
+  padding: 2rem 1rem 1rem 1rem;
   width: 45%;
   text-align: justify;
+  font-family: 'Rimouski', sans-serif;
+  height: 300px;
+  overflow: auto;
+}
+
+.spanUranus {
+  color: rgb(67, 187, 227);
+  background-image: none;
+  background-color: rgb(17, 16, 16);
+  text-shadow: rgb(67, 187, 227);
 }
 
 .card-container {
