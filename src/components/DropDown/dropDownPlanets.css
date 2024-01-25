@@ -5,11 +5,20 @@ body {
   padding: 0;
 }
 
-.navbar {
+/* .navbar {
   background-color: #ffffff;
   overflow: hidden;
-}
+} */
 
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 20px;
+  width: 100%;
+  background-color: #f1f1f1;
+  z-index: 1000;
+}
 .navbar a {
   float: left;
   display: block;
@@ -30,9 +39,12 @@ body {
   color: rgb(252, 248, 248);
 } */
 
-.dropdown {
+/* .dropdown {
   float: left;
   overflow: hidden;
+} */
+.dropdown {
+  position: relative;
 }
 
 .dropdown .Depy {
@@ -44,6 +56,14 @@ body {
   background-color: inherit;
   font-family: inherit;
   margin: 0;
+
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .dropdown-content {

@@ -46,7 +46,11 @@ body {
 .navUlEarth {
   display: flex;
   list-style-type: none;
-  margin-bottom: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+
+  margin: 5rem 16rem 1.5rem 16rem;
 }
 
 .navLiEarth {
