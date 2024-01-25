@@ -46,7 +46,9 @@ body {
 .navUlEarth {
   display: flex;
   list-style-type: none;
-  margin-bottom: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 16rem 1.5rem 16rem;
 }
 
 .navLiEarth {

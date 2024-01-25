@@ -21,10 +21,13 @@ const Galaxy = () => {
           <nav className="cardNavGalaxy">
             <ul className="navUlGalaxy">
               <li className="navLiGalaxy">
-                <Link to="/blackholes">BlackHole</Link>
+                <Link to="/solarsystem">Solar System</Link>
               </li>
               <li className="navLiGalaxy">
-                <Link to="/solarsystem">Solar System</Link>
+                <Link to="/solarsystem">Other Galaxies</Link>
+              </li>
+              <li className="navLiGalaxy">
+                <Link to="/blackholes">BlackHole</Link>
               </li>
             </ul>
           </nav>

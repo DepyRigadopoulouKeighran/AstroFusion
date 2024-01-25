@@ -10,7 +10,6 @@ import DropDownPlanets from '../DropDown/DropDownPlanets';
 
 import { NavLink } from 'react-router-dom';
 
-
 const SolarSystem = () => {
   return (
     <>
@@ -18,7 +17,6 @@ const SolarSystem = () => {
 
       <nav className="cardNavSolar">
         <ul className="navUlSolar">
-
           <li className="navLiSolar">
             <DropDownPlanets />
           </li>
