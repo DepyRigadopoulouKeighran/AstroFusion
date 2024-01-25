@@ -27,7 +27,7 @@ const Galaxy = () => {
                 <Link to="/solarsystem">Other Galaxies</Link>
               </li>
               <li className="navLiGalaxy">
-                <Link to="/blackholes">BlackHole</Link>
+                <Link to="/blackholes">BlackHole / Supernova</Link>
               </li>
             </ul>
           </nav>

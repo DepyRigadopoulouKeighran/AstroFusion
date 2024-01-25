@@ -17,9 +17,9 @@ const SolarSystem = () => {
 
       <nav className="cardNavSolar">
         <ul className="navUlSolar">
-          <li className="navLiSolar">
+          {/* <li className="navLiSolar">
             <DropDownPlanets />
-          </li>
+          </li> */}
 
           <li className="navLiSolar"></li>
 
