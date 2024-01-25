@@ -1,4 +1,3 @@
-// Saturn.js
 import { useState } from 'react';
 import './saturn.css';
 import saturnBackImage from '../../images/saturn-back.jpg';
@@ -85,3 +84,4 @@ const Saturn = () => {
   );
 };
 export default Saturn;
+};

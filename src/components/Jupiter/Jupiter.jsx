@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { useState } from 'react';
 import './jupiter.css';
 import jupiter1 from '../../images/jupiterFront.gif';

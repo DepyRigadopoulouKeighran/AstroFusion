@@ -1,4 +1,3 @@
-// Pluto.js
 import { useState } from 'react';
 import './pluto.css';
 
