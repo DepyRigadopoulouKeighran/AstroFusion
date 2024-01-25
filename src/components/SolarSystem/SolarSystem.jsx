@@ -1,4 +1,3 @@
-
 import solarSystem1 from '../../images/solarSystem2.gif';
 import solarSystem2 from '../../images/solarSystem1.gif';
 // import solarImage1 from '../../images/solarSystem.webp';
@@ -6,6 +5,7 @@ import solarSystem2 from '../../images/solarSystem1.gif';
 // import solarImage3 from '../../images/solarSystem3.gif';
 // import solarImage4 from '../../images/solarSystem4.gif';
 import '../../components/SolarSystem/solarSystem.css';
+import { NavLink } from 'react-router-dom';
 
 const SolarSystem = () => {
   return (
@@ -14,15 +14,21 @@ const SolarSystem = () => {
 
       <nav className="cardNavSolar">
         <ul className="navUlSolar">
-          <li className="navLiSolar">{/* <a href="#size">Planets</a> */}</li>
+          <li className="navLiSolar"></li>
           <li className="navLiSolar">
-            <a href="#distance">Depy</a>
+            <NavLink className="distance" to="/sun">
+              Sun
+            </NavLink>
           </li>
           <li className="navLiSolar">
-            <a href="#characteristics">Star Depy</a>
+            <NavLink className="characteristics" to="/particles">
+              Particles
+            </NavLink>
           </li>
           <li className="navLiSolar">
-            <a href="#characteristics">Moonlight Depy</a>
+            <NavLink className="characteristics" to="/moon">
+              Moon
+            </NavLink>
           </li>
         </ul>
       </nav>
