@@ -12,21 +12,17 @@ import Uranus from './components/Uranus/Uranus';
 import './App.css';
 import SolarSystem from './components/SolarSystem/SolarSystem';
 
-
-
 import DropDownPlanets from './components/DropDown/DropDownPlanets';
 
 import Saturn from './components/Saturn/Saturn';
+import Galaxy from './components/Galaxy/Galaxy';
 
 function App() {
   return (
     <>
-
-
       <DropDownPlanets />
 
       {/* <Galaxy /> */}
-
 
       <Routes>
         <Route path="/" element={<Galaxy />} />
