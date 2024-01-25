@@ -1,7 +1,9 @@
+/* eslint-disable react/no-unescaped-entities */
+import { useState } from 'react';
+import './galaxy.css';
 import galaxy1 from '../../images/Galaxies/ourGalaxy2.webp';
 import galaxy2 from '../../images/Galaxies/milkyWrap.gif';
-import '../../components/Galaxy/galaxy.css';
-import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Galaxy = () => {
   const [showFront, setShowFront] = useState(true);
@@ -11,19 +13,18 @@ const Galaxy = () => {
 
   return (
     <>
-      <div
-        className={`card-container${showFront ? '' : ' flipped'}`}
-        onClick={handleSide}
-      >
+      <div className={`card-container${showFront ? '' : ' flipped'}`}>
         <div className="card cardFront">
-          <h1 className="cardHeaderFrontGalaxy">Galaxy</h1>
+          <h1 onClick={handleSide} className="cardHeaderFrontGalaxy">
+            Galaxy
+          </h1>
           <nav className="cardNavGalaxy">
             <ul className="navUlGalaxy">
               <li className="navLiGalaxy">
-                <a href="#distance">BlackHole</a>
+                <Link to="/blackholes">BlackHole</Link>
               </li>
               <li className="navLiGalaxy">
-                <a href="#size">Other Galaxies</a>
+                <Link to="/solarsystem">Solar System</Link>
               </li>
             </ul>
           </nav>
@@ -80,7 +81,9 @@ const Galaxy = () => {
 
         {/* From here starts the Back Card */}
         <div className="card cardBack">
-          <h1 className="cardHeaderBackGalaxy">Earth</h1>
+          <h1 onClick={handleSide} className="cardHeaderBackGalaxy">
+            Galaxy
+          </h1>
 
           <nav className="cardNavGalaxy">
             <ul className="navUlGalaxy">
