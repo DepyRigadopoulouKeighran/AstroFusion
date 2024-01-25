@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './saturn.css';
 import saturnFront from '../../images/saturnFront.gif';
-import saturnBack from "../../images/saturnBack.gif"
+import saturnBack from '../../images/saturnBack.gif';
 
 const Saturn = () => {
   const [showFront, setShowFront] = useState(true);
@@ -23,16 +23,19 @@ const Saturn = () => {
                 <a href="#size">Size</a>
               </li>
               <li className="navLiSaturn">
-                  <a href="#characteristics">Key Characteristics</a>
-                
+                <a href="#characteristics">Key Characteristics</a>
               </li>
               <li className="navLiSaturn">
-              <a href="#distance">Distance from the Sun</a>
+                <a href="#distance">Distance from the Sun</a>
               </li>
             </ul>
           </nav>
-          <img className="cardImageFront" src={saturnFront} alt="planet Saturn" />
-        
+          <img
+            className="cardImageFront"
+            src={saturnFront}
+            alt="planet Saturn"
+          />
+
           <section className="cardSectionBackSaturn">
             <h2 className="cardTitlesBackSaturn">EARTH - THE BLUE PLANET</h2>
             <p className="cardTextBackSaturn">
@@ -84,11 +87,10 @@ const Saturn = () => {
           <nav className="cardNavSaturn">
             <ul className="navUlSaturn">
               <li className="navLiSaturn">
-                  <a href="#distance">Distance from the Sun</a>
-                
+                <a href="#distance">Distance from the Sun</a>
               </li>
               <li className="navLiSaturn">
-              <a href="#size">Size</a>
+                <a href="#size">Size</a>
               </li>
               <li className="navLiSaturn">
                 <a href="#characteristics">Key Characteristics</a>
@@ -97,7 +99,7 @@ const Saturn = () => {
           </nav>
           <img
             className="cardImageBackSaturn"
-            src={saturnBackI}
+            src={saturnBack}
             alt="planet Saturn"
           />
           <section className="cardSectionBackSaturn">
@@ -235,7 +237,7 @@ const Saturn = () => {
               evolution of species.
               <br />
               <br />
-              <span className="spanEarth">
+              <span className="spanSaturn">
                 Evolution of Humans (2 million years ago to present):{' '}
               </span>
               <br /> Homo sapiens, the modern human species, emerged in Africa
@@ -243,13 +245,13 @@ const Saturn = () => {
               societies and cultures.
               <br />
               <br />
-              <span className="spanEarth">
+              <span className="spanSaturn">
                 Industrial Revolution (18th to 19th centuries):{' '}
               </span>
               <br /> The widespread use of steam engines and other innovations
               marked the Industrial Revolution, transforming human societies and
               leading to significant environmental changes.
-              <span className="spanEarth">
+              <span className="spanSaturn">
                 Space Exploration (20th century to present):
               </span>
               <br /> Humans achieved space travel, with notable events including
@@ -262,16 +264,16 @@ const Saturn = () => {
               over billions of years.
             </p>
 
-            <h2 className="cardTitlesBackEarth">SPACE PHENOMENA</h2>
+            <h2 className="cardTitlesBackSaturn">SPACE PHENOMENA</h2>
 
-            <p className="cardTextBackEarth">
+            <p className="cardTextBackSaturn">
               While Earth may not boast the same giant storms and gas
               compositions as Jupiter, it exhibits its own mesmerizing space
               phenomena. From celestial displays to magnetic wonders, Earth
               showcases a unique cosmic dance in its corner of the solar system.
               <br />
               <br />
-              <span className="spanEarth">Auroras :</span>
+              <span className="spanSaturn">Auroras :</span>
               <br />
               Earth's polar regions come alive with vibrant displays of auroras,
               also known as the Northern and Southern Lights. These breathtaking
@@ -280,7 +282,7 @@ const Saturn = () => {
               displays that dance across the night sky.
               <br />
               <br />
-              <span className="spanEarth">
+              <span className="spanSaturn">
                 Magnetic field and Van Allen Belts :
               </span>
               <br />
@@ -290,7 +292,7 @@ const Saturn = () => {
               this magnetic field that trap charged particles. They contribute
               to Earth's space weather and impact technologies in space.
               <br />
-              <span className="spanEarth">Meteor showers</span>
+              <span className="spanSaturn">Meteor showers</span>
               <br /> Earth encounters debris from comets and asteroids in its
               orbit, leading to spectacular meteor showers. As these fragments
               burn up upon entering the Earth's atmosphere, they create streaks
@@ -298,7 +300,7 @@ const Saturn = () => {
               Perseids and Geminids.
               <br />
               <br />
-              <span className="spanEarth">Eclipses :</span>
+              <span className="spanSaturn">Eclipses :</span>
               <br /> Earth experiences solar and lunar eclipses, captivating
               skywatchers. A solar eclipse occurs when the Moon passes between
               the Sun and Earth, casting a shadow on the planet. Conversely, a
@@ -306,7 +308,7 @@ const Saturn = () => {
               the Moon, resulting in a reddish tint during totality.
               <br />
               <br />
-              <span className="spanEarth">Gravity Assist </span>
+              <span className="spanSaturn">Gravity Assist </span>
               <br />
               Earth's gravitational force is harnessed by spacecraft for gravity
               assists. This technique utilizes a planet's gravity to alter a
@@ -315,7 +317,7 @@ const Saturn = () => {
               spacecraft venturing into the depths of the solar system.
               <br />
               <br />
-              <span className="spanEarth">Magnetosphere interactions</span>
+              <span className="spanSaturn">Magnetosphere interactions</span>
               Earth's magnetosphere interacts dynamically with solar winds,
               creating dynamic and ever-changing phenomena. The magnetosphere
               protects the planet from the solar wind, forming a boundary that
@@ -334,4 +336,3 @@ const Saturn = () => {
   );
 };
 export default Saturn;
-};

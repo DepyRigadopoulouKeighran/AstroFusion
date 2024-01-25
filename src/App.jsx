@@ -16,6 +16,7 @@ import './App.css';
 import SolarSystem from './components/SolarSystem/SolarSystem';
 import Galaxy from './components/Galaxy/Galaxy';
 import { Component } from 'react';
+import Saturn from './components/Saturn/Saturn';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
       {/* <Galaxy /> */}
       {/* <Jupiter /> */}
       {/* <Mercury /> */}
+      {/* <Saturn /> */}
       {/* <Mars /> */}
       <EarthProvider>
         <h1>AstroFusion Project</h1>
