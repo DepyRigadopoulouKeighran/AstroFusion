@@ -5,7 +5,8 @@ const DropDownPlanets = () => {
   return (
     <div className="navbar">
       <div className="dropdown">
-        <button className="Depy">Planets</button>
+        <button id="Depy">Planets</button>
+
         <div className="dropdown-content">
           <NavLink to="/mercury">Mercury</NavLink>
           <NavLink to="/venus"> Venus </NavLink>
