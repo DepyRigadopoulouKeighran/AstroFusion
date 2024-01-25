@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './uranus.css';
-import satelite from '../../images/earth-satelite.gif';
-import earth from '../../images/earth1.gif';
+import uranusFront from '../../images/uranusFront.gif';
+import uranusBack from '../../images/uranusBack.gif';
 
 const Uranus = () => {
   const [showFront, setShowFront] = useState(true);
@@ -15,131 +15,319 @@ const Uranus = () => {
         onClick={handleSide}
       >
         <div className="card cardFront">
-          <h1 className="cardHeaderFront">Uranus</h1>
-          <nav className="cardNav">
-            <ul className="navUl">
-              <li className="navLi">
-                <a href="#size">Size</a>
-              </li>
-              <li className="navLi">
+          <h1 className="cardHeaderFrontUranus">Uranus</h1>
+          <nav className="cardNavUranus">
+            <ul className="navUlUranus">
+              <li className="navLiUranus">
                 <a href="#distance">Distance from the Uranus</a>
               </li>
-              <li className="navLi">
-                <a href="#characteristics">Key Characteristics</a>
-              </li>
-            </ul>
-          </nav>
-          <img className="cardImageFront" src={satelite} alt="" />
-        </div>
-        <div className="card cardBack">
-          <h1 className="cardHeaderBack">Uranus</h1>
-          <nav className="cardNav">
-            <ul className="navUl">
-              <li className="navLi">
+              <li className="navLiUranus">
                 <a href="#size">Size</a>
               </li>
-              <li className="navLi">
-                <a href="#distance">Distance from the Sun</a>
-              </li>
-              <li className="navLi">
+              <li className="navLiUranus">
                 <a href="#characteristics">Key Characteristics</a>
               </li>
             </ul>
           </nav>
-          <img className="cardImageBack" src={earth} alt="" />
-          <section className="cardSection">
-            <h2 className="cardTitles">Fun facts about Uranus</h2>
-            <p className="cardText">
-              1 Earth is not actually round While this sounds like an elaborate
-              joke, we are actually serious. Earth it is not flat, but it is not
-              perfectly round either. Earth rotation causes the planet to bulge
-              at the equator and flatten at the poles, while the distribution of
-              mass on Earth (which is not perfectly uniform) causes small
-              variations in the gravitational pull at different locations on the
-              planet. These variations are too small to be seen in pictures of
-              Earth from space, so it appears round to the human eye
+          <img
+            className="cardImageFrontUranus"
+            src={uranusFront}
+            alt="planet Uranus"
+          />
+
+          <section className="cardSectionBackUranus">
+            <h2 className="cardTitlesBackUranus">EARTH - THE BLUE PLANET</h2>
+            <p className="cardTextBackUranus">
+              Earth is the third planet from our Sun and holds the distinction
+              of being the only known celestial body to support life. It is a
+              diverse and vibrant world, teeming with a myriad of ecosystems and
+              a rich tapestry of life forms.
+              <br />
+              <br />
+              Earth's landscapes are a testament to its geological history, with
+              majestic mountains, sprawling plains, and vast oceans that cover
+              about 71% of its surface. The planet's atmosphere, primarily
+              composed of nitrogen and oxygen, sustains life as we know it,
+              providing the necessary elements for a complex web of ecosystems.
+              <br />
+              <br />
+              Unlike the turbulent storms on Jupiter, Earth experiences a
+              variety of weather patterns, from gentle breezes to powerful
+              hurricanes. The dynamic climate allows for the existence of
+              diverse habitats, from the icy poles to the lush rainforests near
+              the equator.
+              <br />
+              <br />
+              One of Earth's most iconic features is the Great Barrier Reef, a
+              vast underwater ecosystem that rivals the grandeur of any
+              celestial storm. The planet's natural wonders, including the
+              Amazon Rainforest and the Grand Canyon, showcase the beauty and
+              geological diversity that Earth has nurtured over millions of
+              years.
+              <br />
+              <br />
+              Earth is named after ancient Germanic and Old English words for
+              "ground" or "soil," reflecting its connection to the elements that
+              support life. Unlike Jupiter's massive size, Earth's relatively
+              moderate dimensions provide a perfect balance for a stable climate
+              and the flourishing of life.
+              <br />
+              <br />
+              As we look at Earth from space, the swirling clouds and patterns
+              of its atmosphere remind us of the delicate interconnectedness of
+              life on this pale blue dot, a home to billions of organisms,
+              including the remarkably adaptable human species.
             </p>
-            <p className="cardText">
-              2 Earth has a squishy interior Earth’s interior is not solid, but
-              rather has a semi-solid or ‘squishy’ consistency owing to high
-              temperatures and pressures. This squishy consistency allows the
-              mantle to flow and move over geological timescales, which is
-              responsible for phenomena such as plate tectonics, volcanic
-              activity and earthquakes. One consequence of this squishy interior
-              is a process known as post-glacial rebound. During the last ice
-              age, large portions of Earth's surface were covered by glaciers,
-              causing the underlying mantle to deform and sink.
-            </p>
-            <p className="cardText">
-              3 Atacama is the driest place on Earth The Atacama Desert, located
-              in South America, is widely considered to be the driest place on
-              Earth, outside of the Antarctic dry valleys. This vast expanse of
-              land spans over 100 000 sq km and receives an average of less than
-              1 mm of rainfall per year. Atacama Desert Atacama Desert The harsh
-              climate of the Atacama is due to a combination of factors
-              including its location in a rain shadow caused by the Andes
-              mountains, the presence of the cold Humboldt Current offshore and
-              a lack of moisture-bearing winds. Despite its arid conditions, the
-              Atacama is home to a number of unique species of plants and
-              animals that have adapted to survive in this harsh environment
+          </section>
+        </div>
+
+        {/* From here starts the Back Card */}
+        <div className="card cardBack">
+          <h1 className="cardHeaderBackUranus">Uranus</h1>
+          <nav className="cardNavUranus">
+            <ul className="navUlUranus">
+              <li className="navLiUranus">
+                <a href="#distance">Distance from the Sun</a>
+              </li>
+              <li className="navLiUranus">
+                <a href="#size">Size</a>
+              </li>
+              <li className="navLiUranus">
+                <a href="#characteristics">Key Characteristics</a>
+              </li>
+            </ul>
+          </nav>
+          <img
+            className="cardImageBackUranus"
+            src={uranusBack}
+            alt="planet Uranus"
+          />
+          <section className="cardSectionBackUranus">
+            <h2 className="cardTitlesBackUranus">FUN FACTS ABOUT EARTH</h2>
+            <p className="cardTextBackUranus">
+              <span className="spanUranus">Blue Planet: </span>
+              <br /> Earth is often referred to as the "Blue Planet" due to the
+              high percentage of water on its surface, giving it a distinct blue
+              appearance from space.
+              <br />
+              <br />
+              <span className="spanUranus">Only Known Habitable Planet: </span>
+              <br /> As of our current understanding, Earth is the only planet
+              in our solar system known to support life. Its conditions are
+              ideal for a diverse range of organisms.
+              <br />
+              <br />
+              <span className="spanUranus">Unique Moon:</span>
+              <br /> Earth's moon, Luna, is relatively large compared to the
+              planet it orbits. The Moon's gravitational influence plays a
+              crucial role in stabilizing Earth's axial tilt and impacting
+              tides.
+              <br />
+              <br />
+              <span className="spanUranus">70% Water: </span>
+              <br /> Approximately 70% of Earth's surface is covered by oceans.
+              The remaining 30% consists of continents, islands, and other
+              landforms.
+              <br />
+              <br />
+              <span className="spanUranus">Oxygen-Rich Atmosphere: </span>
+              <br /> Earth's atmosphere is composed of about 78% nitrogen, 21%
+              oxygen, and trace amounts of other gases. This oxygen-rich
+              atmosphere is crucial for supporting life.
+              <br />
+              <br />
+              <span className="spanUranus">Diverse Ecosystems:</span>
+              <br /> Earth boasts a wide variety of ecosystems, from tropical
+              rainforests to polar ice caps. This biodiversity allows for a rich
+              tapestry of plant and animal life.
+              <br />
+              <br />
+              <span className="spanUranus">Continental Drift: </span>
+              <br /> Earth's continents are not fixed; they drift over
+              geological time scales. The theory of plate tectonics explains the
+              movement of Earth's lithospheric plates.
+              <br />
+              <br />
+              <span className="spanUranus">Highest and Lowest Points: </span>
+              <br /> The highest point on Earth is Mount Everest, located in the
+              Himalayas, while the lowest point is the Challenger Deep in the
+              Mariana Trench, found in the Pacific Ocean.
+              <br />
+              <br />
+              <span className="spanUranus">Rotation and Orbit: </span>
+              <br /> Earth rotates on its axis, completing one full rotation
+              approximately every 24 hours, leading to day and night. It orbits
+              the Sun, completing one orbit roughly every 365.25 days, resulting
+              in a year.
+              <br />
+              <br />
+              <span className="spanUranus">Magnetic Field: </span>
+              <br /> Earth has a magnetic field that is generated by its
+              iron-nickel core. This field protects the planet from the solar
+              wind and cosmic rays.
             </p>
 
-            <h2 className="cardTitles">Historical Events</h2>
-            <p className="cardText">
-              Many dramatic changes to the Earth’s climate have occurred over
-              the planet’s 4.5-billion-year history. Long periods of stability,
-              or equilibrium, are occasionally disrupted by periods of change
-              that vary in length and intensity. Climatic shifts are
-              destructive, and some even caused mass extinction events that
-              wiped out high percentages of species. Despite these extinctions,
-              life has always rebounded, allowing new species to dominate the
-              landscape.
-            </p>
-            <p className="cardText">
-              770 million years ago - Snowball Earth Scientists believe that
-              there may have been several times when the entire Earth was frozen
-              over with ice. There is no consensus as to what exactly caused
-              these frigid events. One theory holds that a number of large
-              volcanic eruptions sent sulfur gas particles into the atmosphere
-              that reacted with solar radiation to produce a cooling effect.
-              Some scientists speculate that snowball conditions facilitated an
-              explosion of multicellular organisms.
+            <h2 className="cardTitlesBackUranus">HISTORICAL EVENTS</h2>
+
+            <p className="cardTextBackUranus">
+              Creating a brief summary of Earth's historical events poses a
+              challenge due to the extensive timespan and the multitude of
+              impactful incidents. Nonetheless, here are several noteworthy
+              events that have shaped Earth's geological and biological history:
+              <br />
+              <br />
+              <span className="spanUranus">
+                Formation of Earth (4.5 billion years ago):{' '}
+              </span>
+              <br />
+              Earth formed from the dust and gas surrounding the young Sun,
+              coalescing into a molten mass that eventually cooled to become our
+              planet.
+              <br />
+              <br />
+              <span className="spanUranus">
+                Origin of Life (3.5 to 4 billion years ago):{' '}
+              </span>
+              <br /> Life is believed to have originated in the form of simple,
+              single-celled organisms in Earth's early oceans.
+              <br />
+              <br />
+              <span className="spanUranus">
+                Oxygenation of the Atmosphere (2.4 to 2 billion years ago):
+              </span>
+              <br /> Cyanobacteria, through photosynthesis, started releasing
+              oxygen into the atmosphere, gradually changing its composition.
+              <br />
+              <br />
+              <span className="spanUranus">
+                Formation of Continents (2.5 billion years ago to present):{' '}
+              </span>
+              <br /> Over millions of years, tectonic processes led to the
+              formation of continents through the collision and separation of
+              landmasses.
+              <br />
+              <br />
+              <span className="spanUranus">Mass Extinctions: </span>
+              <br />
+              Several mass extinctions have occurred throughout Earth's history,
+              with notable events such as the Permian-Triassic Extinction
+              (around 252 million years ago) and the Cretaceous-Paleogene
+              Extinction (around 66 million years ago), which led to the demise
+              of dinosaurs.
+              <br />
+              <br />
+              <span className="spanUranus">
+                Development of Multicellular Life (around 1 billion years ago):{' '}
+              </span>
+              Complex multicellular organisms began to evolve, diversifying into
+              various forms over time.
+              <br />
+              <span className="spanUranus">
+                Cambrian Explosion (541 million years ago):{' '}
+              </span>
+              <br /> A rapid diversification of life forms occurred during the
+              Cambrian period, leading to the emergence of various animal phyla.
+              <br />
+              <br />
+              <span className="spanUranus">
+                Ice Ages (multiple occurrences):{' '}
+              </span>
+              <br /> Earth experienced several ice ages, during which glaciers
+              advanced and retreated, shaping the landscape and influencing the
+              evolution of species.
+              <br />
+              <br />
+              <span className="spanUranus">
+                Evolution of Humans (2 million years ago to present):{' '}
+              </span>
+              <br /> Homo sapiens, the modern human species, emerged in Africa
+              and gradually spread across the globe, developing complex
+              societies and cultures.
+              <br />
+              <br />
+              <span className="spanUranus">
+                Industrial Revolution (18th to 19th centuries):{' '}
+              </span>
+              <br /> The widespread use of steam engines and other innovations
+              marked the Industrial Revolution, transforming human societies and
+              leading to significant environmental changes.
+              <span className="spanUranus">
+                Space Exploration (20th century to present):
+              </span>
+              <br /> Humans achieved space travel, with notable events including
+              the first human on the Moon in 1969 and the ongoing exploration of
+              Mars and other celestial bodies.
+              <br />
+              <br />
+              These events provide a glimpse into Earth's rich and dynamic
+              history, shaped by geological, climatic, and biological processes
+              over billions of years.
             </p>
 
-            <h2 className="cardTitles">Space Phenomena</h2>
-            <p className="cardText">
-              1 Asteroid A broad and diverse group of rocks in space that were
-              little studied by astronomers until the mid-twentieth century. A
-              major ‘belt’ of asteroids exists between Mars and Jupiter, and
-              divides the solar system into the terrestrial group of planets and
-              the gasseous giants.
+            <h2 className="cardTitlesBackUranus">SPACE PHENOMENA</h2>
+
+            <p className="cardTextBackUranus">
+              While Earth may not boast the same giant storms and gas
+              compositions as Jupiter, it exhibits its own mesmerizing space
+              phenomena. From celestial displays to magnetic wonders, Earth
+              showcases a unique cosmic dance in its corner of the solar system.
               <br />
               <br />
-              2 Black Hole A large, massive star that has run out of fuel and
-              collapsed in on itself. The remnant core or sphere is so densely
-              packed that light and other objects cannot escape its
-              gravitational pull.
+              <span className="spanUranus">Auroras :</span>
               <br />
-              <br />3 Comet These “dirty snowballs” were once believed to be
-              harbingers of doom or fortune. Unlocking their secrets helped
-              scientists of the renaissance era to hone and prove their
-              mathematical models.
+              Earth's polar regions come alive with vibrant displays of auroras,
+              also known as the Northern and Southern Lights. These breathtaking
+              light shows result from charged particles from the Sun interacting
+              with the Earth's magnetic field and atmosphere, creating colorful
+              displays that dance across the night sky.
               <br />
-              <br />4 Dark Matter Scientists believe that small (and possibly
-              exotic) particles account for motions of stars and galaxies that
-              cannot otherwise be explained. Dark matter, to this point, has
-              eluded detection and can not be seen with technologies that known
-              particles and matter can.
               <br />
-              <br />5 Exoplanet Planets located in solar systems and orbiting
-              stars other than our own. There have been a substantial number of
-              exoplanets discovered in the past few years by astronomers,
-              utilizing improved detection methods and telescopes
+              <span className="spanUranus">
+                Magnetic field and Van Allen Belts :
+              </span>
               <br />
-              <br /> 6 Galaxy Enormous structures in space that are home to
-              millions upon millions of stars and solar systems. They come in
-              different shapes and varieties, and are among the most beautiful
-              astronmoical phenomena to be seen.
+              Earth's magnetic field plays a crucial role in protecting the
+              planet from harmful solar radiation. The Van Allen radiation
+              belts, named after scientist James Van Allen, are regions within
+              this magnetic field that trap charged particles. They contribute
+              to Earth's space weather and impact technologies in space.
+              <br />
+              <span className="spanUranus">Meteor showers</span>
+              <br /> Earth encounters debris from comets and asteroids in its
+              orbit, leading to spectacular meteor showers. As these fragments
+              burn up upon entering the Earth's atmosphere, they create streaks
+              of light, captivating observers during celestial events like the
+              Perseids and Geminids.
+              <br />
+              <br />
+              <span className="spanUranus">Eclipses :</span>
+              <br /> Earth experiences solar and lunar eclipses, captivating
+              skywatchers. A solar eclipse occurs when the Moon passes between
+              the Sun and Earth, casting a shadow on the planet. Conversely, a
+              lunar eclipse transpires when the Earth comes between the Sun and
+              the Moon, resulting in a reddish tint during totality.
+              <br />
+              <br />
+              <span className="spanUranus">Gravity Assist </span>
+              <br />
+              Earth's gravitational force is harnessed by spacecraft for gravity
+              assists. This technique utilizes a planet's gravity to alter a
+              spacecraft's speed and trajectory. Earth has played a pivotal role
+              in numerous space missions, providing gravity assists for
+              spacecraft venturing into the depths of the solar system.
+              <br />
+              <br />
+              <span className="spanUranus">Magnetosphere interactions</span>
+              Earth's magnetosphere interacts dynamically with solar winds,
+              creating dynamic and ever-changing phenomena. The magnetosphere
+              protects the planet from the solar wind, forming a boundary that
+              shields against the charged particles constantly emitted by the
+              Sun.
+              <br />
+              While Earth may not have the colossal storms and vast gas expanses
+              seen on other planets, its own set of space phenomena adds to the
+              celestial tapestry, making it a fascinating subject for
+              exploration and observation.
             </p>
           </section>
         </div>

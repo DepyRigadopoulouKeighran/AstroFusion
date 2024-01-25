@@ -17,13 +17,19 @@ import './App.css';
 
 import SolarSystem from './components/SolarSystem/SolarSystem';
 
-import Saturn from './components/Saturn/Saturn.jsx';
+
 
 import DropDownPlanets from './components/DropDown/DropDownPlanets';
+
+import Galaxy from './components/Galaxy/Galaxy';
+import { Component } from 'react';
+import Saturn from './components/Saturn/Saturn';
+
 
 function App() {
   return (
     <>
+
       <DropDownPlanets />
       <Routes>
         <Route path="/" element={<SolarSystem />} />
@@ -41,6 +47,8 @@ function App() {
 
         <Route path="solarSystem" element={<SolarSystem />} />
       </Routes>
+
+     
 
       <EarthProvider>
         <h1>AstroFusion Project</h1>

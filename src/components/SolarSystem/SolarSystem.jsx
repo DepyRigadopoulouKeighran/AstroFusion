@@ -1,3 +1,4 @@
+
 import solarSystem1 from '../../images/solarSystem2.gif';
 import solarSystem2 from '../../images/solarSystem1.gif';
 // import solarImage1 from '../../images/solarSystem.webp';
