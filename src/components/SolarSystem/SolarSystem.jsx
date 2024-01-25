@@ -15,6 +15,14 @@ const SolarSystem = () => {
 
       <nav className="cardNavSolar">
         <ul className="navUlSolar">
+
+          {/* <li className="navLiSolar">
+            <DropDownPlanets />
+          </li> */}
+
+          <li className="navLiSolar"></li>
+
+
           <li className="navLiSolar">
             <NavLink className="distance" to="/sun">
               Sun
