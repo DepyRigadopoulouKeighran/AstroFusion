@@ -1,10 +1,10 @@
 import solarSystem1 from '../../images/solarSystem2.gif';
 import solarSystem2 from '../../images/solarSystem1.gif';
-import solarImage1 from '../../images/solarSystem.webp';
-import solarImage2 from '../../images/solarSystem.avif';
-import solarImage3 from '../../images/solarSystem3.gif';
-import solarImage4 from '../../images/solarSystem4.gif';
-import '../../components/SolarSystem/solarsystem.css';
+// import solarImage1 from '../../images/solarSystem.webp';
+// import solarImage2 from '../../images/solarSystem2.avif';
+// import solarImage3 from '../../images/solarSystem3.gif';
+// import solarImage4 from '../../images/solarSystem4.gif';
+import '../../components/SolarSystem/solarSystem.css';
 
 const SolarSystem = () => {
   return (
@@ -13,23 +13,21 @@ const SolarSystem = () => {
 
       <nav className="cardNavSolar">
         <ul className="navUlSolar">
+          <li className="navLiSolar">{/* <a href="#size">Planets</a> */}</li>
           <li className="navLiSolar">
-            <a href="#size">Planets</a>
+            <a href="#distance">Depy</a>
           </li>
           <li className="navLiSolar">
-            <a href="#distance">Sun</a>
+            <a href="#characteristics">Star Depy</a>
           </li>
           <li className="navLiSolar">
-            <a href="#characteristics">Moon</a>
-          </li>
-          <li className="navLiSolar">
-            <a href="#characteristics">Particles</a>
+            <a href="#characteristics">Moonlight Depy</a>
           </li>
         </ul>
       </nav>
       <img className="cardImageFrontSolar" src={solarSystem1} alt="" />
 
-      <section className="wrapperSolar">
+      {/* <section className="wrapperSolar">
         <h2 className="cardTitlesBackSolar">Lorem lorem lore lorem</h2>
         <div>
           <img src={solarImage1} alt="" />
@@ -43,7 +41,7 @@ const SolarSystem = () => {
         <div>
           <img src={solarImage4} alt="" />
         </div>
-      </section>
+      </section> */}
 
       {/* Back Side of the Solar System */}
 

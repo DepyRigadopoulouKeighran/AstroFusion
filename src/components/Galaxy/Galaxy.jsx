@@ -1,8 +1,14 @@
 import galaxy1 from '../../images/Galaxies/ourGalaxy2.webp';
 import galaxy2 from '../../images/Galaxies/milkyWrap.gif';
 import '../../components/Galaxy/galaxy.css';
+import { useState } from 'react';
 
 const Galaxy = () => {
+  const [showFront, setShowFront] = useState(true);
+  const handleSide = () => {
+    setShowFront(!showFront);
+  };
+
   return (
     <>
       <div

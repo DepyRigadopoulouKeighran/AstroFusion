@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './saturn.css';
-import saturnBackImage from '../../images/saturn-back.jpg';
-
+import saturnBackImage from '../../images/earth1.gif';
+import saturnFrontImage from '../../images/marsFront.gif';
 const Saturn = () => {
   const [showFront, setShowFront] = useState(true);
 
@@ -30,7 +30,11 @@ const Saturn = () => {
               </li>
             </ul>
           </nav>
-          <img className="cardImageFront" src="" alt="Saturn Front" />
+          <img
+            className="cardImageFront"
+            src={saturnFrontImage}
+            alt="Saturn Front"
+          />
         </div>
         <div className="card cardBack">
           <h1 className="cardHeaderBack">Saturn</h1>
@@ -84,4 +88,3 @@ const Saturn = () => {
   );
 };
 export default Saturn;
-};
