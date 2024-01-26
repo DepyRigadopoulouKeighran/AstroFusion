@@ -3,7 +3,7 @@ import { useState } from 'react';
 import './galaxy.css';
 import galaxy1 from '../../images/Galaxies/ourGalaxy2.webp';
 import galaxy2 from '../../images/Galaxies/milkyWrap.gif';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Galaxy = () => {
   const [showFront, setShowFront] = useState(true);
@@ -21,13 +21,13 @@ const Galaxy = () => {
           <nav className="cardNavGalaxy">
             <ul className="navUlGalaxy">
               <li className="navLiGalaxy">
-                <Link to="/solarsystem">Solar System</Link>
+                <NavLink to="/solarsystem">Solar System</NavLink>
               </li>
               <li className="navLiGalaxy">
-                <Link to="/solarsystem">Other Galaxies</Link>
+                <NavLink to="/othergalaxies">Other Galaxies</NavLink>
               </li>
               <li className="navLiGalaxy">
-                <Link to="/blackholes">BlackHole / Supernova</Link>
+                <NavLink to="/blackhole">BlackHole / Supernova</NavLink>
               </li>
             </ul>
           </nav>

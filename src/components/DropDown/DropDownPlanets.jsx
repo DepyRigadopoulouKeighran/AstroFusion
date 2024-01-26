@@ -16,10 +16,6 @@ const DropDownPlanets = () => {
           <NavLink to="/saturn"> Saturn</NavLink>
           <NavLink to="/uranus"> Uranus </NavLink>
           <NavLink to="/neptune">Neptune</NavLink>
-          {/* <NavLink to="/moon">Moon</NavLink> */}
-          {/* <NavLink to="/pluto"> PLuto </NavLink> */}
-          {/* <NavLink to="/sun"> Sun </NavLink> */}
-
           <NavLink to="/solarSystem"> SolarSystem</NavLink>
         </div>
       </div>
