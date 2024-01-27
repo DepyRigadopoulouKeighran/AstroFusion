@@ -1,7 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import { useState } from 'react';
 import './galaxy.css';
-import galaxy1 from '../../images/Galaxies/ourGalaxy2.webp';
+import universe from '../../images/Galaxies/universe.gif';
+import galaxy1 from '../../images/Galaxies/ourGalaxy2.gif';
 import galaxy2 from '../../images/Galaxies/milkyWrap.gif';
 import { Link } from 'react-router-dom';
 
@@ -13,71 +14,99 @@ const Galaxy = () => {
 
   return (
     <>
+      {/* The front side is about the UNIVERSE */}
       <div className={`card-container${showFront ? '' : ' flipped'}`}>
         <div className="card cardFront">
           <h1 onClick={handleSide} className="cardHeaderFrontGalaxy">
-            Galaxy
+            The Universe
           </h1>
           <nav className="cardNavGalaxy">
             <ul className="navUlGalaxy">
-              <li className="navLiGalaxy">
-                <Link to="/solarsystem">Solar System</Link>
-              </li>
-              <li className="navLiGalaxy">
-                <Link to="/solarsystem">Other Galaxies</Link>
-              </li>
-              <li className="navLiGalaxy">
+              <li className="navLiGalaxy firstNavLi">
                 <Link to="/blackholes">BlackHole / Supernova</Link>
+              </li>
+
+              <li className="navLiGalaxy secondNavLi">
+                <Link to="/solarsystem">Other Galaxies</Link>
               </li>
             </ul>
           </nav>
           <img
             className="cardImageFrontGalaxy"
-            src={galaxy1}
+            src={universe}
             alt="Planet Earth"
           />
           <section className="cardSectionBackGalaxy">
-            <h2 className="cardTitlesBackGalaxy">GALAXY - THE BLUE PLANET</h2>
+            <h2 className="cardTitlesBackGalaxy">THE UNIVERSE</h2>
             <p className="cardTextBackGalaxy">
-              Earth is the third planet from our Sun and holds the distinction
-              of being the only known celestial body to support life. It is a
-              diverse and vibrant world, teeming with a myriad of ecosystems and
-              a rich tapestry of life forms.
+              The universe is all of space, time, matter, and energy that
+              exists. It encompasses everything, from the smallest subatomic
+              particles to the largest galaxies and beyond. The universe is
+              constantly expanding, and its current age is estimated to be
+              around 13.8 billion years based on observations of the cosmic
+              microwave background radiation.
               <br />
               <br />
-              Earth's landscapes are a testament to its geological history, with
-              majestic mountains, sprawling plains, and vast oceans that cover
-              about 71% of its surface. The planet's atmosphere, primarily
-              composed of nitrogen and oxygen, sustains life as we know it,
-              providing the necessary elements for a complex web of ecosystems.
+              The observable universe is a vast expanse that we can detect and
+              study using various astronomical observations and measurements. It
+              contains galaxies, stars, planets, dark matter, and other cosmic
+              structures. The universe operates according to physical laws and
+              principles, and its study falls under the field of cosmology,
+              which seeks to understand the origin, evolution, and eventual fate
+              of the universe. The vastness and complexity of the universe make
+              it a fascinating subject of scientific inquiry and exploration.
+            </p>
+          </section>
+
+          <section className="cardSectionBackGalaxy">
+            <h2 className="cardTitlesBackGalaxy">FUN FACTS ABOUT UNIVERSE</h2>
+            <p className="cardTextBackGalaxy">
+              <span className="spanGalaxy">Expanding Universe: </span>
+              <br /> The universe is expanding, meaning that galaxies are moving
+              away from each other over time. This discovery, based on
+              observations of distant galaxies, earned the Nobel Prize in
+              Physics in 2011.
               <br />
               <br />
-              Unlike the turbulent storms on Jupiter, Earth experiences a
-              variety of weather patterns, from gentle breezes to powerful
-              hurricanes. The dynamic climate allows for the existence of
-              diverse habitats, from the icy poles to the lush rainforests near
-              the equator.
+              <span className="spanGalaxy">Infinite or Finite?: </span>
+              <br />
+              The shape and ultimate fate of the universe are still unknown.
+              Depending on factors such as dark energy and the overall mass
+              density, the universe could be infinite or have a finite size.
               <br />
               <br />
-              One of Earth's most iconic features is the Great Barrier Reef, a
-              vast underwater ecosystem that rivals the grandeur of any
-              celestial storm. The planet's natural wonders, including the
-              Amazon Rainforest and the Grand Canyon, showcase the beauty and
-              geological diversity that Earth has nurtured over millions of
-              years.
+              <span className="spanGalaxy">
+                Most of the Universe is Empty:{' '}
+              </span>
+              <br /> Despite the presence of galaxies, stars, and planets, most
+              of the universe is empty space. Even within galaxies, the space
+              between stars is vast.
               <br />
               <br />
-              Earth is named after ancient Germanic and Old English words for
-              "ground" or "soil," reflecting its connection to the elements that
-              support life. Unlike Jupiter's massive size, Earth's relatively
-              moderate dimensions provide a perfect balance for a stable climate
-              and the flourishing of life.
+              <span className="spanGalaxy">Hubble's Law: </span>
+              <br /> The farther a galaxy is from us, the faster it is moving
+              away. This relationship is described by Hubble's Law, named after
+              the astronomer Edwin Hubble, who made significant contributions to
+              our understanding of the expanding universe.
               <br />
               <br />
-              As we look at Earth from space, the swirling clouds and patterns
-              of its atmosphere remind us of the delicate interconnectedness of
-              life on this pale blue dot, a home to billions of organisms,
-              including the remarkably adaptable human species.
+              <span className="spanGalaxy">Age of the Universe: </span>
+              <br /> The estimated age of the universe is approximately 13.8
+              billion years. This age is determined by studying the oldest
+              objects in the cosmos and measuring the rate of expansion.
+            </p>
+          </section>
+
+          <img className="cardImageBackGalaxy" src={galaxy2} alt="" />
+
+          <section className="cardSectionBackGalaxy">
+            <h2 className="cardTitlesBackGalaxy">FUN FACTS ABOUT UNIVERSE</h2>
+            <p className="cardTextBackGalaxy">
+              <span className="spanGalaxy">Expanding Universe: </span>
+              <br /> The universe is expanding, meaning that galaxies are moving
+              away from each other over time. This discovery, based on
+              observations of distant galaxies, earned the Nobel Prize in
+              Physics in 2011.
             </p>
           </section>
         </div>
@@ -90,11 +119,8 @@ const Galaxy = () => {
 
           <nav className="cardNavGalaxy">
             <ul className="navUlGalaxy">
-              <li className="navLiGalaxy">
-                <a href="#distance">BlackHole</a>
-              </li>
-              <li className="navLiGalaxy">
-                <a href="#size">Other Galaxies</a>
+              <li className="navLiGalaxy ">
+                <Link to="/solarsystem">Solar System</Link>
               </li>
             </ul>
           </nav>

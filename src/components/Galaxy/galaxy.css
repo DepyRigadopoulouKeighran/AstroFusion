@@ -42,6 +42,7 @@ body {
   border-radius: 10px;
   padding: 0.5rem;
   box-shadow: -20px -20px 60px #bebebe, 20px 20px 60px #ffffff;
+  /* margin-left: 130px; */
 }
 .navUlGalaxy {
   display: flex;
@@ -52,6 +53,18 @@ body {
 .navLiGalaxy {
   font-family: 'Nasalization', sans-serif;
 }
+
+/* .firstNavLi {
+  margin-left: 210px;
+}
+
+.secondNavLi {
+  margin-left: 10px;
+}
+
+.thirdNavLi {
+  margin-left: 1px;
+} */
 
 .cardImageBackGalaxy {
   display: flex;
