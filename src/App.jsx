@@ -34,6 +34,9 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Galaxy />} />
+
+        <Route path="particles" element={<Particles />} />
+        <Route path="blackhole" element={<Blackhole />} />
         <Route path="earth" element={<Earth />} />
         <Route path="othergalaxies" element={<OtherGalaxies />} />
         <Route path="blackhole" element={<Blackhole />} />
@@ -47,6 +50,7 @@ function App() {
         <Route path="solarSystem" element={<SolarSystem />} />
         <Route path="sun" element={<Sun />} />
         <Route path="moon" element={<Moon />} />
+        <Route path="othergalaxies" element={<OtherGalaxies />} />
       </Routes>
 
       <EarthProvider>

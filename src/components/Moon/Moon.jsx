@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './moon.css';
-import satelite from '../../images/earth-satelite.gif';
-import earth from '../../images/earth1.gif';
+
+import moon from '../../images/moonPhases.gif';
 
 const Moon = () => {
   const [showFront, setShowFront] = useState(true);
@@ -29,7 +29,7 @@ const Moon = () => {
               </li>
             </ul>
           </nav>
-          <img className="cardImageFront" src={satelite} alt="" />
+          <img className="cardImageFront" src={moon} alt="" />
         </div>
         <div className="card cardBack">
           <h1 className="cardHeaderBack">Moon</h1>
@@ -46,7 +46,7 @@ const Moon = () => {
               </li>
             </ul>
           </nav>
-          <img className="cardImageBack" src={earth} alt="" />
+          <img className="cardImageBack" src={moon} alt="" />
           <section className="cardSection">
             <h2 className="cardTitles">Fun facts about Moon</h2>
             <p className="cardText">

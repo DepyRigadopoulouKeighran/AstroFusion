@@ -21,6 +21,20 @@ const Galaxy = () => {
           <h1 onClick={handleSide} className="cardHeaderFrontGalaxy">
             Galaxy
           </h1>
+
+          <nav className="cardNavGalaxy">
+            <ul className="navUlGalaxy">
+              <li className="navLiGalaxy">
+                <NavLink to="/solarsystem">Solar System</NavLink>
+              </li>
+              <li className="navLiGalaxy">
+                <NavLink to="/othergalaxies">Other Galaxies</NavLink>
+              </li>
+              <li className="navLiGalaxy">
+                <NavLink to="/blackhole">BlackHole / Supernova</NavLink>
+              </li>
+            </ul>
+
           <nav className="cardNavGalaxy navbar navbar-expand-lg">
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic">
@@ -45,6 +59,7 @@ const Galaxy = () => {
                 </li>
               </Dropdown.Menu>
             </Dropdown>
+
           </nav>
           <img
             className="cardImageFrontGalaxy img-fluid"
