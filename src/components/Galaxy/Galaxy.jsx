@@ -4,9 +4,27 @@ import Dropdown from 'react-bootstrap/Dropdown';
 
 import { useState } from 'react';
 import './galaxy.css';
-import galaxy1 from '../../images/Galaxies/ourGalaxy2.webp';
+import universe from '../../images/Galaxies/universe.gif';
+import galaxy1 from '../../images/Galaxies/ourGalaxy2.gif';
 import galaxy2 from '../../images/Galaxies/milkyWrap.gif';
+
+
+import matter from '../../images/Galaxies/matter.gif';
+import darkMatter from '../../images/Galaxies/darkMatter1.gif';
+import darkEnergy1 from '../../images/Galaxies/darkEnergy1.gif';
+import energy from '../../images/Galaxies/energy.gif';
+import space from '../../images/Galaxies/space.gif';
+import time from '../../images/Galaxies/time.gif';
+import time2 from '../../images/Galaxies/time2.gif';
+import gravitationalWaves from '../../images/Galaxies/gravitationalWaves.gif';
+import cosmicMicrowaveBackground from '../../images/Galaxies/cosmicMicrowaveBackground.gif';
+import pulsars from '../../images/Galaxies/pulsars.gif';
+import kilonova from '../../images/Galaxies/kilonova.gif';
+import galaxiesFormation from '../../images/Galaxies/galaxiesFormation.gif';
+import formationSolarSystem from '../../images/Galaxies/formationSolarSystem.gif';
+
 import { NavLink } from 'react-router-dom';
+
 
 const Galaxy = () => {
   const [showFront, setShowFront] = useState(true);
@@ -16,14 +34,16 @@ const Galaxy = () => {
 
   return (
     <>
+      {/* The front side is about the UNIVERSE */}
       <div className={`card-container${showFront ? '' : ' flipped'}`}>
         <div className="card cardFront">
           <h1 onClick={handleSide} className="cardHeaderFrontGalaxy">
-            Galaxy
+            The Universe
           </h1>
 
           <nav className="cardNavGalaxy">
             <ul className="navUlGalaxy">
+
               <li className="navLiGalaxy">
                 <NavLink to="/solarsystem">Solar System</NavLink>
               </li>
@@ -33,6 +53,7 @@ const Galaxy = () => {
               <li className="navLiGalaxy">
                 <NavLink to="/blackhole">BlackHole / Supernova</NavLink>
               </li>
+
             </ul>
 
           <nav className="cardNavGalaxy navbar navbar-expand-lg">
@@ -62,55 +83,34 @@ const Galaxy = () => {
 
           </nav>
           <img
-            className="cardImageFrontGalaxy img-fluid"
-            src={galaxy1}
+
+            className="cardImageFrontGalaxy"
+            src={universe}
+
             alt="Planet Earth"
           />
           <section className="cardSectionBackGalaxy">
-            <h2 className="cardTitlesBackGalaxy">GALAXY - THE BLUE PLANET</h2>
+            <h2 className="cardTitlesBackGalaxy">THE UNIVERSE</h2>
             <p className="cardTextBackGalaxy">
-              Earth is the third planet from our Sun and holds the distinction
-              of being the only known celestial body to support life. It is a
-              diverse and vibrant world, teeming with a myriad of ecosystems and
-              a rich tapestry of life forms.
+              The universe is all of space, time, matter, and energy that
+              exists. It encompasses everything, from the smallest subatomic
+              particles to the largest galaxies and beyond. The universe is
+              constantly expanding, and its current age is estimated to be
+              around 13.8 billion years based on observations of the cosmic
+              microwave background radiation.
               <br />
               <br />
-              Earth's landscapes are a testament to its geological history, with
-              majestic mountains, sprawling plains, and vast oceans that cover
-              about 71% of its surface. The planet's atmosphere, primarily
-              composed of nitrogen and oxygen, sustains life as we know it,
-              providing the necessary elements for a complex web of ecosystems.
-              <br />
-              <br />
-              Unlike the turbulent storms on Jupiter, Earth experiences a
-              variety of weather patterns, from gentle breezes to powerful
-              hurricanes. The dynamic climate allows for the existence of
-              diverse habitats, from the icy poles to the lush rainforests near
-              the equator.
-              <br />
-              <br />
-              One of Earth's most iconic features is the Great Barrier Reef, a
-              vast underwater ecosystem that rivals the grandeur of any
-              celestial storm. The planet's natural wonders, including the
-              Amazon Rainforest and the Grand Canyon, showcase the beauty and
-              geological diversity that Earth has nurtured over millions of
-              years.
-              <br />
-              <br />
-              Earth is named after ancient Germanic and Old English words for
-              "ground" or "soil," reflecting its connection to the elements that
-              support life. Unlike Jupiter's massive size, Earth's relatively
-              moderate dimensions provide a perfect balance for a stable climate
-              and the flourishing of life.
-              <br />
-              <br />
-              As we look at Earth from space, the swirling clouds and patterns
-              of its atmosphere remind us of the delicate interconnectedness of
-              life on this pale blue dot, a home to billions of organisms,
-              including the remarkably adaptable human species.
+              The observable universe is a vast expanse that we can detect and
+              study using various astronomical observations and measurements. It
+              contains galaxies, stars, planets, dark matter, and other cosmic
+              structures. The universe operates according to physical laws and
+              principles, and its study falls under the field of cosmology,
+              which seeks to understand the origin, evolution, and eventual fate
+              of the universe. The vastness and complexity of the universe make
+              it a fascinating subject of scientific inquiry and exploration.
             </p>
           </section>
-        </div>
+
 
         {/* From here starts the Back Card */}
         <div className="card cardBack">
@@ -151,232 +151,433 @@ const Galaxy = () => {
             </div>
           </nav>
           <img className="cardImageBackGalaxy img-fluid" src={galaxy2} alt="" />
+
           <section className="cardSectionBackGalaxy">
-            <h2 className="cardTitlesBackGalaxy">FUN FACTS ABOUT EARTH</h2>
+            <h2 className="cardTitlesBackGalaxy">FUN FACTS ABOUT UNIVERSE</h2>
             <p className="cardTextBackGalaxy">
-              <span className="spanGalaxy">Blue Planet: </span>
-              <br /> Earth is often referred to as the "Blue Planet" due to the
-              high percentage of water on its surface, giving it a distinct blue
-              appearance from space.
+              <span className="spanGalaxy">Expanding Universe: </span>
+              <br /> The universe is expanding, meaning that galaxies are moving
+              away from each other over time. This discovery, based on
+              observations of distant galaxies, earned the Nobel Prize in
+              Physics in 2011.
               <br />
               <br />
-              <span className="spanGalaxy">Only Known Habitable Planet: </span>
-              <br /> As of our current understanding, Earth is the only planet
-              in our solar system known to support life. Its conditions are
-              ideal for a diverse range of organisms.
+              <span className="spanGalaxy">Dark Energy Dominance: </span>
+              <br /> Approximately 68% of the universe is made up of dark
+              energy, a mysterious force causing the accelerated expansion of
+              the universe. Dark matter constitutes about 27%, while the rest is
+              ordinary matter.
               <br />
               <br />
-              <span className="spanGalaxy">Unique Moon:</span>
-              <br /> Earth's moon, Luna, is relatively large compared to the
-              planet it orbits. The Moon's gravitational influence plays a
-              crucial role in stabilizing Earth's axial tilt and impacting
-              tides.
+              <span className="spanGalaxy">Infinite or Finite?: </span>
+              <br />
+              The shape and ultimate fate of the universe are still unknown.
+              Depending on factors such as dark energy and the overall mass
+              density, the universe could be infinite or have a finite size.
               <br />
               <br />
-              <span className="spanGalaxy">70% Water: </span>
-              <br /> Approximately 70% of Earth's surface is covered by oceans.
-              The remaining 30% consists of continents, islands, and other
-              landforms.
+              <span className="spanGalaxy">
+                Most of the Universe is Empty:{' '}
+              </span>
+              <br /> Despite the presence of galaxies, stars, and planets, most
+              of the universe is empty space. Even within galaxies, the space
+              between stars is vast.
               <br />
               <br />
-              <span className="spanGalaxy">Oxygen-Rich Atmosphere: </span>
-              <br /> Earth's atmosphere is composed of about 78% nitrogen, 21%
-              oxygen, and trace amounts of other gases. This oxygen-rich
-              atmosphere is crucial for supporting life.
+              <span className="spanGalaxy">Hubble's Law: </span>
+              <br /> The farther a galaxy is from us, the faster it is moving
+              away. This relationship is described by Hubble's Law, named after
+              the astronomer Edwin Hubble, who made significant contributions to
+              our understanding of the expanding universe.
               <br />
               <br />
-              <span className="spanGalaxy">Diverse Ecosystems:</span>
-              <br /> Earth boasts a wide variety of ecosystems, from tropical
-              rainforests to polar ice caps. This biodiversity allows for a rich
-              tapestry of plant and animal life.
+              <span className="spanGalaxy">Age of the Universe: </span>
+              <br /> The estimated age of the universe is approximately 13.8
+              billion years. This age is determined by studying the oldest
+              objects in the cosmos and measuring the rate of expansion.
+            </p>
+          </section>
+
+          <img className="cardImageBackGalaxy" src={matter} alt="" />
+
+          <section className="cardSectionBackGalaxy">
+            <h2 className="cardTitlesBackGalaxy">
+              PRIMARY CONSTITUENTS OF THE UNIVERSE
+            </h2>
+            <p className="cardTextBackUniverse">
+              <span className="spanGalaxy">Matter: </span>
+              <br /> The universe is expanding, meaning that galaxies are moving
+              away from each other over time. This discovery, based on
+              observations of distant galaxies, earned the Nobel Prize in
+              Physics in 2011.
               <br />
               <br />
-              <span className="spanGalaxy">Continental Drift: </span>
-              <br /> Earth's continents are not fixed; they drift over
-              geological time scales. The theory of plate tectonics explains the
-              movement of Earth's lithospheric plates.
+              <span className="spanGalaxy">Dark Matter: </span>
+              <br /> Although it cannot be directly observed, dark matter is
+              believed to make up a significant portion of the total mass in the
+              universe. It does not emit, absorb, or reflect light, making it
+              invisible to electromagnetic radiation. Its presence is inferred
+              from its gravitational effects on visible matter.
+            </p>
+          </section>
+          <img className="cardImageBackGalaxy" src={darkMatter} alt="" />
+
+          <img className="cardImageBackGalaxy" src={energy} alt="" />
+
+          <section className="cardSectionBackGalaxy">
+            <p className="cardTextBackUniverse">
+              <span className="spanGalaxy">Energy: </span>
+              <br /> Energy is the fundamental ability to make things happen or
+              cause change. In the universe, energy comes in various forms, such
+              as light, heat, and motion. It powers stars, fuels cosmic
+              processes, and is a key player in shaping the dynamic events that
+              unfold across the vast expanse of space and time.
               <br />
               <br />
-              <span className="spanGalaxy">Highest and Lowest Points: </span>
-              <br /> The highest point on Earth is Mount Everest, located in the
-              Himalayas, while the lowest point is the Challenger Deep in the
-              Mariana Trench, found in the Pacific Ocean.
+              <span className="spanGalaxy">Dark Energy: </span>
+              <br /> Dark energy is a mysterious form of energy that is thought
+              to be responsible for the accelerated expansion of the universe.
+              Unlike dark matter, dark energy does not cluster around galaxies
+              or other structures but is instead believed to permeate space
+              uniformly.
+            </p>
+          </section>
+          <img className="cardImageBackGalaxy" src={darkEnergy1} alt="" />
+
+          <img className="cardImageBackGalaxy" src={space} alt="" />
+
+          <section className="cardSectionBackGalaxy">
+            <p className="cardTextBackUniverse">
+              <span className="spanGalaxy">Space: </span>
+              <br /> The fabric of space itself is a fundamental component of
+              the universe. It is not empty but rather filled with a dynamic
+              structure that can be affected by the presence of mass and energy.
+              The expansion of space is a key feature of the evolving universe.
               <br />
               <br />
-              <span className="spanGalaxy">Rotation and Orbit: </span>
-              <br /> Earth rotates on its axis, completing one full rotation
-              approximately every 24 hours, leading to day and night. It orbits
-              the Sun, completing one orbit roughly every 365.25 days, resulting
-              in a year.
+              <span className="spanGalaxy">Time: </span>
+              <br /> Time is a dimension that allows events to occur in a
+              sequential order. It is intimately connected with space to form
+              the spacetime continuum. The concept of spacetime is a fundamental
+              aspect of Einstein's theory of general relativity.
+            </p>
+          </section>
+          <img className="cardImageBackGalaxy" src={time} alt="" />
+          <img className="cardImageBackGalaxy" src={time2} alt="" />
+
+          <img
+            className="cardImageBackGalaxy"
+            src={gravitationalWaves}
+            alt=""
+          />
+
+          <section className="cardSectionBackGalaxy">
+            <p className="cardTextBackUniverse">
+              <span className="spanGalaxy">Gravitational Waves: </span>
+              <br /> In 2015, scientists detected gravitational waves for the
+              first time, ripples in spacetime caused by the collision of two
+              black holes. This discovery confirmed a prediction made by Albert
+              Einstein a century earlier.
               <br />
               <br />
-              <span className="spanGalaxy">Magnetic Field: </span>
-              <br /> Earth has a magnetic field that is generated by its
-              iron-nickel core. This field protects the planet from the solar
-              wind and cosmic rays.
+              <span className="spanGalaxy">Cosmic Microwave Background: </span>
+              <br /> The CMB is faint radiation left over from the Big Bang. It
+              provides a snapshot of the early universe's conditions, and its
+              discovery earned Arno Penzias and Robert Wilson the Nobel Prize in
+              Physics in 1978.
+            </p>
+          </section>
+          <img
+            className="cardImageBackGalaxy"
+            src={cosmicMicrowaveBackground}
+            alt=""
+          />
+
+          <img className="cardImageBackGalaxy" src={pulsars} alt="" />
+
+          <section className="cardSectionBackGalaxy">
+            <p className="cardTextBackUniverse">
+              <span className="spanGalaxy">Pulsars: </span>
+              <br /> Pulsars are highly magnetized, rotating neutron stars that
+              emit beams of electromagnetic radiation. They can rotate
+              incredibly fast, with some pulsars completing hundreds of
+              rotations per second.
+              <br />
+              <br />
+              <span className="spanGalaxy">Gold & Cosmic Event: </span>
+              <br /> Heavy elements like gold and platinum are believed to be
+              produced during the explosive collisions of neutron stars. These
+              cosmic events, known as kilonovae, can send ripples through
+              spacetime and create heavy elements.
+            </p>
+          </section>
+          <img className="cardImageBackGalaxy" src={kilonova} alt="" />
+
+          <section className="cardSectionBackGalaxy">
+            <h2 className="cardTitlesBackGalaxy">HISTORICAL EVENTS</h2>
+            <p className="cardTextBackGalaxy">
+              <span className="spanGalaxy">
+                The Big Bang (13.8 billion years ago):{' '}
+              </span>
+              <br /> The universe began with an extremely hot and dense state,
+              and it rapidly expanded from this singularity. This event marks
+              the beginning of space and time as we know them.
+              <br />
+              <br />
+              <span className="spanGalaxy">
+                Formation of the First Stars and Galaxies (around 100 million
+                years after the Big Bang):{' '}
+              </span>
+              <br /> The first stars and galaxies formed from the primordial
+              elements, marking the end of the cosmic dark ages.
+              <br />
+              <br />
+              <span className="spanGalaxy">
+                Formation of the Milky Way (around 13.6 billion years after the
+                Big Bang):{' '}
+              </span>
+              <br />
+              Our galaxy, the Milky Way, formed as matter in the early universe
+              clumped together under the influence of gravity.
+              <br />
+              <span className="spanGalaxy">
+                Formation of the Solar System (about 4.6 billion years ago):
+              </span>
+              <br /> The Sun and its surrounding planets, including Earth,
+              formed from a rotating disk of gas and dust.
+              <br />
+              <span className="spanGalaxy">
+                Life on Earth (around 3.5 billion years ago):{' '}
+              </span>
+              <br /> The first life forms appeared on Earth, marking the
+              beginning of biological evolution.
+              <br />
+              <br />
+              <span className="spanGalaxy">
+                Cambrian Explosion (around 541 million years ago):{' '}
+              </span>
+              <br /> A period of rapid diversification of life, leading to the
+              emergence of various complex multicellular organisms.
+              <br />
+              <br />
+              <span className="spanGalaxy">Mass Extinctions:</span>
+              <br /> Several mass extinction events occurred throughout Earth's
+              history, including the Permian-Triassic extinction (the most
+              severe, about 252 million years ago) and the Cretaceous-Paleogene
+              extinction (which led to the extinction of dinosaurs, about 66
+              million years ago).
+              <br />
+              <span className="spanGalaxy">
+                Evolution of Homo sapiens (around 300,000 years ago):
+              </span>
+              <br /> Modern humans evolved in Africa and eventually migrated to
+              other parts of the world.
+              <br />
+              <br />
+              <span className="spanGalaxy">
+                Discovery of Cosmic Microwave Background (1965):
+              </span>
+              <br /> Arno Penzias and Robert Wilson accidentally discovered the
+              cosmic microwave background radiation, providing evidence for the
+              Big Bang theory.
+              <br />
+              <br />
+              <span className="spanGalaxy">
+                Cambrian Explosion (around 541 million years ago):{' '}
+              </span>
+              <br /> The Laser Interferometer Gravitational-Wave Observatory
+              (LIGO) detected gravitational waves for the first time, confirming
+              a prediction of Einstein's general relativity and opening a new
+              era of gravitational wave astronomy.
+              <br />
+              <br />
+            </p>
+          </section>
+
+          <img className="cardImageBackGalaxy" src={galaxiesFormation} alt="" />
+          <img
+            className="cardImageBackGalaxy"
+            src={formationSolarSystem}
+            alt=""
+          />
+        </div>
+
+        {/* From here starts the Back Card - OUR GALAXY */}
+        <div className="card cardBack">
+          <h1 onClick={handleSide} className="cardHeaderBackGalaxy">
+            Our Galaxy
+          </h1>
+
+          <nav className="cardNavGalaxy">
+            <ul className="navUlGalaxy">
+              <li className="navLiGalaxy ">
+                <Link to="/solarsystem">Our Solar System</Link>
+              </li>
+            </ul>
+          </nav>
+
+          <img className="cardImageBackGalaxy" src={galaxy2} alt="" />
+
+          <section className="cardSectionBackGalaxy">
+            <h2 className="cardTitlesBackGalaxy">THE MILKY WAY</h2>
+            <p className="cardTextBackGalaxy">
+              The Milky Way, our celestial home, is a barred spiral galaxy that
+              spans an immense cosmic expanse. It is a vast collection of stars,
+              planets, gas, dust, and dark matter bound together by gravity,
+              creating a stunning tapestry that graces our night sky. Here's an
+              introduction, along with some fun facts and historical events
+              related to our galaxy:
+              <br />
+              <br />
+              The Milky Way is an immense structure, with a diameter of about
+              100,000 light-years and containing an estimated 100 to 400 billion
+              stars. At its center lies a supermassive black hole, Sagittarius
+              A*, which influences the orbits of stars in its vicinity. The
+              galaxy is organized into spiral arms, and our solar system resides
+              in one of these arms, known as the Orion Arm.
+            </p>
+          </section>
+
+          <img className="cardImageBackGalaxy" src={galaxy1} alt="" />
+
+          <section className="cardSectionBackGalaxy">
+            <h2 className="cardTitlesBackGalaxy">FUN FACTS ABOUT MILKY WAY</h2>
+            <p className="cardTextBackGalaxy">
+              <span className="spanGalaxy">Stellar Neighborhood: </span>
+              <br /> The Milky Way is home to a diverse array of stars. Some are
+              much larger and more luminous than our Sun, while others are
+              faint, small, and cool. Our Sun is an average-sized star, situated
+              in the outskirts of the galaxy.
+              <br />
+              <br />
+              <span className="spanGalaxy">Dark Matter Dominance: </span>
+              <br /> While stars, gas, and dust contribute to the visible mass
+              of the Milky Way, a significant portion of its mass is attributed
+              to dark matter, a mysterious and invisible substance that
+              interacts with gravity but not with light.
+              <br />
+              <br />
+              <span className="spanGalaxy">Galactic Recycling:</span>
+              <br /> Elements essential for life, such as carbon, oxygen, and
+              nitrogen, are formed in the cores of stars through nuclear fusion.
+              When these stars explode in supernovae, they release these
+              elements back into space, contributing to the formation of new
+              stars and planetary systems.
+              <br />
+              <br />
+              <span className="spanGalaxy">Galactic Cannibalism: </span>
+              <br /> The Milky Way has a history of interacting with and
+              absorbing smaller satellite galaxies. Evidence of this can be seen
+              in streams of stars and debris that stretch across the night sky.
             </p>
 
             <h2 className="cardTitlesBackGalaxy">HISTORICAL EVENTS</h2>
 
             <p className="cardTextBackGalaxy">
-              Creating a brief summary of Earth's historical events poses a
-              challenge due to the extensive timespan and the multitude of
-              impactful incidents. Nonetheless, here are several noteworthy
-              events that have shaped Earth's geological and biological history:
+              <span className="spanGalaxy">
+                Discovery of the Milky Way's Spiral Structure (1845):
+              </span>
+              <br />
+              The American astronomer William Parsons (Lord Rosse) made early
+              observations that suggested the Milky Way had a spiral structure.
+              Subsequent studies and advancements in observational techniques
+              confirmed this spiral nature.
               <br />
               <br />
               <span className="spanGalaxy">
-                Formation of Earth (4.5 billion years ago):{' '}
+                Harlow Shapley's Galactic Center Determination (1917):
               </span>
-              <br />
-              Earth formed from the dust and gas surrounding the young Sun,
-              coalescing into a molten mass that eventually cooled to become our
-              planet.
+              <br /> Astronomer Harlow Shapley used the distribution of globular
+              clusters to estimate the position of the center of the Milky Way.
+              His work was instrumental in understanding the structure and size
+              of our galaxy.
               <br />
               <br />
               <span className="spanGalaxy">
-                Origin of Life (3.5 to 4 billion years ago):{' '}
+                Radio Astronomy and the Galactic Center (1931):
               </span>
-              <br /> Life is believed to have originated in the form of simple,
-              single-celled organisms in Earth's early oceans.
+              <br /> Karl Jansky's pioneering work in radio astronomy led to the
+              discovery of radio waves emanating from the center of the Milky
+              Way, providing a new way to study its structure.
               <br />
               <br />
               <span className="spanGalaxy">
-                Oxygenation of the Atmosphere (2.4 to 2 billion years ago):
+                Milky Way's Rotation Curve (1970s):
               </span>
-              <br /> Cyanobacteria, through photosynthesis, started releasing
-              oxygen into the atmosphere, gradually changing its composition.
-              <br />
-              <br />
-              <span className="spanGalaxy">
-                Formation of Continents (2.5 billion years ago to present):{' '}
-              </span>
-              <br /> Over millions of years, tectonic processes led to the
-              formation of continents through the collision and separation of
-              landmasses.
-              <br />
-              <br />
-              <span className="spanGalaxy">Mass Extinctions: </span>
-              <br />
-              Several mass extinctions have occurred throughout Earth's history,
-              with notable events such as the Permian-Triassic Extinction
-              (around 252 million years ago) and the Cretaceous-Paleogene
-              Extinction (around 66 million years ago), which led to the demise
-              of dinosaurs.
-              <br />
-              <br />
-              <span className="spanGalaxy">
-                Development of Multicellular Life (around 1 billion years ago):{' '}
-              </span>
-              Complex multicellular organisms began to evolve, diversifying into
-              various forms over time.
-              <br />
-              <span className="spanGalaxy">
-                Cambrian Explosion (541 million years ago):{' '}
-              </span>
-              <br /> A rapid diversification of life forms occurred during the
-              Cambrian period, leading to the emergence of various animal phyla.
-              <br />
-              <br />
-              <span className="spanGalaxy">
-                Ice Ages (multiple occurrences):{' '}
-              </span>
-              <br /> Earth experienced several ice ages, during which glaciers
-              advanced and retreated, shaping the landscape and influencing the
-              evolution of species.
-              <br />
-              <br />
-              <span className="spanGalaxy">
-                Evolution of Humans (2 million years ago to present):{' '}
-              </span>
-              <br /> Homo sapiens, the modern human species, emerged in Africa
-              and gradually spread across the globe, developing complex
-              societies and cultures.
-              <br />
-              <br />
-              <span className="spanGalaxy">
-                Industrial Revolution (18th to 19th centuries):{' '}
-              </span>
-              <br /> The widespread use of steam engines and other innovations
-              marked the Industrial Revolution, transforming human societies and
-              leading to significant environmental changes.
-              <span className="spanGalaxy">
-                Space Exploration (20th century to present):
-              </span>
-              <br /> Humans achieved space travel, with notable events including
-              the first human on the Moon in 1969 and the ongoing exploration of
-              Mars and other celestial bodies.
-              <br />
-              <br />
-              These events provide a glimpse into Earth's rich and dynamic
-              history, shaped by geological, climatic, and biological processes
-              over billions of years.
+              <br /> Observations of the rotation of the Milky Way's stars,
+              particularly by Vera Rubin and others, led to the discovery that
+              galaxies don't behave as expected based on visible matter alone.
+              This contributed to the understanding of dark matter's presence in
+              galaxies, including the Milky Way.
             </p>
 
             <h2 className="cardTitlesBackGalaxy">SPACE PHENOMENA</h2>
-
             <p className="cardTextBackGalaxy">
-              While Earth may not boast the same giant storms and gas
-              compositions as Jupiter, it exhibits its own mesmerizing space
-              phenomena. From celestial displays to magnetic wonders, Earth
-              showcases a unique cosmic dance in its corner of the solar system.
+              Our galaxy, the Milky Way, is home to a variety of fascinating
+              space phenomena. These phenomena include cosmic events, celestial
+              structures, and interactions that contribute to the dynamic nature
+              of our galactic neighborhood. Here are some notable space
+              phenomena within the Milky Way:
+              <br />
+              <span className="spanGalaxy">Spiral Arms: </span>
+              <br />
+              The Milky Way exhibits prominent spiral arms, including the
+              Perseus Arm, Sagittarius Arm, and Orion Arm. These arms contain
+              regions of increased star density and are shaped by the
+              gravitational interactions between stars and molecular clouds.
               <br />
               <br />
-              <span className="spanGalaxy">Auroras :</span>
+              <span className="spanGalaxy">Galactic Center:</span>
               <br />
-              Earth's polar regions come alive with vibrant displays of auroras,
-              also known as the Northern and Southern Lights. These breathtaking
-              light shows result from charged particles from the Sun interacting
-              with the Earth's magnetic field and atmosphere, creating colorful
-              displays that dance across the night sky.
+              At the heart of the Milky Way lies a supermassive black hole named
+              Sagittarius A*. This region, known as the galactic center, is
+              surrounded by a complex environment of stars, gas, and dust.
+              <span className="spanGalaxy">Star Clusters: </span>
+              <br /> The Milky Way contains various types of star clusters,
+              including open clusters and globular clusters. Open clusters, like
+              the Pleiades, are young groups of stars that formed from the same
+              molecular cloud. Globular clusters, such as Omega Centauri, are
+              dense spherical collections of older stars.
               <br />
+              <span className="spanGalaxy">Nebulae: </span>
               <br />
-              <span className="spanGalaxy">
-                Magnetic field and Van Allen Belts :
-              </span>
-              <br />
-              Earth's magnetic field plays a crucial role in protecting the
-              planet from harmful solar radiation. The Van Allen radiation
-              belts, named after scientist James Van Allen, are regions within
-              this magnetic field that trap charged particles. They contribute
-              to Earth's space weather and impact technologies in space.
-              <br />
-              <span className="spanGalaxy">Meteor showers</span>
-              <br /> Earth encounters debris from comets and asteroids in its
-              orbit, leading to spectacular meteor showers. As these fragments
-              burn up upon entering the Earth's atmosphere, they create streaks
-              of light, captivating observers during celestial events like the
-              Perseids and Geminids.
+              Nebulae are vast clouds of gas and dust where new stars are born.
+              The Orion Nebula is a well-known example of an emission nebula
+              associated with ongoing star formation.
               <br />
               <br />
-              <span className="spanGalaxy">Eclipses :</span>
-              <br /> Earth experiences solar and lunar eclipses, captivating
-              skywatchers. A solar eclipse occurs when the Moon passes between
-              the Sun and Earth, casting a shadow on the planet. Conversely, a
-              lunar eclipse transpires when the Earth comes between the Sun and
-              the Moon, resulting in a reddish tint during totality.
+              <span className="spanGalaxy">Supernova Remnants: </span>
+              <br />
+              Supernova explosions mark the end of massive stars' lives. The
+              remnants of these explosions, such as the Crab Nebula, contribute
+              to the enrichment of the interstellar medium with heavy elements.
               <br />
               <br />
-              <span className="spanGalaxy">Gravity Assist </span>
+              <span className="spanGalaxy">H-II Regions: </span>
+              H-II regions are areas of ionized hydrogen gas associated with
+              young, massive stars. The Eagle Nebula, known for its "Pillars of
+              Creation," is an example of an H-II region.
               <br />
-              Earth's gravitational force is harnessed by spacecraft for gravity
-              assists. This technique utilizes a planet's gravity to alter a
-              spacecraft's speed and trajectory. Earth has played a pivotal role
-              in numerous space missions, providing gravity assists for
-              spacecraft venturing into the depths of the solar system.
+              <span className="spanGalaxy"> Molecular Clouds: </span>
+              These dense clouds of cold gas and dust serve as the birthplaces
+              of stars. They are often observed in regions of active star
+              formation, like the Taurus Molecular Cloud.
               <br />
+              <span className="spanGalaxy">Interstellar Medium (ISM): </span>
+              The ISM consists of gas and dust between stars, playing a crucial
+              role in the lifecycle of cosmic material. It includes ionized gas,
+              neutral atomic hydrogen, and molecules.
               <br />
-              <span className="spanGalaxy">Magnetosphere interactions</span>
-              Earth's magnetosphere interacts dynamically with solar winds,
-              creating dynamic and ever-changing phenomena. The magnetosphere
-              protects the planet from the solar wind, forming a boundary that
-              shields against the charged particles constantly emitted by the
-              Sun.
+              <span className="spanGalaxy">Galactic Halo and Streams: </span>
+              The Milky Way's halo contains globular clusters, dark matter, and
+              streams of stars, remnants of interactions with smaller satellite
+              galaxies over cosmic time.
               <br />
-              While Earth may not have the colossal storms and vast gas expanses
-              seen on other planets, its own set of space phenomena adds to the
-              celestial tapestry, making it a fascinating subject for
-              exploration and observation.
+              These space phenomena contribute to the rich tapestry of our
+              galaxy, offering insights into its formation, evolution, and
+              ongoing dynamics. Observing and studying these phenomena enhance
+              our understanding of the intricate processes shaping the Milky Way
+              and, by extension, galaxies throughout the universe.
             </p>
           </section>
         </div>

@@ -42,6 +42,7 @@ body {
   border-radius: 10px;
   padding: 0.5rem;
   box-shadow: -20px -20px 60px #bebebe, 20px 20px 60px #ffffff;
+  /* margin-left: 130px; */
 }
 .navUlGalaxy {
   display: flex;
@@ -52,6 +53,18 @@ body {
 .navLiGalaxy {
   font-family: 'Nasalization', sans-serif;
 }
+
+/* .firstNavLi {
+  margin-left: 210px;
+}
+
+.secondNavLi {
+  margin-left: 10px;
+}
+
+.thirdNavLi {
+  margin-left: 1px;
+} */
 
 .cardImageBackGalaxy {
   display: flex;
@@ -91,11 +104,25 @@ body {
   overflow: auto;
 }
 
-.spanGalaxy {
-  color: rgb(47, 47, 181);
+.cardTextBackUniverse {
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
   background-image: none;
   background-color: rgb(17, 16, 16);
-  text-shadow: rgb(32, 32, 186);
+  padding: 2rem 1rem 1rem 1rem;
+  width: 45%;
+  text-align: justify;
+  font-family: 'Rimouski', sans-serif;
+  height: 250px;
+  overflow: auto;
+}
+
+.spanGalaxy {
+  color: orange;
+  background-image: none;
+  background-color: rgb(17, 16, 16);
+  text-shadow: orange;
 }
 
 .card-container {
