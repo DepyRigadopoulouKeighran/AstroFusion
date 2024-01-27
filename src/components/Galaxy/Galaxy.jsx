@@ -1,9 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Dropdown from 'react-bootstrap/Dropdown';
+
 import { useState } from 'react';
 import './galaxy.css';
 import galaxy1 from '../../images/Galaxies/ourGalaxy2.webp';
 import galaxy2 from '../../images/Galaxies/milkyWrap.gif';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Galaxy = () => {
   const [showFront, setShowFront] = useState(true);
@@ -18,21 +21,33 @@ const Galaxy = () => {
           <h1 onClick={handleSide} className="cardHeaderFrontGalaxy">
             Galaxy
           </h1>
-          <nav className="cardNavGalaxy">
-            <ul className="navUlGalaxy">
-              <li className="navLiGalaxy">
-                <Link to="/solarsystem">Solar System</Link>
-              </li>
-              <li className="navLiGalaxy">
-                <Link to="/solarsystem">Other Galaxies</Link>
-              </li>
-              <li className="navLiGalaxy">
-                <Link to="/blackholes">BlackHole / Supernova</Link>
-              </li>
-            </ul>
+          <nav className="cardNavGalaxy navbar navbar-expand-lg">
+            <Dropdown>
+              <Dropdown.Toggle variant="success" id="dropdown-basic">
+                Dropdown Button
+              </Dropdown.Toggle>
+
+              <Dropdown.Menu>
+                <li className="nav-item">
+                  <NavLink to="/solarsystem" className="nav-link">
+                    Solar System
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink to="/othergalaxies" className="nav-link">
+                    Other Galaxies
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink to="/blackhole" className="nav-link">
+                    BlackHole / Supernova
+                  </NavLink>
+                </li>
+              </Dropdown.Menu>
+            </Dropdown>
           </nav>
           <img
-            className="cardImageFrontGalaxy"
+            className="cardImageFrontGalaxy img-fluid"
             src={galaxy1}
             alt="Planet Earth"
           />
@@ -88,17 +103,39 @@ const Galaxy = () => {
             Galaxy
           </h1>
 
-          <nav className="cardNavGalaxy">
-            <ul className="navUlGalaxy">
-              <li className="navLiGalaxy">
-                <a href="#distance">BlackHole</a>
-              </li>
-              <li className="navLiGalaxy">
-                <a href="#size">Other Galaxies</a>
-              </li>
-            </ul>
+          <nav className="cardNavGalaxy  navbar navbar-expand-lg">
+            <button
+              className="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavFront"
+              aria-controls="navbarNavBack"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="collapse navbar-collapse" id="navbarNavFront">
+              <ul className="navbar-nav">
+                <li className="nav-item">
+                  <NavLink to="/solarsystem" className="nav-link">
+                    Solar System
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink to="/othergalaxies" className="nav-link">
+                    Other Galaxies
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink to="/blackhole" className="nav-link">
+                    BlackHole / Supernova
+                  </NavLink>
+                </li>
+              </ul>
+            </div>
           </nav>
-          <img className="cardImageBackGalaxy" src={galaxy2} alt="" />
+          <img className="cardImageBackGalaxy img-fluid" src={galaxy2} alt="" />
           <section className="cardSectionBackGalaxy">
             <h2 className="cardTitlesBackGalaxy">FUN FACTS ABOUT EARTH</h2>
             <p className="cardTextBackGalaxy">
