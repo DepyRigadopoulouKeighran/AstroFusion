@@ -1,10 +1,14 @@
 /* eslint-disable react/no-unescaped-entities */
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Dropdown from 'react-bootstrap/Dropdown';
+
 import { useState } from 'react';
 import './galaxy.css';
 import universe from '../../images/Galaxies/universe.gif';
 import galaxy1 from '../../images/Galaxies/ourGalaxy2.gif';
 import galaxy2 from '../../images/Galaxies/milkyWrap.gif';
-import { Link } from 'react-router-dom';
+
+
 import matter from '../../images/Galaxies/matter.gif';
 import darkMatter from '../../images/Galaxies/darkMatter1.gif';
 import darkEnergy1 from '../../images/Galaxies/darkEnergy1.gif';
@@ -18,6 +22,9 @@ import pulsars from '../../images/Galaxies/pulsars.gif';
 import kilonova from '../../images/Galaxies/kilonova.gif';
 import galaxiesFormation from '../../images/Galaxies/galaxiesFormation.gif';
 import formationSolarSystem from '../../images/Galaxies/formationSolarSystem.gif';
+
+import { NavLink } from 'react-router-dom';
+
 
 const Galaxy = () => {
   const [showFront, setShowFront] = useState(true);
@@ -33,20 +40,53 @@ const Galaxy = () => {
           <h1 onClick={handleSide} className="cardHeaderFrontGalaxy">
             The Universe
           </h1>
+
           <nav className="cardNavGalaxy">
             <ul className="navUlGalaxy">
-              <li className="navLiGalaxy firstNavLi">
-                <Link to="/blackholes">BlackHole / Supernova</Link>
+
+              <li className="navLiGalaxy">
+                <NavLink to="/solarsystem">Solar System</NavLink>
+              </li>
+              <li className="navLiGalaxy">
+                <NavLink to="/othergalaxies">Other Galaxies</NavLink>
+              </li>
+              <li className="navLiGalaxy">
+                <NavLink to="/blackhole">BlackHole / Supernova</NavLink>
               </li>
 
-              <li className="navLiGalaxy secondNavLi">
-                <Link to="/solarsystem">Other Galaxies</Link>
-              </li>
             </ul>
+
+          <nav className="cardNavGalaxy navbar navbar-expand-lg">
+            <Dropdown>
+              <Dropdown.Toggle variant="success" id="dropdown-basic">
+                Dropdown Button
+              </Dropdown.Toggle>
+
+              <Dropdown.Menu>
+                <li className="nav-item">
+                  <NavLink to="/solarsystem" className="nav-link">
+                    Solar System
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink to="/othergalaxies" className="nav-link">
+                    Other Galaxies
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink to="/blackhole" className="nav-link">
+                    BlackHole / Supernova
+                  </NavLink>
+                </li>
+              </Dropdown.Menu>
+            </Dropdown>
+
           </nav>
           <img
+
             className="cardImageFrontGalaxy"
             src={universe}
+
             alt="Planet Earth"
           />
           <section className="cardSectionBackGalaxy">
@@ -70,6 +110,47 @@ const Galaxy = () => {
               it a fascinating subject of scientific inquiry and exploration.
             </p>
           </section>
+
+
+        {/* From here starts the Back Card */}
+        <div className="card cardBack">
+          <h1 onClick={handleSide} className="cardHeaderBackGalaxy">
+            Galaxy
+          </h1>
+
+          <nav className="cardNavGalaxy  navbar navbar-expand-lg">
+            <button
+              className="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavFront"
+              aria-controls="navbarNavBack"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="collapse navbar-collapse" id="navbarNavFront">
+              <ul className="navbar-nav">
+                <li className="nav-item">
+                  <NavLink to="/solarsystem" className="nav-link">
+                    Solar System
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink to="/othergalaxies" className="nav-link">
+                    Other Galaxies
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink to="/blackhole" className="nav-link">
+                    BlackHole / Supernova
+                  </NavLink>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <img className="cardImageBackGalaxy img-fluid" src={galaxy2} alt="" />
 
           <section className="cardSectionBackGalaxy">
             <h2 className="cardTitlesBackGalaxy">FUN FACTS ABOUT UNIVERSE</h2>

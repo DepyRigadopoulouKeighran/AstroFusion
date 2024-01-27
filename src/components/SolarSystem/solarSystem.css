@@ -113,3 +113,12 @@ body {
   background-color: rgb(17, 16, 16);
   text-shadow: rgb(32, 32, 186);
 }
+.card {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+.cardBack {
+  transform: rotateY(180deg);
+}

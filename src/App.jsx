@@ -12,17 +12,15 @@ import Uranus from './components/Uranus/Uranus';
 import './App.css';
 import SolarSystem from './components/SolarSystem/SolarSystem';
 
-
 import DropDownPlanets from './components/DropDown/DropDownPlanets';
 
 import Saturn from './components/Saturn/Saturn';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Blackhole from './components/Blackhole/Blackhole';
 import OtherGalaxies from './components/OtherGalaxies/OtherGalaxies';
 import Particles from './components/Particles/Particles';
 
 import Galaxy from './components/Galaxy/Galaxy';
-
 
 function App() {
   return (
@@ -31,15 +29,17 @@ function App() {
 
       {/* <Galaxy /> */}
 
-
-      {/* <OtherGalaxies /> */}
       {/* <Sun /> */}
       {/* <Particles /> */}
 
-
       <Routes>
         <Route path="/" element={<Galaxy />} />
+
+        <Route path="particles" element={<Particles />} />
+        <Route path="blackhole" element={<Blackhole />} />
         <Route path="earth" element={<Earth />} />
+        <Route path="othergalaxies" element={<OtherGalaxies />} />
+        <Route path="blackhole" element={<Blackhole />} />
         <Route path="saturn" element={<Saturn />} />
         <Route path="jupiter" element={<Jupiter />} />
         <Route path="mars" element={<Mars />} />
@@ -50,6 +50,7 @@ function App() {
         <Route path="solarSystem" element={<SolarSystem />} />
         <Route path="sun" element={<Sun />} />
         <Route path="moon" element={<Moon />} />
+        <Route path="othergalaxies" element={<OtherGalaxies />} />
       </Routes>
 
       <EarthProvider>
