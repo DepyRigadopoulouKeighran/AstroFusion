@@ -238,21 +238,21 @@ const Blackhole = () => {
               with fun facts, historical events, and related space phenomena:
             </p>
 
-            <h2 className="cardTitlesBlackhole">FUN FACTS ABOUT BLACK HOLES</h2>
+            <h2 className="cardTitlesBlackhole">FUN FACTS ABOUT SUPERNOVA</h2>
             <p className="cardTextBlackhole">
-              <span className="spanBlackhole">Brightness: </span>
+              <span className="spanSupernova">Brightness: </span>
               <br />
               A supernova can briefly outshine an entire galaxy, emitting as
               much light as billions of ordinary stars combined.
               <br />
               <br />
-              <span className="spanBlackhole">Elemental Forging: </span>
+              <span className="spanSupernova">Elemental Forging: </span>
               <br /> Supernovae are crucial for the production and dispersal of
-              heavy elements such as gold, silver, and uranium. These elements
+              heavy elements such as gold,silver, and uranium. These elements
               are created in the intense heat and pressure during the explosion.
               <br />
               <br />
-              <span className="spanBlackhole">
+              <span className="spanSupernova">
                 Neutron Stars and Black Holes:{' '}
               </span>
               <br />
@@ -261,12 +261,14 @@ const Blackhole = () => {
               core.
               <br />
               <br />
-              <span className="spanBlackhole">Supernova Types: </span>
+              <span className="spanSupernova">Supernova Types: </span>
               <br /> There are two main types of supernovae: Type I, which lacks
               hydrogen lines in its spectrum, and Type II, which does have
               hydrogen lines. Each type has different progenitor stars and
               mechanisms for the explosion.
-              <span className="spanBlackhole">Supernova Remnants: </span>
+              <br />
+              <br />
+              <span className="spanSupernova">Supernova Remnants: </span>
               <br />
               The expanding debris from a supernova explosion forms a nebula
               known as a supernova remnant. Examples include the Crab Nebula and
@@ -284,7 +286,7 @@ const Blackhole = () => {
           <section className="cardSectionBlackhole">
             <h2 className="cardTitlesBlackhole">HISTORICAL EVENTS</h2>
             <p className="cardTextBlackhole">
-              <span className="spanBlackhole">Supernova of 1006:</span>
+              <span className="spanSupernova">Supernova of 1006:</span>
               <br />
               Supernova of 1006: The supernova of 1006 was one of the most
               well-documented stellar explosions in human history. It was
@@ -292,7 +294,7 @@ const Blackhole = () => {
               known as SN 1006.
               <br />
               <br />
-              <span className="spanBlackhole">
+              <span className="spanSupernova">
                 Tycho's Supernova (SN 1572):{' '}
               </span>
               <br /> In 1572, Danish astronomer Tycho Brahe observed a new star
@@ -301,7 +303,7 @@ const Blackhole = () => {
               unchanging heavens.
               <br />
               <br />
-              <span className="spanBlackhole">
+              <span className="spanSupernova">
                 Kepler's Supernova (SN 1604):
               </span>
               <br />
@@ -321,14 +323,14 @@ const Blackhole = () => {
           <section className="cardSectionBlackhole">
             <h2 className="cardTitlesBlackhole">SPACE PHENOMENA</h2>
             <p className="cardTextBlackhole">
-              <span className="spanBlackhole">Gamma-Ray Bursts (GRBs): </span>
+              <span className="spanSupernova">Gamma-Ray Bursts (GRBs): </span>
               <br />
               Some supernovae are associated with gamma-ray bursts, which are
               intense flashes of gamma-ray radiation. These events are among the
               most energetic phenomena in the universe.
               <br />
               <br />
-              <span className="spanBlackhole">Neutrino Emission: </span>
+              <span className="spanSupernova">Neutrino Emission: </span>
               <br />
               Supernovae release an enormous number of neutrinos, nearly as many
               as the total number of neutrinos emitted by the Sun over its
@@ -336,7 +338,7 @@ const Blackhole = () => {
               into the core-collapse process.
               <br />
               <br />
-              <span className="spanBlackhole">
+              <span className="spanSupernova">
                 Supernova Progenitor Systems:{' '}
               </span>
               <br />
