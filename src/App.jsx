@@ -19,6 +19,7 @@ import Saturn from './components/Saturn/Saturn';
 import Blackhole from './components/Blackhole/Blackhole';
 import OtherGalaxies from './components/OtherGalaxies/OtherGalaxies';
 import Particles from './components/Particles/Particles';
+import { scrollTop } from './components/BackButton/scrollTop';
 
 import Galaxy from './components/Galaxy/Galaxy';
 
@@ -55,9 +56,10 @@ function App() {
         <Route path="othergalaxies" element={<OtherGalaxies />} />
       </Routes>
 
-      <EarthProvider>
-        <h1>AstroFusion Project</h1>
-      </EarthProvider>
+      <EarthProvider>{/* <h1>AstroFusion Project</h1> */}</EarthProvider>
+      <button id="go-up-btn" onClick={scrollTop}>
+        Go Up
+      </button>
     </>
   );
 }
