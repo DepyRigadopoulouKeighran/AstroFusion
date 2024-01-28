@@ -10,12 +10,11 @@ const Earth = () => {
   };
   return (
     <>
-      <div
-        className={`card-container${showFront ? '' : ' flipped'}`}
-        onClick={handleSide}
-      >
+      <div className={`card-container${showFront ? '' : ' flipped'}`}>
         <div className="card cardFront">
-          <h1 className="cardHeaderFrontEarth">Earth</h1>
+          <h1 onClick={handleSide} className="cardHeaderFrontEarth">
+            Earth
+          </h1>
           <nav className="cardNavEarth">
             <ul className="navUlEarth">
               <li className="navLiEarth">
@@ -82,7 +81,9 @@ const Earth = () => {
 
         {/* From here starts the Back Card */}
         <div className="card cardBack">
-          <h1 className="cardHeaderBackEarth">Earth</h1>
+          <h1 onClick={handleSide} className="cardHeaderBackEarth">
+            Earth
+          </h1>
 
           <nav className="cardNavEarth">
             <ul className="navUlEarth">
