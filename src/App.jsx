@@ -15,7 +15,7 @@ import SolarSystem from './components/SolarSystem/SolarSystem';
 import DropDownPlanets from './components/DropDown/DropDownPlanets';
 
 import Saturn from './components/Saturn/Saturn';
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 import Blackhole from './components/Blackhole/Blackhole';
 import OtherGalaxies from './components/OtherGalaxies/OtherGalaxies';
 import Particles from './components/Particles/Particles';
@@ -31,8 +31,9 @@ function App() {
 
       {/* <Sun /> */}
       {/* <Particles /> */}
+      <Blackhole />
 
-      <Routes>
+      {/* <Routes>
         <Route path="/" element={<Galaxy />} />
 
         <Route path="particles" element={<Particles />} />
@@ -51,7 +52,7 @@ function App() {
         <Route path="sun" element={<Sun />} />
         <Route path="moon" element={<Moon />} />
         <Route path="othergalaxies" element={<OtherGalaxies />} />
-      </Routes>
+      </Routes> */}
 
       <EarthProvider>
         <h1>AstroFusion Project</h1>
