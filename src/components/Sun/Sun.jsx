@@ -11,23 +11,23 @@ const Sun = () => {
   };
   return (
     <>
-      <div
-        className={`card-container${showFront ? '' : ' flipped'}`}
-        onClick={handleSide}
-      >
+      {/* THIS IS THE FRONT SIDE - ITS ABOUT SUN */}
+      <div className={`card-container${showFront ? '' : ' flipped'}`}>
         <div className="card cardFront">
-          <h1 className="cardHeaderFrontSun">Sun</h1>
+          <h1 onClick={handleSide} className="cardHeaderFrontSun">
+            Sun <i className="fa-solid fa-right-long arrow"></i>
+          </h1>
+
           <nav className="cardNavSun">
             <ul className="navUlSun">
               <li className="navLiSun">
-                <a href="#distance">Distance from Earth : 93 million miles</a>
-              </li>
-
-              <li className="navLiSun">
-                <a href="#characteristics">Diameter : 1.4 million klm</a>
+                <a href="#distance">
+                  Distance from Earth : 150 million kilometers
+                </a>
               </li>
             </ul>
           </nav>
+
           <img className="cardImageFrontSun" src={sunFront} alt="The Sun" />
           <section className="cardSectionSun">
             <h2 className="cardTitlesSun">SUN - OUR CELESTIAL POWERHOUSE</h2>
@@ -66,233 +66,102 @@ const Sun = () => {
               behavior. Composed mostly of plasma, the Sun's constituents reveal
               the intricate dance of particles and magnetic fields.
             </p>
-
-            <h2 className="cardTitlesSun">POTENTIAL FOR LIFE</h2>
-            <p className="cardTextSun">
-              Jupiter's conditions are likely inhospitable for life as we
-              understand it, given the extreme temperatures, pressures, and
-              materials prevalent on the planet, making adaptation for organisms
-              challenging.
-              <br />
-              <br />
-              While Jupiter itself is an improbable environment for sustaining
-              life, the same cannot be said for some of its numerous moons.
-              Europa stands out as one of the most promising locations for
-              potential extraterrestrial life within our solar system.
-              Substantial evidence suggests the presence of an expansive ocean
-              beneath its icy surface, providing a conceivable habitat for life.
-            </p>
           </section>
         </div>
 
-        {/* From here starts the Back Card */}
+        {/* THIS IS THE BACK SIDE - ITS ABOUT THE SUN */}
         <div className="card cardBack">
-          <h1 className="cardHeaderBackSun">Sun</h1>
+          <h1 onClick={handleSide} className="cardHeaderBackSun">
+            Sun <i class="fa-solid fa-right-long arrow"></i>
+          </h1>
           <nav className="cardNavSun">
             <ul className="navUlSun">
               <li className="navLiSun">
-                <a href="#size">Distance from the Earth </a>
-              </li>
-              <li className="navLiSun">
-                <a href="#distance">Size</a>
-              </li>
-              <li className="navLiSun">
-                <a href="#characteristics">Key Characteristics</a>
+                <a href="#distance">
+                  Distance from Earth : 150 million kilometers
+                </a>
               </li>
             </ul>
           </nav>
           <img className="cardImageBackSun" src={sunBack} alt="The Sun" />
+
           <section className="cardSectionSun">
-            <h2 className="cardTitlesSun">FUN FACTS ABOUT JUPITER</h2>
+            <h2 className="cardTitlesSun">FUN FACTS ABOUT SUN</h2>
             <p className="cardTextSun">
-              <span className="spanSun">Giant of the Solar System:</span>
-              <br /> Jupiter is the largest planet in our solar system. It is
-              more than twice as massive as all the other planets combined.
+              <span className="spanSun">Energy Source: </span>
+              <br /> The Sun's energy stems from the heart of its core, where
+              nuclear fusion transmutes hydrogen into helium, liberating a
+              prodigious amount of energy in the process.
               <br />
               <br />
-              <span className="spanSun">Rapid Rotation:</span>
-              <br /> Jupiter has the shortest day of any planet, completing one
-              rotation on its axis in just about 10 hours. This fast rotation
-              causes the planet to have an oblate shape.
+              <span className="spanSun">Light Travel Time: </span>
+              <br /> Sunlight embarks on an extraordinary journey, traversing
+              the cosmic abyss at a speed of 186,282 miles per second. It takes
+              a mere 8 minutes and 20 seconds for this radiant emissary to reach
+              Earth.
               <br />
               <br />
-              <span className="spanSun">Massive Magnetic Field: </span>
-              <br /> Jupiter has a powerful magnetic field, approximately 16 to
-              54 times stronger than Earth's. This magnetic field creates
-              intense radiation belts and spectacular auroras.
+              <span className="spanSun"> Solar Flares: </span>
+              <br />
+              The Sun, in its dynamic splendor, experiences sporadic bursts of
+              energy known as solar flares. These eruptions can emit intense
+              radiation and influence space weather.
               <br />
               <br />
-              <span className="spanSun">Great Red Spot:</span>
-              <br /> Jupiter's Great Red Spot is a massive storm that has been
-              raging for at least 300 years. It is twice the size of Earth and
-              is a prominent feature in the planet's atmosphere.
-              <br />
-              <br />
-              <span className="spanSun">Many Moons:</span>
-              <br /> Jupiter has a whopping 95 officially recognized moons. The
-              four largest, known as the Galilean moons, are Io, Europa,
-              Ganymede, and Callisto.
-              <br />
-              <br />
-              <span className="spanSun">Rings of Jupiter:</span>
-              <br /> Although not as prominent as Saturn's, Jupiter also has a
-              ring system. Discovered by the Voyager 1 spacecraft in 1979, these
-              rings are mainly composed of dust particles.
-              <br />
-              <br />
-              <span className="spanSun">Jovian Atmosphere: </span>
-              <br /> Jupiter's atmosphere is composed mostly of hydrogen and
-              helium. It displays distinct cloud bands, zones, and belts,
-              creating a colorful and dynamic appearance.
-              <br />
-              <br />
-              <span className="spanSun">Fast-Moving Storms: </span>
-              <br /> Jupiter experiences incredibly fast winds, with some
-              reaching speeds of up to 335 miles per hour (539 kilometers per
-              hour) at the equator. The planet is marked by numerous storms and
-              cyclones.
-              <br />
-              <br />
-              <span className="spanSun">Europa's Ocean: </span>
-              <br /> One of Jupiter's moons, Europa, is believed to have a
-              subsurface ocean beneath its icy crust. This has led scientists to
-              consider Europa as a potential location for extraterrestrial life.
-              <br />
-              <br />
-              <span className="spanSun">Spacecraft Exploration:</span>
-              <br /> Nine spacecraft have visited Jupiter. Notable missions
-              include Pioneer 10, Pioneer 11, Voyager 1, Voyager 2, Galileo, and
-              the more recent Juno mission, which arrived at Jupiter in 2016.{' '}
+              <span className="spanSun">Sunspots: </span>
+              <br /> Mysterious dark patches, sunspots mark areas of heightened
+              magnetic activity on the Sun's surface. Their cyclical appearance
+              follows an intriguing 11-year solar cycle.
             </p>
 
             <h2 className="cardTitlesSun">HISTORICAL EVENTS</h2>
             <p className="cardTextSun">
-              Jupiter, being a giant gas planet, doesn't have historical events
-              in the same way that Earth does. However, there are significant
-              historical events related to the exploration and observation of
-              Jupiter by humans. Here are some key historical events related to
-              Jupiter:
+              <span className="spanSun">Ancient Sun Worship: </span>
+              <br />
+              Across millennia, cultures have revered the Sun as a deity,
+              attributing divine significance to its life-giving radiance.
+              Temples aligned with solar movements stand testament to ancient
+              sun worship.
               <br />
               <br />
-              <span className="spanSun">Galileo's Discovery (1610): </span>
-              <br /> Italian astronomer Galileo Galilei observed Jupiter through
-              a telescope and discovered its four largest moons – Io, Europa,
-              Ganymede, and Callisto. This discovery was crucial in supporting
-              the heliocentric model of the solar system.
+              <span className="spanSun">Galileo's Sunspot Observations: </span>
+              <br />
+              In the early 17th century, Galileo Galilei revolutionized our
+              understanding of the Sun by scrutinizing sunspots through a
+              telescope, challenging prevailing notions of celestial perfection.
               <br />
               <br />
-              <span className="spanSun">Pioneer 10 and 11 (1972, 1973):</span>
-              <br /> NASA's Pioneer 10 and Pioneer 11 spacecraft provided the
-              first close-up images of Jupiter. Pioneer 10 conducted a flyby in
-              December 1973, followed by Pioneer 11 in December 1974.
-              <br />
-              <br />
-              <span className="spanSun">Voyager Missions (1979): </span>
-              <br /> Voyager 1 and Voyager 2 conducted extensive studies of
-              Jupiter in 1979. They revealed details about Jupiter's atmosphere,
-              magnetosphere, and its diverse moons. The missions provided
-              valuable data about the planet's structure and composition.
-              <br />
-              <br />
-              <span className="spanSun">Galileo Mission (1989 - 2003): </span>
-              <br /> NASA's Galileo spacecraft, named after the astronomer
-              Galileo Galilei, orbited Jupiter for eight years, from 1995 to
-              2003. It conducted detailed studies of Jupiter's atmosphere,
-              magnetic field, and moons, providing extensive data.
-              <br />
-              <br />
-              <span className="spanSun">
-                Hubble Space Telescope Observations (ongoing):
-              </span>
-              <br /> The Hubble Space Telescope has provided continuous
-              observations of Jupiter, capturing high-resolution images and
-              monitoring changes in its atmosphere. These observations
-              contribute to our understanding of Jupiter's dynamic features.
-              <br />
-              <br />
-              <span className="spanSun">Juno Mission (2016 - present):</span>
-              <br /> Launched in 2011, NASA's Juno spacecraft arrived at Jupiter
-              in 2016. Juno is on a polar orbit, studying Jupiter's composition,
-              gravity field, magnetic field, and polar magnetosphere. The
-              mission aims to understand the planet's origin and evolution.
+              <span className="spanSun"> Solar Eclipses in History: </span>
+              <br /> Solar Eclipses in History: Solar eclipses, captivating and
+              awe-inspiring, have left an indelible mark on human history.
+              Ancient astronomers recorded these celestial ballets, contributing
+              to our evolving comprehension of the cosmos.
             </p>
 
             <h2 className="cardTitlesSun">SPACE PHENOMENA</h2>
             <p className="cardTextSun">
-              While Jupiter itself is not a space phenomenon, it is involved in
-              various space phenomena and exhibits fascinating celestial events.
-              Here are some space phenomena related to Jupiter:
+              <span className="spanSun">Solar Wind: </span>
+              <br /> Solar Wind: A ceaseless stream of charged particles, the
+              solar wind emanates from the Sun, sculpting the heliosphere and
+              influencing the magnetospheres of neighboring celestial bodies.
+              <br />
+              <span className="spanSun">Coronal Mass Ejections (CMEs): </span>
+              <br /> Explosive releases of solar material, CMEs surge forth from
+              the Sun's corona, occasionally interacting with Earth's
+              magnetosphere and contributing to geomagnetic storms.
               <br />
               <br />
-              <span className="spanSun">Jovian Auroras: </span>
-              <br /> Jupiter's powerful magnetic field interacts with charged
-              particles in its magnetosphere, creating intense auroras near its
-              polar regions. These auroras are similar to Earth's northern and
-              southern lights.
+              <span className="spanSun">Solar Prominences: </span>
+              <br /> Majestic arcs of solar material, solar prominences
+              gracefully extend from the Sun's surface into the corona, offering
+              captivating displays often visible during total solar eclipses.
               <br />
               <br />
-              <span className="spanSun">Jupiter's Great Red Spot:</span>
-              <br /> The Great Red Spot is a massive storm on Jupiter that has
-              been observed for centuries. It is an atmospheric phenomenon, a
-              giant anticyclonic storm, and it is one of the most prominent
-              features in Jupiter's atmosphere.
-              <br />
-              <br />
-              <span className="spanSun">Jovian Magnetosphere: </span>
-              <br /> Jupiter's magnetic field is exceptionally strong, ranging
-              from 16 to 54 times stronger than Earth's. The magnetosphere
-              extends far into space and plays a crucial role in trapping
-              charged particles, creating radiation belts and contributing to
-              auroras.
-              <br />
-              <br />
-              <span className="spanSun">Galilean Moons:</span>
-              <br /> The four largest moons of Jupiter, known as the Galilean
-              moons (Io, Europa, Ganymede, and Callisto), exhibit phenomena such
-              as volcanic activity, subsurface oceans, and unique surface
-              features. These moons are a significant focus of scientific study.
-              <br />
-              <br />
-              <span className="spanSun">Jovian Rings:</span>
-              <br /> Jupiter has a faint ring system, discovered by the Voyager
-              1 spacecraft in 1979. Although not as prominent as Saturn's rings,
-              Jupiter's rings are composed of small particles and are part of
-              the complex interactions in the Jovian system.
-              <br />
-              <br />
-              <span className="spanSun">Polar Cyclones:</span>
-              <br /> Juno spacecraft observations have revealed polygonal
-              arrangements of giant cyclonic storms at both of Jupiter's poles.
-              These polar cyclones provide insights into the planet's
-              atmospheric dynamics.
-              <br />
-              <br />
-              <span className="spanSun">Fast-Moving Storms: </span>
-              <br /> Jupiter experiences incredibly fast winds, with some
-              reaching speeds of up to 335 miles per hour (539 kilometers per
-              hour) at the equator. The planet is marked by numerous storms and
-              cyclones, creating a dynamic and ever-changing atmosphere.
-              <br />
-              <br />
-              <span className="spanSun">Jovian Cloud Bands:</span>
-              <br /> Jupiter's atmosphere displays distinct cloud bands, zones,
-              and belts, creating a colorful and dynamic appearance. These cloud
-              formations are a result of Jupiter's fast rotation and complex
-              atmospheric dynamics.
-              <br />
-              <br />
-              <span className="spanSun">Io's Volcanic Activity:</span>
-              <br /> Jupiter's moon Io is the most volcanically active body in
-              the solar system. The interaction between Jupiter's intense
-              gravitational forces and Io's orbit leads to constant volcanic
-              eruptions on its surface.
-              <br />
-              <br />
-              <span className="spanSun">Juno's Gravity Science:</span>
-              <br /> The Juno spacecraft, in addition to studying Jupiter's
-              atmosphere, is mapping its gravity field. This helps scientists
-              understand the distribution of mass within the planet, providing
-              insights into its internal structure.
+              In essence, the Sun transcends its astronomical role, standing as
+              an enduring symbol of cosmic grandeur, a radiant source of life,
+              and a captivating celestial entity that continues to inspire
+              exploration and understanding in the realms of science and human
+              curiosity.
             </p>
           </section>
         </div>

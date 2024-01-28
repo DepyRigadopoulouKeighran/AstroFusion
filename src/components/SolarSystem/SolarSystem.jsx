@@ -13,10 +13,11 @@ const SolarSystem = () => {
   };
   return (
     <>
+      {/* THIS IS THE FRONT SIDE - ITS ABOUT OUR SOLAR SYSTEM */}
       <div className={`card-container${showFront ? '' : ' flipped'}`}>
         <div className="card cardFront">
           <h1 onClick={handleSide} className="cardHeaderSolar">
-            Our Solar System
+            Our Solar System <i className="fa-solid fa-right-long arrow"></i>
           </h1>
 
           <nav className="cardNavSolar">
@@ -26,6 +27,7 @@ const SolarSystem = () => {
                   Sun
                 </NavLink>
               </li>
+
               <li className="navLiSolar">
                 <NavLink className="characteristics" to="/particles">
                   Particles
@@ -38,8 +40,9 @@ const SolarSystem = () => {
               </li>
             </ul>
           </nav>
+
           <img
-            className="cardImageSolar"
+            className="cardImageFrontSolar"
             src={solarSystem1}
             alt="Solar System"
           />
@@ -92,15 +95,16 @@ const SolarSystem = () => {
               including the remarkably adaptable human species.
             </p>
           </section>
-          <img className="cardImageSolar" src={solarSystem3} alt="" />
+          <img className="cardImageFrontSolar" src={solarSystem3} alt="" />
         </div>
       </div>
 
-      {/* Back Side of the Solar System */}
+      {/* THIS IS THE BACK SIDE - ITS ABOUT OUR SOLAR SYSTEM*/}
       <div className={`card-container${showFront ? '' : ' flipped'}`}>
         <div className="card cardBack">
           <h1 onClick={handleSide} className="cardHeaderSolar">
             Our Solar System
+            <i class="fa-solid fa-right-long arrow"></i>
           </h1>
 
           <nav className="cardNavSolar">
@@ -122,7 +126,7 @@ const SolarSystem = () => {
               </li>
             </ul>
           </nav>
-          <img className="cardImageSolar" src={solarSystem2} alt="" />
+          <img className="cardImageBackSolar" src={solarSystem2} alt="" />
 
           <div>
             <section className="cardSectionSolar">
@@ -293,7 +297,7 @@ const SolarSystem = () => {
               </p>
 
               <img
-                className="cardImageSolar"
+                className="cardImageFrontSolar"
                 src={solarSystem4}
                 alt="Solar System"
               />

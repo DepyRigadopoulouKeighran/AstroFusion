@@ -16,7 +16,9 @@ const Particles = () => {
         onClick={handleSide}
       >
         <div className="card cardFront">
-          <h1 className="cardHeaderFrontParticles">Particles</h1>
+          <h1 className="cardHeaderFrontParticles">
+            Particles <i className="fa-solid fa-right-long arrow"></i>
+          </h1>
           <nav className="cardNavParticles">
             <ul className="navUlParticles">
               <li className="navLiParticles">

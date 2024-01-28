@@ -15,7 +15,9 @@ const Pluto = () => {
         onClick={handleSide}
       >
         <div className="card cardFront">
-          <h1 className="cardHeaderFront">Pluto</h1>
+          <h1 className="cardHeaderFront">
+            Pluto <i className="fa-solid fa-right-long arrow"></i>
+          </h1>
           <nav className="cardNav">
             <ul className="navUl">
               <li className="navLi">

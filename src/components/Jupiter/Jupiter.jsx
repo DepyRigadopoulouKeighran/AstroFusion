@@ -11,12 +11,11 @@ const Jupiter = () => {
   };
   return (
     <>
-      <div
-        className={`card-container${showFront ? '' : ' flipped'}`}
-        onClick={handleSide}
-      >
+      <div className={`card-container${showFront ? '' : ' flipped'}`}>
         <div className="card cardFront">
-          <h1 className="cardHeaderFrontJupiter">Jupiter</h1>
+          <h1 onClick={handleSide} className="cardHeaderFrontJupiter">
+            Jupiter <i className="fa-solid fa-right-long arrow"></i>
+          </h1>
           <nav className="cardNavJupiter">
             <ul className="navUlJupiter">
               <li className="navLiJupiter">
@@ -66,7 +65,9 @@ const Jupiter = () => {
 
         {/* From here starts the Back Card */}
         <div className="card cardBack">
-          <h1 className="cardHeaderBackJupiter">Jupiter</h1>
+          <h1 onClick={handleSide} className="cardHeaderBackJupiter">
+            Jupiter <i className="fa-solid fa-right-long arrow"></i>
+          </h1>
           <nav className="cardNavJupiter">
             <ul className="navUlJupiter">
               <li className="navLiJupiter">

@@ -15,10 +15,11 @@ const Blackhole = () => {
   };
   return (
     <>
+      {/* THIS IS THE FRONT SIDE - ITS ABOUT BLACKHOLE */}
       <div className={`card-container${showFront ? '' : ' flipped'}`}>
         <div className="card cardFront">
           <h1 onClick={handleSide} className="cardHeaderFrontBlackhole">
-            Blackhole
+            Blackhole <i className="fa-solid fa-right-long arrow"></i>
           </h1>
           <nav className="cardNavBlackhole">
             <ul className="navUlBlackhole">
@@ -108,7 +109,7 @@ const Blackhole = () => {
           </section>
 
           <img
-            className="cardImageBackBlackhole"
+            className="cardImageFrontBlackhole"
             src={blackholeBack}
             alt="A blackhole"
           />
@@ -143,7 +144,7 @@ const Blackhole = () => {
           </section>
 
           <img
-            className="cardImageBackBlackhole"
+            className="cardImageFrontBlackhole"
             src={blackhole3}
             alt="A blackhole"
           />
@@ -181,10 +182,10 @@ const Blackhole = () => {
           </section>
         </div>
 
-        {/* From here starts the Back Card - its about SUPERNOVA*/}
+        {/* THIS IS THE BACK SIDE - ITS ABOUT SUPERNOVA */}
         <div className="card cardBack">
           <h1 onClick={handleSide} className="cardHeaderBackBlackhole">
-            Supernova
+            Supernova <i className="fa-solid fa-right-long arrow"></i>
           </h1>
           <nav className="cardNavBlackhole">
             <ul className="navUlBlackhole">

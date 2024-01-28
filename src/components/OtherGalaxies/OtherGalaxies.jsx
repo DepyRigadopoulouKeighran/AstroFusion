@@ -19,24 +19,28 @@ const OtherGalaxies = () => {
   };
   return (
     <>
+      {/* THIS IS THE FRONT SIDE - ITS ABOUT OTHER GALAXIES */}
       <div className={`card-container${showFront ? '' : ' flipped'}`}>
         <div className="card cardFront">
           <h1 onClick={handleSide} className="cardHeaderFrontOtherGalaxies">
-            Other Galaxies
+            Other Galaxies{' '}
+            <span>
+              <i className="fa-solid fa-right-long arrow"></i>
+            </span>
           </h1>
           <nav className="cardNavOtherGalaxies">
             <ul className="navUlOtherGalaxies">
               <li className="navLiOtherGalaxies firstNavLiOtherGalaxies">
-                <a href="#distance">Andromeda</a>
+                <a href="#andromeda">Andromeda</a>
               </li>
               <li className="navLiOtherGalaxies secondNavLiOtherGalaxies">
-                <a href="#size">Triangulum</a>
+                <a href="#triangulum">Triangulum</a>
               </li>
               <li className="navLiOtherGalaxies forthNavLiOtherGalaxies">
-                <a href="#characteristics">Sombrero</a>
+                <a href="#sombrero">Sombrero</a>
               </li>
               <li className="navLiOtherGalaxies thirdNavLiOtherGalaxies">
-                <a href="#characteristics">Whirlpool</a>
+                <a href="#whirlpool">Whirlpool</a>
               </li>
             </ul>
           </nav>
@@ -63,12 +67,14 @@ const OtherGalaxies = () => {
           </section>
 
           <img
-            className="cardImageBackOtherGalaxies"
+            className="cardImageFrontOtherGalaxies"
             src={andromeda}
             alt="Andromeda Galaxy"
           />
           <section className="cardSectionOtherGalaxies">
-            <h2 className="cardTitlesOtherGalaxies">ANDROMEDA</h2>
+            <h2 id="andromeda" className="cardTitlesOtherGalaxies">
+              ANDROMEDA
+            </h2>
             <p className="cardTextOtherGalaxies">
               <span className="spanOtherGalaxies">Andromeda Galaxy (M31):</span>
               <br /> The Andromeda Galaxy is the closest spiral galaxy to the
@@ -89,12 +95,14 @@ const OtherGalaxies = () => {
           </section>
 
           <img
-            className="cardImageBackOtherGalaxies"
+            className="cardImageFrontOtherGalaxies"
             src={triangulum}
             alt="Triangulum Galaxy"
           />
           <section className="cardSectionOtherGalaxies">
-            <h2 className="cardTitlesOtherGalaxies">TRIANGULUM</h2>
+            <h2 id="triangulum" className="cardTitlesOtherGalaxies">
+              TRIANGULUM
+            </h2>
             <p className="cardTextOtherGalaxies">
               <span className="spanOtherGalaxies">
                 Triangulum Galaxy (M33):
@@ -118,12 +126,14 @@ const OtherGalaxies = () => {
           </section>
 
           <img
-            className="cardImageBackOtherGalaxies"
+            className="cardImageFrontOtherGalaxies"
             src={sombrero}
             alt="Sombrero Galaxy"
           />
           <section className="cardSectionOtherGalaxies">
-            <h2 className="cardTitlesOtherGalaxies">SOMBRERO</h2>
+            <h2 id="sombrero" className="cardTitlesOtherGalaxies">
+              SOMBRERO
+            </h2>
             <p className="cardTextOtherGalaxies">
               <span className="spanOtherGalaxies">Sombrero Galaxy (M104):</span>
               <br /> The Sombrero Galaxy is a spiral galaxy located in the
@@ -143,12 +153,14 @@ const OtherGalaxies = () => {
           </section>
 
           <img
-            className="cardImageBackOtherGalaxies"
+            className="cardImageFrontOtherGalaxies"
             src={whirlpool}
             alt="Whirlpool Galaxy"
           />
           <section className="cardSectionOtherGalaxies">
-            <h2 className="cardTitlesOtherGalaxies">WHIRLPOOL</h2>
+            <h2 id="whirlpool" className="cardTitlesOtherGalaxies">
+              WHIRLPOOL
+            </h2>
             <p className="cardTextOtherGalaxies">
               <span className="spanOtherGalaxies">Whirlpool Galaxy (M51):</span>
               <br /> M51 is a classic spiral galaxy with a prominent spiral arm
@@ -168,29 +180,29 @@ const OtherGalaxies = () => {
           </section>
         </div>
 
-        {/* From here starts the Back Card */}
+        {/* THIS IS THE BACK SIDE - ITS ABOUT OTHER GALAXIES */}
         <div className="card cardBack">
           <h1 onClick={handleSide} className="cardHeaderFrontOtherGalaxies">
-            Other Galaxies
+            Other Galaxies <i class="fa-solid fa-right-long arrow"></i>
           </h1>
           <nav className="cardNavOtherGalaxies">
             <ul className="navUlOtherGalaxies">
               <li className="navLiOtherGalaxies firstNavLiOtherGalaxies">
-                <a href="#distance">LMC</a>
+                <a href="#lmc">LMC</a>
               </li>
               <li className="navLiOtherGalaxies secondNavLiOtherGalaxies">
-                <a href="#size">SMC</a>
+                <a href="#smc">SMC</a>
               </li>
               <li className="navLiOtherGalaxies forthNavLiOtherGalaxies">
-                <a href="#characteristics">Messier 87</a>
+                <a href="#messier">Messier 87</a>
               </li>
               <li className="navLiOtherGalaxies thirdNavLiOtherGalaxies">
-                <a href="#characteristics">Centaurus</a>
+                <a href="#centaurus">Centaurus</a>
               </li>
             </ul>
           </nav>
           <img
-            className="cardImageFrontOtherGalaxies"
+            className="cardImageBackOtherGalaxies"
             src={cosmos2}
             alt="cosmos"
           />
@@ -222,7 +234,9 @@ const OtherGalaxies = () => {
             alt="Large Magellanic Cloud Galaxy"
           />
           <section className="cardSectionOtherGalaxies">
-            <h2 className="cardTitlesOtherGalaxies">LARGE MAGELLANIC CLOUD</h2>
+            <h2 id="lmc" className="cardTitlesOtherGalaxies">
+              LARGE MAGELLANIC CLOUD
+            </h2>
             <p className="cardTextOtherGalaxies">
               <span className="spanOtherGalaxies">
                 Large Magellanic Cloud (LMC):
@@ -249,7 +263,9 @@ const OtherGalaxies = () => {
             alt="Small Magellanic Cloud Galaxy"
           />
           <section className="cardSectionOtherGalaxies">
-            <h2 className="cardTitlesOtherGalaxies">SMALL MAGELLANIC CLOUD</h2>
+            <h2 id="smc" className="cardTitlesOtherGalaxies">
+              SMALL MAGELLANIC CLOUD
+            </h2>
             <p className="cardTextOtherGalaxies">
               <span className="spanOtherGalaxies">
                 Small Magellanic Cloud (SMC):
@@ -276,7 +292,9 @@ const OtherGalaxies = () => {
             alt="Galaxy Messier 87"
           />
           <section className="cardSectionOtherGalaxies">
-            <h2 className="cardTitlesOtherGalaxies">MESSIER 87</h2>
+            <h2 id="messier" className="cardTitlesOtherGalaxies">
+              MESSIER 87
+            </h2>
             <p className="cardTextOtherGalaxies">
               <span className="spanOtherGalaxies">Messier 87 (M87):</span>
               <br /> M87 is a giant elliptical galaxy located in the Virgo
@@ -300,7 +318,9 @@ const OtherGalaxies = () => {
             alt="Centaurus Galaxy"
           />
           <section className="cardSectionOtherGalaxies">
-            <h2 className="cardTitlesOtherGalaxies">CENTAURUS</h2>
+            <h2 id="centaurus" className="cardTitlesOtherGalaxies">
+              CENTAURUS
+            </h2>
             <p className="cardTextOtherGalaxies">
               <span className="spanOtherGalaxies">Centaurus A (NGC 5128):</span>
               <br /> Centaurus A is a peculiar galaxy with a prominent dust lane

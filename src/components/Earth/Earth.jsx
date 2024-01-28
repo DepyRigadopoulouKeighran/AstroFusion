@@ -13,7 +13,7 @@ const Earth = () => {
       <div className={`card-container${showFront ? '' : ' flipped'}`}>
         <div className="card cardFront">
           <h1 onClick={handleSide} className="cardHeaderFrontEarth">
-            Earth
+            Earth <i className="fa-solid fa-right-long arrow"></i>
           </h1>
           <nav className="cardNavEarth">
             <ul className="navUlEarth">

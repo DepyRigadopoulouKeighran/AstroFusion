@@ -29,19 +29,19 @@ const Galaxy = () => {
 
   return (
     <>
-      {/* The front side is about the UNIVERSE */}
+      {/* THIS IS THE FRONT SIDE - ITS ABOUT THE UNIVERSE */}
       <div className={`card-container${showFront ? '' : ' flipped'}`}>
         <div className="card cardFront">
           <h1 onClick={handleSide} className="cardHeaderFrontGalaxy">
-            The Universe
+            The Universe <i className="fa-solid fa-right-long arrow"></i>
           </h1>
           <nav className="cardNavGalaxy">
             <ul className="navUlGalaxy">
-              <li className="navLiGalaxy firstNavLi">
+              <li className="navLiGalaxy firstNavLiGalaxy">
                 <NavLink to="/blackhole">BlackHole / Supernova</NavLink>
               </li>
 
-              <li className="navLiGalaxy secondNavLi">
+              <li className="navLiGalaxy secondNavLiGalaxy">
                 <NavLink to="/othergalaxies">Other Galaxies</NavLink>
               </li>
             </ul>
@@ -120,7 +120,7 @@ const Galaxy = () => {
             </p>
           </section>
 
-          <img className="cardImageBackGalaxy" src={matter} alt="" />
+          <img className="cardImageFrontGalaxy" src={matter} alt="" />
 
           <section className="cardSectionBackGalaxy">
             <h2 className="cardTitlesBackGalaxy">
@@ -142,9 +142,9 @@ const Galaxy = () => {
               from its gravitational effects on visible matter.
             </p>
           </section>
-          <img className="cardImageBackGalaxy" src={darkMatter} alt="" />
+          <img className="cardImageFrontGalaxy" src={darkMatter} alt="" />
 
-          <img className="cardImageBackGalaxy" src={energy} alt="" />
+          <img className="cardImageFrontGalaxy" src={energy} alt="" />
 
           <section className="cardSectionBackGalaxy">
             <p className="cardTextBackUniverse">
@@ -164,9 +164,9 @@ const Galaxy = () => {
               uniformly.
             </p>
           </section>
-          <img className="cardImageBackGalaxy" src={darkEnergy1} alt="" />
+          <img className="cardImageFrontGalaxy" src={darkEnergy1} alt="" />
 
-          <img className="cardImageBackGalaxy" src={space} alt="" />
+          <img className="cardImageFrontGalaxy" src={space} alt="" />
 
           <section className="cardSectionBackGalaxy">
             <p className="cardTextBackUniverse">
@@ -184,11 +184,11 @@ const Galaxy = () => {
               aspect of Einstein's theory of general relativity.
             </p>
           </section>
-          <img className="cardImageBackGalaxy" src={time} alt="" />
-          <img className="cardImageBackGalaxy" src={time2} alt="" />
+          <img className="cardImageFrontGalaxy" src={time} alt="" />
+          <img className="cardImageFrontGalaxy" src={time2} alt="" />
 
           <img
-            className="cardImageBackGalaxy"
+            className="cardImageFrontGalaxy"
             src={gravitationalWaves}
             alt=""
           />
@@ -210,12 +210,12 @@ const Galaxy = () => {
             </p>
           </section>
           <img
-            className="cardImageBackGalaxy"
+            className="cardImageFrontGalaxy"
             src={cosmicMicrowaveBackground}
             alt=""
           />
 
-          <img className="cardImageBackGalaxy" src={pulsars} alt="" />
+          <img className="cardImageFrontGalaxy" src={pulsars} alt="" />
 
           <section className="cardSectionBackGalaxy">
             <p className="cardTextBackUniverse">
@@ -233,7 +233,7 @@ const Galaxy = () => {
               spacetime and create heavy elements.
             </p>
           </section>
-          <img className="cardImageBackGalaxy" src={kilonova} alt="" />
+          <img className="cardImageFrontGalaxy" src={kilonova} alt="" />
 
           <section className="cardSectionBackGalaxy">
             <h2 className="cardTitlesBackGalaxy">HISTORICAL EVENTS</h2>
@@ -316,18 +316,22 @@ const Galaxy = () => {
             </p>
           </section>
 
-          <img className="cardImageBackGalaxy" src={galaxiesFormation} alt="" />
           <img
-            className="cardImageBackGalaxy"
+            className="cardImageFrontGalaxy"
+            src={galaxiesFormation}
+            alt=""
+          />
+          <img
+            className="cardImageFrontGalaxy"
             src={formationSolarSystem}
             alt=""
           />
         </div>
 
-        {/* From here starts the Back Card - OUR GALAXY */}
+        {/* THIS IS THE BACK SIDE - ITS ABOUT OUR SOLAR SYSTEM */}
         <div className="card cardBack">
           <h1 onClick={handleSide} className="cardHeaderBackGalaxy">
-            Our Galaxy
+            Our Galaxy <i className="fa-solid fa-right-long arrow"></i>
           </h1>
 
           <nav className="cardNavGalaxy">

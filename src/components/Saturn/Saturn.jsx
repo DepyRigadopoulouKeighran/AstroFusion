@@ -4,7 +4,6 @@ import './saturn.css';
 import saturnFront from '../../images/saturnFront.gif';
 import saturnBack from '../../images/saturnBack.gif';
 
-
 const Saturn = () => {
   const [showFront, setShowFront] = useState(true);
   const handleSide = () => {
@@ -13,12 +12,11 @@ const Saturn = () => {
 
   return (
     <>
-      <div
-        className={`card-container${showFront ? '' : ' flipped'}`}
-        onClick={handleSide}
-      >
+      <div className={`card-container${showFront ? '' : ' flipped'}`}>
         <div className="card cardFront">
-          <h1 className="cardHeaderFrontSaturn">Saturn</h1>
+          <h1 onClick={handleSide} className="cardHeaderFrontSaturn">
+            Saturn <i className="fa-solid fa-right-long arrow"></i>
+          </h1>
           <nav className="cardNavSaturn">
             <ul className="navUlSaturn">
               <li className="navLiSaturn">
@@ -34,10 +32,6 @@ const Saturn = () => {
           </nav>
           <img
             className="cardImageFront"
-            
-            
-          
-
             src={saturnFront}
             alt="planet Saturn"
           />
@@ -86,11 +80,12 @@ const Saturn = () => {
               including the remarkably adaptable human species.
             </p>
           </section>
-
         </div>
         {/* From here starts the Back Card */}
         <div className="card cardBack">
-          <h1 className="cardHeaderBackSaturn">Saturn</h1>
+          <h1 onClick={handleSide} className="cardHeaderBackSaturn">
+            Saturn <i className="fa-solid fa-right-long arrow"></i>
+          </h1>
           <nav className="cardNavSaturn">
             <ul className="navUlSaturn">
               <li className="navLiSaturn">

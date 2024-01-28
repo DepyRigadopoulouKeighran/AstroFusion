@@ -13,6 +13,14 @@ body {
   height: -webkit-fill-available;
 }
 
+#andromeda #triangulum #sombrero #whirlpool #lmc #smc #messier #centaurus {
+  scroll-behavior: smooth;
+}
+
+.arrow {
+  font-size: 2rem;
+}
+
 .cardHeaderFrontOtherGalaxies {
   text-align: center;
   margin: 4rem 0 2rem 0;
@@ -25,8 +33,8 @@ body {
   display: flex;
   padding-bottom: 3rem;
   margin-top: 5rem;
-  width: 100%;
-  height: 700px;
+  width: 700px;
+  height: 500px;
 }
 
 .cardHeaderBackOtherGalaxies {
@@ -56,7 +64,10 @@ body {
 }
 
 .navLiOtherGalaxies {
+  display: flex;
+
   font-family: 'Nasalization', sans-serif;
+  scroll-behavior: smooth;
 }
 
 .firstNavLiOtherGalaxies {
@@ -71,14 +82,15 @@ body {
   display: flex;
   margin-top: 5rem;
   margin-bottom: 2rem;
-  width: 840px;
-  height: 560px;
+  width: 700px;
+  height: 500px;
 }
 
 .cardSectionOtherGalaxies {
   display: flex;
   flex-direction: column;
   font-family: 'a•space', sans-serif;
+  scroll-behavior: smooth;
 }
 
 .cardTitlesOtherGalaxies {
