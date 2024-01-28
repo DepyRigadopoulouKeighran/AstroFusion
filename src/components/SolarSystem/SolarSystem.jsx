@@ -16,12 +16,11 @@ const SolarSystem = () => {
   };
   return (
     <>
-      <div
-        className={`card-container${showFront ? '' : ' flipped'}`}
-        onClick={handleSide}
-      >
+      <div className={`card-container${showFront ? '' : ' flipped'}`}>
         <div className="card cardFront">
-          <h1 className="cardHeaderFrontSolar">Our Solar System</h1>
+          <h1 onClick={handleSide} className="cardHeaderFrontSolar">
+            Our Solar System
+          </h1>
 
           <nav className="cardNavSolar">
             <ul className="navUlSolar">
