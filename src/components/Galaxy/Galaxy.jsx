@@ -42,7 +42,7 @@ const Galaxy = () => {
               </li>
 
               <li className="navLiGalaxy secondNavLi">
-                <NavLink to="/solarsystem">Other Galaxies</NavLink>
+                <NavLink to="/othergalaxies">Other Galaxies</NavLink>
               </li>
             </ul>
           </nav>

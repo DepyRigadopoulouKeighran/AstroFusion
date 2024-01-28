@@ -13,7 +13,7 @@ body {
   height: -webkit-fill-available;
 }
 
-.cardHeaderFrontSolar {
+.cardHeaderSolar {
   text-align: center;
   margin: 4rem 0 2rem 0;
   color: aliceblue;
@@ -21,20 +21,12 @@ body {
   font-size: 6rem;
 }
 
-.cardImageFrontSolar {
+.cardImageSolar {
   display: flex;
   padding-bottom: 3rem;
   margin-top: 5rem;
   width: 1000px;
   height: 700px;
-}
-
-.cardHeaderBackSolar {
-  text-align: center;
-  margin: 4rem 0 2rem 0;
-  color: aliceblue;
-  font-family: 'Nasalization', sans-serif;
-  font-size: 6rem;
 }
 
 .cardNavSolar a {
@@ -52,36 +44,34 @@ body {
 
 .navUlSolar {
   display: flex;
-  justify-content: center;
-  align-items: center;
   list-style-type: none;
+  margin-right: 250px;
+}
 
-  margin: 5rem 18rem 1.5rem 18rem;
+.navUlSolar {
+  display: flex;
+  list-style-type: none;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 .navLiSolar {
   font-family: 'Nasalization', sans-serif;
 }
 
-.wrapperSolar {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: 200px;
-}
-
-.cardImageBackSolar {
+.cardImageSolar {
   display: flex;
   margin-top: 5rem;
   margin-bottom: 2rem;
 }
 
-.cardSectionBackSolar {
+.cardSectionSolar {
   display: flex;
   flex-direction: column;
   font-family: 'a•space', sans-serif;
 }
 
-.cardTitlesBackSolar {
+.cardTitlesSolar {
   background-image: none;
   background-color: rgb(26, 26, 26);
   border: 1px solid rgb(26, 26, 26);
@@ -93,7 +83,7 @@ body {
   width: 45%;
 }
 
-.cardTextBackSolar {
+.cardTextSolar {
   color: white;
   border: 2px solid white;
   border-radius: 10px;

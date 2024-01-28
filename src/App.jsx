@@ -31,9 +31,10 @@ function App() {
 
       {/* <Sun /> */}
       {/* <Particles /> */}
-      <Blackhole />
+      {/* <Blackhole /> */}
+      {/* <SolarSystem /> */}
 
-      {/* <Routes>
+      <Routes>
         <Route path="/" element={<Galaxy />} />
 
         <Route path="particles" element={<Particles />} />
@@ -52,7 +53,7 @@ function App() {
         <Route path="sun" element={<Sun />} />
         <Route path="moon" element={<Moon />} />
         <Route path="othergalaxies" element={<OtherGalaxies />} />
-      </Routes> */}
+      </Routes>
 
       <EarthProvider>
         <h1>AstroFusion Project</h1>

@@ -1,8 +1,16 @@
 /* eslint-disable react/no-unescaped-entities */
 import { useState } from 'react';
 import './othergalaxies.css';
+import cosmos1 from '../../images/Galaxies/cosmos1.gif';
+import cosmos2 from '../../images/Galaxies/cosmos2.gif';
+import triangulum from '../../images/Galaxies/triangulum.gif';
+import sombrero from '../../images/Galaxies/sombrero.jpg';
 import andromeda from '../../images/Galaxies/andromedaGalaxy.gif';
 import whirlpool from '../../images/Galaxies/whirlpool.gif';
+import largeMagellanicCloud from '../../images/Galaxies/largeMagellanicCloud.gif';
+import smallMagellanicCloud from '../../images/Galaxies/smallmagellaniccloud.webp';
+import messier from '../../images/Galaxies/Messier87.gif';
+import centaurus from '../../images/Galaxies/Centaurus.gif';
 
 const OtherGalaxies = () => {
   const [showFront, setShowFront] = useState(true);
@@ -11,285 +19,302 @@ const OtherGalaxies = () => {
   };
   return (
     <>
-      <div
-        className={`card-container${showFront ? '' : ' flipped'}`}
-        onClick={handleSide}
-      >
+      <div className={`card-container${showFront ? '' : ' flipped'}`}>
         <div className="card cardFront">
-          <h1 className="cardHeaderFrontOtherGalaxies">Other Galaxies</h1>
+          <h1 onClick={handleSide} className="cardHeaderFrontOtherGalaxies">
+            Other Galaxies
+          </h1>
           <nav className="cardNavOtherGalaxies">
             <ul className="navUlOtherGalaxies">
-              <li className="navLiOtherGalaxies">
-                <a href="#distance">Distance from the Sun</a>
+              <li className="navLiOtherGalaxies firstNavLiOtherGalaxies">
+                <a href="#distance">Andromeda</a>
               </li>
-              <li className="navLiOtherGalaxies">
-                <a href="#size">Size</a>
+              <li className="navLiOtherGalaxies secondNavLiOtherGalaxies">
+                <a href="#size">Triangulum</a>
               </li>
-              <li className="navLiOtherGalaxies">
-                <a href="#characteristics">Key Characteristics</a>
+              <li className="navLiOtherGalaxies forthNavLiOtherGalaxies">
+                <a href="#characteristics">Sombrero</a>
+              </li>
+              <li className="navLiOtherGalaxies thirdNavLiOtherGalaxies">
+                <a href="#characteristics">Whirlpool</a>
               </li>
             </ul>
           </nav>
-          <img className="cardImageFrontOtherGalaxies" src={andromeda} alt="" />
-          <section className="cardSectionOtherGalaxies">
-            <h2 className="cardTitlesOtherGalaxies">
-              JUPITER - THE GIANT PLANET
-            </h2>
-            <p className="cardTextOtherGalaxies">
-              Jupiter is the fifth planet from our Sun and is, by far, the
-              largest planet in the solar system, more than twice as massive as
-              all the other planets combined.
-              <br />
-              <br />
-              Jupiter's stripes and swirls are actually cold, windy clouds of
-              ammonia and water, floating in an atmosphere of hydrogen and
-              helium. Jupiter’s iconic Great Red Spot is a giant storm bigger
-              than Earth that has raged for hundreds of years. Jupiter is named
-              for the king of the ancient Roman gods.​
-            </p>
+          <img
+            className="cardImageFrontOtherGalaxies"
+            src={cosmos1}
+            alt="cosmos"
+          />
 
-            <h2 className="cardTitlesOtherGalaxies">POTENTIAL FOR LIFE</h2>
+          <section className="cardSectionOtherGalaxies">
+            <h2 className="cardTitlesOtherGalaxies">GALAXIES</h2>
             <p className="cardTextOtherGalaxies">
-              Jupiter's conditions are likely inhospitable for life as we
-              understand it, given the extreme temperatures, pressures, and
-              materials prevalent on the planet, making adaptation for organisms
-              challenging.
+              Galaxies, the cosmic building blocks, form a diverse tapestry of
+              stars, gas, dust, and dark matter. From spirals to ellipticals,
+              irregulars to peculiars, their structures vary. Stars, gas clouds,
+              and dark matter shape galaxies, spanning dwarf to massive sizes.
+              Galactic congregations, clusters, and groups unite galaxies in
+              cosmic gatherings. Over eons, galaxies evolve through star
+              formation bursts and cosmic collisions. Observational tools like
+              telescopes unveil their intricate details, yet mysteries persist.
+              Galaxies, celestial storytellers, hold the universe's history,
+              revealing the dynamic cosmos that surrounds us.
+            </p>
+          </section>
+
+          <img
+            className="cardImageBackOtherGalaxies"
+            src={andromeda}
+            alt="Andromeda Galaxy"
+          />
+          <section className="cardSectionOtherGalaxies">
+            <h2 className="cardTitlesOtherGalaxies">ANDROMEDA</h2>
+            <p className="cardTextOtherGalaxies">
+              <span className="spanOtherGalaxies">Andromeda Galaxy (M31):</span>
+              <br /> The Andromeda Galaxy is the closest spiral galaxy to the
+              Milky Way and is on a collision course with our galaxy. It is
+              larger than the Milky Way and is a beautiful sight in the night
+              sky.
               <br />
               <br />
-              While Jupiter itself is an improbable environment for sustaining
-              life, the same cannot be said for some of its numerous moons.
-              Europa stands out as one of the most promising locations for
-              potential extraterrestrial life within our solar system.
-              Substantial evidence suggests the presence of an expansive ocean
-              beneath its icy surface, providing a conceivable habitat for life.
+              <span className="spanOtherGalaxies">
+                Distance from Milky Way:{' '}
+              </span>
+              Approximately 2.5 million light-years.
+              <br />
+              <br />
+              <span className="spanOtherGalaxies">Distance from Earth: </span>
+              About 2.5 million light-years.
+            </p>
+          </section>
+
+          <img
+            className="cardImageBackOtherGalaxies"
+            src={triangulum}
+            alt="Triangulum Galaxy"
+          />
+          <section className="cardSectionOtherGalaxies">
+            <h2 className="cardTitlesOtherGalaxies">TRIANGULUM</h2>
+            <p className="cardTextOtherGalaxies">
+              <span className="spanOtherGalaxies">
+                Triangulum Galaxy (M33):
+              </span>
+              <br /> Also known as the Pinwheel Galaxy, M33 is the third-largest
+              galaxy in our Local Group. It is a spiral galaxy, and its
+              structure is influenced by gravitational interactions with the
+              Andromeda Galaxy. than the Milky Way and is a beautiful sight in
+              the night sky.
+              <br />
+              <br />
+              <span className="spanOtherGalaxies">
+                Distance from Milky Way:{' '}
+              </span>
+              Approximately 2.9 million light-years.
+              <br />
+              <br />
+              <span className="spanOtherGalaxies">Distance from Earth: </span>
+              About 2.7 million light-years.
+            </p>
+          </section>
+
+          <img
+            className="cardImageBackOtherGalaxies"
+            src={sombrero}
+            alt="Sombrero Galaxy"
+          />
+          <section className="cardSectionOtherGalaxies">
+            <h2 className="cardTitlesOtherGalaxies">SOMBRERO</h2>
+            <p className="cardTextOtherGalaxies">
+              <span className="spanOtherGalaxies">Sombrero Galaxy (M104):</span>
+              <br /> The Sombrero Galaxy is a spiral galaxy located in the
+              constellation Virgo. Its bright nucleus and large central bulge
+              give it a distinctive appearance resembling a sombrero hat.
+              <br />
+              <br />
+              <span className="spanOtherGalaxies">
+                Distance from Milky Way:{' '}
+              </span>
+              Approximately 29 million light-years.
+              <br />
+              <br />
+              <span className="spanOtherGalaxies">Distance from Earth: </span>
+              About 28 million light-years.
+            </p>
+          </section>
+
+          <img
+            className="cardImageBackOtherGalaxies"
+            src={whirlpool}
+            alt="Whirlpool Galaxy"
+          />
+          <section className="cardSectionOtherGalaxies">
+            <h2 className="cardTitlesOtherGalaxies">WHIRLPOOL</h2>
+            <p className="cardTextOtherGalaxies">
+              <span className="spanOtherGalaxies">Whirlpool Galaxy (M51):</span>
+              <br /> M51 is a classic spiral galaxy with a prominent spiral arm
+              structure. It is interacting with a smaller galaxy, NGC 5195,
+              creating a beautiful celestial pairing.
+              <br />
+              <br />
+              <span className="spanOtherGalaxies">
+                Distance from Milky Way:{' '}
+              </span>
+              Approximately 23 million light-years.
+              <br />
+              <br />
+              <span className="spanOtherGalaxies">Distance from Earth: </span>
+              About 23 million light-years.
             </p>
           </section>
         </div>
 
         {/* From here starts the Back Card */}
         <div className="card cardBack">
-          <h1 className="cardHeaderBackOtherGalaxies">Other Galaxies</h1>
+          <h1 onClick={handleSide} className="cardHeaderFrontOtherGalaxies">
+            Other Galaxies
+          </h1>
           <nav className="cardNavOtherGalaxies">
             <ul className="navUlOtherGalaxies">
-              <li className="navLiOtherGalaxies">
-                <a href="#size">Distance from the Sun </a>
+              <li className="navLiOtherGalaxies firstNavLiOtherGalaxies">
+                <a href="#distance">LMC</a>
               </li>
-              <li className="navLiOtherGalaxies">
-                <a href="#distance">Size</a>
+              <li className="navLiOtherGalaxies secondNavLiOtherGalaxies">
+                <a href="#size">SMC</a>
               </li>
-              <li className="navLiOtherGalaxies">
-                <a href="#characteristics">Key Characteristics</a>
+              <li className="navLiOtherGalaxies forthNavLiOtherGalaxies">
+                <a href="#characteristics">Messier 87</a>
+              </li>
+              <li className="navLiOtherGalaxies thirdNavLiOtherGalaxies">
+                <a href="#characteristics">Centaurus</a>
               </li>
             </ul>
           </nav>
-          <img className="cardImageBackOtherGalaxies" src={whirlpool} alt="" />
+          <img
+            className="cardImageFrontOtherGalaxies"
+            src={cosmos2}
+            alt="cosmos"
+          />
+
           <section className="cardSectionOtherGalaxies">
-            <h2 className="cardTitlesOtherGalaxies">FUN FACTS ABOUT JUPITER</h2>
+            <h2 className="cardTitlesOtherGalaxies">GALAXIES</h2>
             <p className="cardTextOtherGalaxies">
-              <span className="spanOtherGalaxies">
-                Giant of the Solar System:
-              </span>
-              <br /> Jupiter is the largest planet in our solar system. It is
-              more than twice as massive as all the other planets combined.
+              The exact number of galaxies in the observable universe is
+              challenging to determine precisely due to the vastness of space
+              and the limitations of current observational technology. However,
+              astronomers estimate that there are around 100 billion to 200
+              billion galaxies in the observable universe. Each of these
+              galaxies can host varying numbers of stars, ranging from a few
+              million to hundreds of billions.
               <br />
               <br />
-              <span className="spanOtherGalaxies">Rapid Rotation:</span>
-              <br /> Jupiter has the shortest day of any planet, completing one
-              rotation on its axis in just about 10 hours. This fast rotation
-              causes the planet to have an oblate shape.
-              <br />
-              <br />
-              <span className="spanOtherGalaxies">
-                Massive Magnetic Field:{' '}
-              </span>
-              <br /> Jupiter has a powerful magnetic field, approximately 16 to
-              54 times stronger than Earth's. This magnetic field creates
-              intense radiation belts and spectacular auroras.
-              <br />
-              <br />
-              <span className="spanOtherGalaxies">Great Red Spot:</span>
-              <br /> Jupiter's Great Red Spot is a massive storm that has been
-              raging for at least 300 years. It is twice the size of Earth and
-              is a prominent feature in the planet's atmosphere.
-              <br />
-              <br />
-              <span className="spanOtherGalaxies">Many Moons:</span>
-              <br /> Jupiter has a whopping 95 officially recognized moons. The
-              four largest, known as the Galilean moons, are Io, Europa,
-              Ganymede, and Callisto.
-              <br />
-              <br />
-              <span className="spanOtherGalaxies">Rings of Jupiter:</span>
-              <br /> Although not as prominent as Saturn's, Jupiter also has a
-              ring system. Discovered by the Voyager 1 spacecraft in 1979, these
-              rings are mainly composed of dust particles.
-              <br />
-              <br />
-              <span className="spanOtherGalaxies">Jovian Atmosphere: </span>
-              <br /> Jupiter's atmosphere is composed mostly of hydrogen and
-              helium. It displays distinct cloud bands, zones, and belts,
-              creating a colorful and dynamic appearance.
-              <br />
-              <br />
-              <span className="spanOtherGalaxies">Fast-Moving Storms: </span>
-              <br /> Jupiter experiences incredibly fast winds, with some
-              reaching speeds of up to 335 miles per hour (539 kilometers per
-              hour) at the equator. The planet is marked by numerous storms and
-              cyclones.
-              <br />
-              <br />
-              <span className="spanOtherGalaxies">Europa's Ocean: </span>
-              <br /> One of Jupiter's moons, Europa, is believed to have a
-              subsurface ocean beneath its icy crust. This has led scientists to
-              consider Europa as a potential location for extraterrestrial life.
-              <br />
-              <br />
-              <span className="spanOtherGalaxies">Spacecraft Exploration:</span>
-              <br /> Nine spacecraft have visited Jupiter. Notable missions
-              include Pioneer 10, Pioneer 11, Voyager 1, Voyager 2, Galileo, and
-              the more recent Juno mission, which arrived at Jupiter in 2016.{' '}
+              It's important to note that this estimate is based on observations
+              of the observable universe, and there may be regions beyond our
+              current observational reach. As technology advances and
+              observational capabilities improve, astronomers may refine these
+              estimates and gain a better understanding of the total number of
+              galaxies in the entire universe.
             </p>
+          </section>
 
-            <h2 className="cardTitlesOtherGalaxies">HISTORICAL EVENTS</h2>
+          <img
+            className="cardImageBackOtherGalaxies"
+            src={largeMagellanicCloud}
+            alt="Large Magellanic Cloud Galaxy"
+          />
+          <section className="cardSectionOtherGalaxies">
+            <h2 className="cardTitlesOtherGalaxies">LARGE MAGELLANIC CLOUD</h2>
             <p className="cardTextOtherGalaxies">
-              Jupiter, being a giant gas planet, doesn't have historical events
-              in the same way that Earth does. However, there are significant
-              historical events related to the exploration and observation of
-              Jupiter by humans. Here are some key historical events related to
-              Jupiter:
+              <span className="spanOtherGalaxies">
+                Large Magellanic Cloud (LMC):
+              </span>
+              <br /> The LMC is a satellite galaxy of the Milky Way and is one
+              of the closest galaxies to us. It is irregular in shape and hosts
+              numerous star-forming regions.
               <br />
               <br />
               <span className="spanOtherGalaxies">
-                Galileo's Discovery (1610):{' '}
+                Distance from Milky Way:{' '}
               </span>
-              <br /> Italian astronomer Galileo Galilei observed Jupiter through
-              a telescope and discovered its four largest moons – Io, Europa,
-              Ganymede, and Callisto. This discovery was crucial in supporting
-              the heliocentric model of the solar system.
+              Approximately 163,000 light-years.
               <br />
               <br />
-              <span className="spanOtherGalaxies">
-                Pioneer 10 and 11 (1972, 1973):
-              </span>
-              <br /> NASA's Pioneer 10 and Pioneer 11 spacecraft provided the
-              first close-up images of Jupiter. Pioneer 10 conducted a flyby in
-              December 1973, followed by Pioneer 11 in December 1974.
-              <br />
-              <br />
-              <span className="spanOtherGalaxies">
-                Voyager Missions (1979):{' '}
-              </span>
-              <br /> Voyager 1 and Voyager 2 conducted extensive studies of
-              Jupiter in 1979. They revealed details about Jupiter's atmosphere,
-              magnetosphere, and its diverse moons. The missions provided
-              valuable data about the planet's structure and composition.
-              <br />
-              <br />
-              <span className="spanOtherGalaxies">
-                Galileo Mission (1989 - 2003):{' '}
-              </span>
-              <br /> NASA's Galileo spacecraft, named after the astronomer
-              Galileo Galilei, orbited Jupiter for eight years, from 1995 to
-              2003. It conducted detailed studies of Jupiter's atmosphere,
-              magnetic field, and moons, providing extensive data.
-              <br />
-              <br />
-              <span className="spanOtherGalaxies">
-                Hubble Space Telescope Observations (ongoing):
-              </span>
-              <br /> The Hubble Space Telescope has provided continuous
-              observations of Jupiter, capturing high-resolution images and
-              monitoring changes in its atmosphere. These observations
-              contribute to our understanding of Jupiter's dynamic features.
-              <br />
-              <br />
-              <span className="spanOtherGalaxies">
-                Juno Mission (2016 - present):
-              </span>
-              <br /> Launched in 2011, NASA's Juno spacecraft arrived at Jupiter
-              in 2016. Juno is on a polar orbit, studying Jupiter's composition,
-              gravity field, magnetic field, and polar magnetosphere. The
-              mission aims to understand the planet's origin and evolution.
+              <span className="spanOtherGalaxies">Distance from Earth: </span>
+              About 163,000 light-years.
             </p>
+          </section>
 
-            <h2 className="cardTitlesOtherGalaxies">SPACE PHENOMENA</h2>
+          <img
+            className="cardImageBackOtherGalaxies"
+            src={smallMagellanicCloud}
+            alt="Small Magellanic Cloud Galaxy"
+          />
+          <section className="cardSectionOtherGalaxies">
+            <h2 className="cardTitlesOtherGalaxies">SMALL MAGELLANIC CLOUD</h2>
             <p className="cardTextOtherGalaxies">
-              While Jupiter itself is not a space phenomenon, it is involved in
-              various space phenomena and exhibits fascinating celestial events.
-              Here are some space phenomena related to Jupiter:
-              <br />
-              <br />
-              <span className="spanOtherGalaxies">Jovian Auroras: </span>
-              <br /> Jupiter's powerful magnetic field interacts with charged
-              particles in its magnetosphere, creating intense auroras near its
-              polar regions. These auroras are similar to Earth's northern and
-              southern lights.
+              <span className="spanOtherGalaxies">
+                Small Magellanic Cloud (SMC):
+              </span>
+              <br /> Like the LMC, the SMC is a satellite galaxy of the Milky
+              Way. It is irregular in shape and is gravitationally interacting
+              with the Large Magellanic Cloud.
               <br />
               <br />
               <span className="spanOtherGalaxies">
-                Jupiter's Great Red Spot:
+                Distance from Milky Way:{' '}
               </span>
-              <br /> The Great Red Spot is a massive storm on Jupiter that has
-              been observed for centuries. It is an atmospheric phenomenon, a
-              giant anticyclonic storm, and it is one of the most prominent
-              features in Jupiter's atmosphere.
+              Approximately 199,000 light-years.
               <br />
               <br />
-              <span className="spanOtherGalaxies">Jovian Magnetosphere: </span>
-              <br /> Jupiter's magnetic field is exceptionally strong, ranging
-              from 16 to 54 times stronger than Earth's. The magnetosphere
-              extends far into space and plays a crucial role in trapping
-              charged particles, creating radiation belts and contributing to
-              auroras.
+              <span className="spanOtherGalaxies">Distance from Earth: </span>
+              About 199,000 light-years.
+            </p>
+          </section>
+
+          <img
+            className="cardImageBackOtherGalaxies"
+            src={messier}
+            alt="Galaxy Messier 87"
+          />
+          <section className="cardSectionOtherGalaxies">
+            <h2 className="cardTitlesOtherGalaxies">MESSIER 87</h2>
+            <p className="cardTextOtherGalaxies">
+              <span className="spanOtherGalaxies">Messier 87 (M87):</span>
+              <br /> M87 is a giant elliptical galaxy located in the Virgo
+              Cluster. It gained widespread attention due to the first-ever
+              image of a black hole, which resides in its center.
+              <br />
+              <span className="spanOtherGalaxies">
+                Distance from Milky Way:{' '}
+              </span>
+              Approximately 55 million light-years.
               <br />
               <br />
-              <span className="spanOtherGalaxies">Galilean Moons:</span>
-              <br /> The four largest moons of Jupiter, known as the Galilean
-              moons (Io, Europa, Ganymede, and Callisto), exhibit phenomena such
-              as volcanic activity, subsurface oceans, and unique surface
-              features. These moons are a significant focus of scientific study.
+              <span className="spanOtherGalaxies">Distance from Earth: </span>
+              About 55 million light-years.
+            </p>
+          </section>
+
+          <img
+            className="cardImageBackOtherGalaxies"
+            src={centaurus}
+            alt="Centaurus Galaxy"
+          />
+          <section className="cardSectionOtherGalaxies">
+            <h2 className="cardTitlesOtherGalaxies">CENTAURUS</h2>
+            <p className="cardTextOtherGalaxies">
+              <span className="spanOtherGalaxies">Centaurus A (NGC 5128):</span>
+              <br /> Centaurus A is a peculiar galaxy with a prominent dust lane
+              across its center. It is the fifth-brightest galaxy in the night
+              sky and is believed to have undergone a merger.
+              <br />
+              <span className="spanOtherGalaxies">
+                Distance from Milky Way:{' '}
+              </span>
+              Approximately 13 million light-years.
               <br />
               <br />
-              <span className="spanOtherGalaxies">Jovian Rings:</span>
-              <br /> Jupiter has a faint ring system, discovered by the Voyager
-              1 spacecraft in 1979. Although not as prominent as Saturn's rings,
-              Jupiter's rings are composed of small particles and are part of
-              the complex interactions in the Jovian system.
-              <br />
-              <br />
-              <span className="spanOtherGalaxies">Polar Cyclones:</span>
-              <br /> Juno spacecraft observations have revealed polygonal
-              arrangements of giant cyclonic storms at both of Jupiter's poles.
-              These polar cyclones provide insights into the planet's
-              atmospheric dynamics.
-              <br />
-              <br />
-              <span className="spanOtherGalaxies">Fast-Moving Storms: </span>
-              <br /> Jupiter experiences incredibly fast winds, with some
-              reaching speeds of up to 335 miles per hour (539 kilometers per
-              hour) at the equator. The planet is marked by numerous storms and
-              cyclones, creating a dynamic and ever-changing atmosphere.
-              <br />
-              <br />
-              <span className="spanOtherGalaxies">Jovian Cloud Bands:</span>
-              <br /> Jupiter's atmosphere displays distinct cloud bands, zones,
-              and belts, creating a colorful and dynamic appearance. These cloud
-              formations are a result of Jupiter's fast rotation and complex
-              atmospheric dynamics.
-              <br />
-              <br />
-              <span className="spanOtherGalaxies">Io's Volcanic Activity:</span>
-              <br /> Jupiter's moon Io is the most volcanically active body in
-              the solar system. The interaction between Jupiter's intense
-              gravitational forces and Io's orbit leads to constant volcanic
-              eruptions on its surface.
-              <br />
-              <br />
-              <span className="spanOtherGalaxies">Juno's Gravity Science:</span>
-              <br /> The Juno spacecraft, in addition to studying Jupiter's
-              atmosphere, is mapping its gravity field. This helps scientists
-              understand the distribution of mass within the planet, providing
-              insights into its internal structure.
+              <span className="spanOtherGalaxies">Distance from Earth: </span>
+              About 12 million light-years.
             </p>
           </section>
         </div>
