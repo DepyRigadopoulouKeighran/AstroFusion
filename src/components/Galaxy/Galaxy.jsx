@@ -38,7 +38,7 @@ const Galaxy = () => {
           <nav className="cardNavGalaxy">
             <ul className="navUlGalaxy">
               <li className="navLiGalaxy firstNavLi">
-                <NavLink to="/blackholes">BlackHole / Supernova</NavLink>
+                <NavLink to="/blackhole">BlackHole / Supernova</NavLink>
               </li>
 
               <li className="navLiGalaxy secondNavLi">
