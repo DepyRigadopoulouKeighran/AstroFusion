@@ -138,3 +138,40 @@ body {
 .cardBack {
   transform: rotateY(180deg);
 }
+
+@media (max-width: 780px) {
+  .navUlBlackhole {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+
+    margin: 0;
+  }
+  .navLiBlackhole {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    margin: 0;
+  }
+  .cardHeaderFrontBlackhole {
+    margin-top: 25%;
+    font-size: 55px;
+  }
+}
+
+@media (max-width: 484px) {
+  .cardHeaderFrontBlackhole {
+    margin-top: 30%;
+    font-size: 55px;
+  }
+
+  .navUlBlackhole {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+  }
+
+  .navLiBlackholes {
+    margin: 0;
+  }
+}

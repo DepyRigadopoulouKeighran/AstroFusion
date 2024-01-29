@@ -132,3 +132,43 @@ body {
 .cardBack {
   transform: rotateY(180deg);
 }
+@media (max-width: 780px) {
+  .navUlNeptune {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    margin: 0;
+  }
+  .navLiNeptune {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    margin: 0;
+  }
+  .cardHeaderFrontNeptune {
+    margin-top: 25%;
+    font-size: 55px;
+  }
+  .cardHeaderBackNeptune {
+    margin-top: 25%;
+    font-size: 55px;
+  }
+}
+@media (max-width: 484px) {
+  .cardHeaderFrontNeptune {
+    margin-top: 25%;
+    font-size: 55px;
+  }
+  .cardHeaderBackNeptune {
+    margin-top: 25%;
+    font-size: 55px;
+  }
+  .navUlNeptune {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+  }
+  .navLiNeptune {
+    margin: 0;
+  }
+}

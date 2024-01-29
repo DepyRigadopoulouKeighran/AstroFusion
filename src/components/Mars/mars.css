@@ -129,3 +129,44 @@ body {
 .cardBack {
   transform: rotateY(180deg);
 }
+
+@media (max-width: 780px) {
+  .navUlMars {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    margin: 0;
+  }
+  .navLiMars {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    margin: 0;
+  }
+  .cardHeaderFrontMars {
+    margin-top: 25%;
+    font-size: 55px;
+  }
+  .cardHeaderBackMars {
+    margin-top: 25%;
+    font-size: 55px;
+  }
+}
+@media (max-width: 484px) {
+  .cardHeaderFrontMars {
+    margin-top: 25%;
+    font-size: 55px;
+  }
+  .cardHeaderBackMars {
+    margin-top: 25%;
+    font-size: 55px;
+  }
+  .navUlMars {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+  }
+  .navLiMars {
+    margin: 0;
+  }
+}

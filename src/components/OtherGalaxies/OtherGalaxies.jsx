@@ -183,7 +183,7 @@ const OtherGalaxies = () => {
         {/* THIS IS THE BACK SIDE - ITS ABOUT OTHER GALAXIES */}
         <div className="card cardBack">
           <h1 onClick={handleSide} className="cardHeaderFrontOtherGalaxies">
-            Other Galaxies <i class="fa-solid fa-right-long arrow"></i>
+            Other Galaxies <i className="fa-solid fa-right-long arrow"></i>
           </h1>
           <nav className="cardNavOtherGalaxies">
             <ul className="navUlOtherGalaxies">
