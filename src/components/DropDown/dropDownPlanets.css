@@ -12,7 +12,7 @@ body {
   position: fixed;
   top: 0;
   right: 0;
-
+  margin-bottom: 5rem;
   width: 100%;
   background-color: #f1f1f1;
   z-index: 1000;
@@ -39,7 +39,7 @@ body {
 .dropdown-content.show {
   display: block;
 }
-
+/* 
 .dropdown .Depy {
   font-size: 16px;
   border: none;
@@ -57,7 +57,7 @@ body {
 
   border-radius: 5px;
   cursor: pointer;
-}
+} */
 
 .dropdown-content {
   display: none;
@@ -131,7 +131,8 @@ body {
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    margin: 0;
   }
 
   .navbar #Depy {
@@ -149,14 +150,16 @@ body {
   } */
   .dropdown-content {
     display: none;
+    padding: 6rem;
 
     position: absolute;
     background-color: #f9f9f9;
     width: 100%; /* Set the width to 100% for full page width */
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    text-align: left;
+    /* text-align: left; */
     top: 50px; /* Adjust the top position as needed */
+    left: 0;
   }
 
   .dropdown-content a {
@@ -165,7 +168,11 @@ body {
     padding: 12px 5px;
     text-decoration: none;
     display: block;
-    text-align: left;
+    /* text-align: left; */
+  }
+
+  .dropdown #Depy {
+    margin-right: 0;
   }
 }
 /* body {

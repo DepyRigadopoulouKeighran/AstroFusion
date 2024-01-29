@@ -125,3 +125,47 @@ body {
 .cardBack {
   transform: rotateY(180deg);
 }
+@media (max-width: 780px) {
+  .navUlEarth {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+
+    margin: 0;
+  }
+  .navLiEarth {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    margin: 0;
+  }
+  .cardHeaderFrontEarth {
+    margin-top: 25%;
+    font-size: 55px;
+  }
+  .cardHeaderBackEarth {
+    margin-top: 30%;
+    font-size: 55px;
+  }
+}
+
+@media (max-width: 484px) {
+  .cardHeaderFrontEarth {
+    margin-top: 30%;
+    font-size: 55px;
+  }
+  .cardHeaderBackEarth {
+    margin-top: 30%;
+    font-size: 55px;
+  }
+
+  .navUlEarth {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+  }
+
+  .navLiEarth {
+    margin: 0;
+  }
+}
