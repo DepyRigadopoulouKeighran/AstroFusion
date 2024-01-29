@@ -4,6 +4,7 @@ import solarSystem4 from '../../images/solarSystem4.gif';
 
 import moon from '../../images/moonPhases.gif';
 
+
 const Moon = () => {
   const [showFront, setShowFront] = useState(true);
   const handleSide = () => {
