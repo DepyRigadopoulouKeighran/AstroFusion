@@ -11,24 +11,15 @@ const Particles = () => {
   };
   return (
     <>
-      <div
-        className={`card-container${showFront ? '' : ' flipped'}`}
-        onClick={handleSide}
-      >
+      <div className={`card-container${showFront ? '' : ' flipped'}`}>
         <div className="card cardFront">
-          <h1 className="cardHeaderFrontParticles">
+          <h1 onClick={handleSide} className="cardHeaderFrontParticles">
             Particles <i className="fa-solid fa-right-long arrow"></i>
           </h1>
           <nav className="cardNavParticles">
             <ul className="navUlParticles">
               <li className="navLiParticles">
                 <a href="#distance">Distance from the Sun</a>
-              </li>
-              <li className="navLiParticles">
-                <a href="#size">Size</a>
-              </li>
-              <li className="navLiParticles">
-                <a href="#characteristics">Key Characteristics</a>
               </li>
             </ul>
           </nav>
@@ -68,17 +59,13 @@ const Particles = () => {
 
         {/* From here starts the Back Card */}
         <div className="card cardBack">
-          <h1 className="cardHeaderBackParticles">Particles</h1>
+          <h1 onClick={handleSide} className="cardHeaderBackParticles">
+            Particles <i className="fa-solid fa-right-long arrow"></i>
+          </h1>
           <nav className="cardNavParticles">
             <ul className="navUlParticles">
               <li className="navLiParticles">
                 <a href="#size">Distance from the Sun </a>
-              </li>
-              <li className="navLiParticles">
-                <a href="#distance">Size</a>
-              </li>
-              <li className="navLiParticles">
-                <a href="#characteristics">Key Characteristics</a>
               </li>
             </ul>
           </nav>

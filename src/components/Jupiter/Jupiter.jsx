@@ -21,12 +21,6 @@ const Jupiter = () => {
               <li className="navLiJupiter">
                 <a href="#distance">Distance from the Sun</a>
               </li>
-              <li className="navLiJupiter">
-                <a href="#size">Size</a>
-              </li>
-              <li className="navLiJupiter">
-                <a href="#characteristics">Key Characteristics</a>
-              </li>
             </ul>
           </nav>
           <img className="cardImageFrontJupiter" src={jupiter1} alt="" />
@@ -72,12 +66,6 @@ const Jupiter = () => {
             <ul className="navUlJupiter">
               <li className="navLiJupiter">
                 <a href="#size">Distance from the Sun </a>
-              </li>
-              <li className="navLiJupiter">
-                <a href="#distance">Size</a>
-              </li>
-              <li className="navLiJupiter">
-                <a href="#characteristics">Key Characteristics</a>
               </li>
             </ul>
           </nav>

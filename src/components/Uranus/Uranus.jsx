@@ -20,12 +20,6 @@ const Uranus = () => {
               <li className="navLiUranus">
                 <a href="#distance">Distance from the Uranus</a>
               </li>
-              <li className="navLiUranus">
-                <a href="#size">Size</a>
-              </li>
-              <li className="navLiUranus">
-                <a href="#characteristics">Key Characteristics</a>
-              </li>
             </ul>
           </nav>
           <img
@@ -89,12 +83,6 @@ const Uranus = () => {
             <ul className="navUlUranus">
               <li className="navLiUranus">
                 <a href="#distance">Distance from the Sun</a>
-              </li>
-              <li className="navLiUranus">
-                <a href="#size">Size</a>
-              </li>
-              <li className="navLiUranus">
-                <a href="#characteristics">Key Characteristics</a>
               </li>
             </ul>
           </nav>

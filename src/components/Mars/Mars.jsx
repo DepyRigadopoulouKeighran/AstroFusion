@@ -11,12 +11,9 @@ const Mars = () => {
   };
   return (
     <>
-      <div
-        className={`card-container${showFront ? '' : ' flipped'}`}
-        onClick={handleSide}
-      >
+      <div className={`card-container${showFront ? '' : ' flipped'}`}>
         <div className="card cardFront">
-          <h1 className="cardHeaderFrontMars">
+          <h1 onClick={handleSide} className="cardHeaderFrontMars">
             Mars <i className="fa-solid fa-right-long arrow"></i>
           </h1>
 
@@ -24,12 +21,6 @@ const Mars = () => {
             <ul className="navUlMars">
               <li className="navLiMars">
                 <a href="#distance">Distance from the Sun</a>
-              </li>
-              <li className="navLiMars">
-                <a href="#size">Size</a>
-              </li>
-              <li className="navLiMars">
-                <a href="#characteristics">Key Characteristics</a>
               </li>
             </ul>
           </nav>
@@ -82,18 +73,14 @@ const Mars = () => {
         </div>
         {/* From here starts the Back Card */}
         <div className="card cardBack">
-          <h1 className="cardHeaderBackMars">Mars</h1>
+          <h1 onClick={handleSide} className="cardHeaderBackMars">
+            Mars <i className="fa-solid fa-right-long arrow"></i>
+          </h1>
 
           <nav className="cardNavMars">
             <ul className="navUlMars">
               <li className="navLiMars">
                 <a href="#distance">Distance from the Sun</a>
-              </li>
-              <li className="navLiMars">
-                <a href="#size">Size</a>
-              </li>
-              <li className="navLiMars">
-                <a href="#characteristics">Key Characteristics</a>
               </li>
             </ul>
           </nav>
