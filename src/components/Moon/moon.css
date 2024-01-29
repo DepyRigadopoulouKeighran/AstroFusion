@@ -13,7 +13,7 @@ body {
   height: -webkit-fill-available;
 }
 
-.cardHeaderFront {
+.cardHeaderFrontMoon {
   text-align: center;
   margin: 4rem 0 2rem 0;
   color: aliceblue;
@@ -21,15 +21,15 @@ body {
   font-size: 6rem;
 }
 
-.cardImageFront {
+.cardImageFrontMoon {
   display: flex;
   padding-bottom: 5rem;
   margin-top: 5rem;
-  width: 100%;
-  height: 700px;
+  width: 700px;
+  height: 500px;
 }
 
-.cardHeaderBack {
+.cardHeaderBackMoon {
   text-align: center;
   margin: 5rem 0 2rem 0;
   color: aliceblue;
@@ -37,7 +37,7 @@ body {
   font-size: 6rem;
 }
 
-.cardNav a {
+.cardNavMoon a {
   color: aliceblue;
   background-image: none;
   font-size: 1.5rem;
@@ -50,29 +50,29 @@ body {
   display: flex;
 }
 
-.navUl {
+.navUlMoon {
   display: flex;
   list-style-type: none;
   margin-bottom: 1.5rem;
 }
 
-.navLi {
+.navLiMoon {
   font-family: 'Nasalization', sans-serif;
 }
 
-.cardImageBack {
+.cardImageBackMoon {
   display: flex;
   margin-top: 5rem;
   margin-bottom: 2rem;
 }
 
-.cardSection {
+.cardSectionMoon {
   display: flex;
   flex-direction: column;
   font-family: 'a•space', sans-serif;
 }
 
-.cardTitles {
+.cardTitlesMoon {
   background-image: none;
   background-color: rgb(26, 26, 26);
   border: 1px solid rgb(26, 26, 26);
@@ -84,7 +84,7 @@ body {
   width: 45%;
 }
 
-.cardText {
+.cardTextMoon {
   color: white;
   border: 2px solid white;
   border-radius: 10px;

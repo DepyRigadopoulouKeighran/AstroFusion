@@ -15,7 +15,9 @@ const Mercury = () => {
         onClick={handleSide}
       >
         <div className="card cardFront">
-          <h1 className="cardHeaderFrontMercury">Mercury</h1>
+          <h1 className="cardHeaderFrontMercury">
+            Mercury <i className="fa-solid fa-right-long arrow"></i>
+          </h1>
           <nav className="cardNavMercury">
             <ul className="navUlMercury">
               <li className="navLiMercury">

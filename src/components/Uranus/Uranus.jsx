@@ -10,12 +10,11 @@ const Uranus = () => {
   };
   return (
     <>
-      <div
-        className={`card-container${showFront ? '' : ' flipped'}`}
-        onClick={handleSide}
-      >
+      <div className={`card-container${showFront ? '' : ' flipped'}`}>
         <div className="card cardFront">
-          <h1 className="cardHeaderFrontUranus">Uranus</h1>
+          <h1 onClick={handleSide} className="cardHeaderFrontUranus">
+            Uranus <i className="fa-solid fa-right-long arrow"></i>
+          </h1>
           <nav className="cardNavUranus">
             <ul className="navUlUranus">
               <li className="navLiUranus">
@@ -83,7 +82,9 @@ const Uranus = () => {
 
         {/* From here starts the Back Card */}
         <div className="card cardBack">
-          <h1 className="cardHeaderBackUranus">Uranus</h1>
+          <h1 onClick={handleSide} className="cardHeaderBackUranus">
+            Uranus <i className="fa-solid fa-right-long arrow"></i>
+          </h1>
           <nav className="cardNavUranus">
             <ul className="navUlUranus">
               <li className="navLiUranus">

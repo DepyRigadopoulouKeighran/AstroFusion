@@ -10,12 +10,11 @@ const Neptune = () => {
   };
   return (
     <>
-      <div
-        className={`card-container${showFront ? '' : ' flipped'}`}
-        onClick={handleSide}
-      >
+      <div className={`card-container${showFront ? '' : ' flipped'}`}>
         <div className="card cardFront">
-          <h1 className="cardHeaderFrontNeptune">Neptune</h1>
+          <h1 onClick={handleSide} className="cardHeaderFrontNeptune">
+            Neptune <i className="fa-solid fa-right-long arrow"></i>
+          </h1>
           <nav className="cardNavNeptune">
             <ul className="navUlNeptune">
               <li className="navLiNeptune">
@@ -81,7 +80,9 @@ const Neptune = () => {
         </div>
         {/* From here starts the Back Card */}
         <div className="card cardBack">
-          <h1 className="cardHeaderBackNeptune">Neptune</h1>
+          <h1 onClick={handleSide} className="cardHeaderBackNeptune">
+            Neptune <i className="fa-solid fa-right-long arrow"></i>
+          </h1>
           <nav className="cardNavNeptune">
             <ul className="navUlNeptune">
               <li className="navLiNeptune">
