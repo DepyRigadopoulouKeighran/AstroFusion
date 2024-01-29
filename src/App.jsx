@@ -60,6 +60,18 @@ function App() {
       <button id="go-up-btn" onClick={scrollTop}>
         Go Up
       </button>
+      {/* <audio
+        controls
+        id="audio"
+        src="./public/onlymp3.to - North Star Forgotten Dreams-GmWJSPmzgu4-192k-1706458034.mp3"
+        loop
+        style={{
+          display: 'block',
+          position: 'relative',
+          width: '100px',
+          zIndex: '1000',
+        }}
+      ></audio> */}
     </>
   );
 }

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './moon.css';
 
 import moon from '../../images/moonPhases.gif';
+import solarSystem4 from '../../images/solarSystem4.gif';
 
 const Moon = () => {
   const [showFront, setShowFront] = useState(true);
@@ -14,7 +15,7 @@ const Moon = () => {
       <div className={`card-container${showFront ? '' : ' flipped'}`}>
         <div className="card cardFront">
           <h1 onClick={handleSide} className="cardHeaderFrontMoon">
-            Moon <i class="fa-solid fa-right-long arrow"></i>
+            Moon <i className="fa-solid fa-right-long arrow"></i>
           </h1>
 
           <nav className="cardNavMoon">

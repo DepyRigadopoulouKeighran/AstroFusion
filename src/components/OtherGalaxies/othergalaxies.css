@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   background-image: url(../src/images/nightSky.gif);
+  scroll-behavior: smooth;
 }
 
 html {
@@ -11,10 +12,6 @@ html {
 
 body {
   height: -webkit-fill-available;
-}
-
-#andromeda #triangulum #sombrero #whirlpool #lmc #smc #messier #centaurus {
-  scroll-behavior: smooth;
 }
 
 .arrow {

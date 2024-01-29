@@ -104,7 +104,7 @@ const SolarSystem = () => {
         <div className="card cardBack">
           <h1 onClick={handleSide} className="cardHeaderSolar">
             Our Solar System
-            <i class="fa-solid fa-right-long arrow"></i>
+            <i className="fa-solid fa-right-long arrow"></i>
           </h1>
 
           <nav className="cardNavSolar">
