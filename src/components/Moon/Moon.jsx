@@ -3,7 +3,7 @@ import './moon.css';
 import solarSystem4 from '../../images/solarSystem4.gif';
 
 import moon from '../../images/moonPhases.gif';
-import solarSystem4 from '../../images/solarSystem4.gif';
+// import solarSystem4 from '../../images/solarSystem4.gif';
 
 const Moon = () => {
   const [showFront, setShowFront] = useState(true);
