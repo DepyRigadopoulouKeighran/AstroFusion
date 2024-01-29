@@ -129,3 +129,44 @@ body {
 .cardBack {
   transform: rotateY(180deg);
 }
+@media (max-width: 780px) {
+  .navUlVenus {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .navLiVenus {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .cardHeaderFrontVenus {
+    margin-top: 25%;
+    font-size: 55px;
+  }
+  .cardHeaderBackVenus {
+    margin-top: 25%;
+    font-size: 55px;
+  }
+}
+
+@media (max-width: 484px) {
+  .cardHeaderFrontVenus {
+    margin-top: 30%;
+    font-size: 55px;
+  }
+
+  .navUlVenus {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+  }
+
+  .navLiVenus {
+    margin: 0;
+  }
+}

@@ -72,7 +72,7 @@ const Sun = () => {
         {/* THIS IS THE BACK SIDE - ITS ABOUT THE SUN */}
         <div className="card cardBack">
           <h1 onClick={handleSide} className="cardHeaderBackSun">
-            Sun <i class="fa-solid fa-right-long arrow"></i>
+            Sun <i className="fa-solid fa-right-long arrow"></i>
           </h1>
           <nav className="cardNavSun">
             <ul className="navUlSun">

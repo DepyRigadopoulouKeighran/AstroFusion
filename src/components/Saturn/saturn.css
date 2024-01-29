@@ -114,3 +114,44 @@ body {
 .cardBack {
   transform: rotateY(180deg);
 }
+@media (max-width: 780px) {
+  .navUlSaturn {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .navLiSaturn {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .cardHeaderFrontSaturn {
+    margin-top: 25%;
+    font-size: 55px;
+  }
+  .cardHeaderBackSaturn {
+    margin-top: 25%;
+    font-size: 55px;
+  }
+}
+
+@media (max-width: 484px) {
+  .cardHeaderFrontSaturn {
+    margin-top: 30%;
+    font-size: 55px;
+  }
+
+  .navUlSaturn {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+  }
+
+  .navLiSaturn {
+    margin: 0;
+  }
+}

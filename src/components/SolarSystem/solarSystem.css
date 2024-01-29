@@ -130,3 +130,44 @@ img {
 .cardBack {
   transform: rotateY(180deg);
 }
+@media (max-width: 780px) {
+  .navUlSolar {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .navLiSolar {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .cardFront {
+    margin-top: 25%;
+    font-size: 55px;
+  }
+  .cardBack {
+    margin-top: 25%;
+    font-size: 55px;
+  }
+}
+
+@media (max-width: 484px) {
+  .cardHeaderSolar {
+    margin-top: 30%;
+    font-size: 55px;
+  }
+
+  .navUlSolar {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+  }
+
+  .navLiSolar {
+    margin: 0;
+  }
+}
