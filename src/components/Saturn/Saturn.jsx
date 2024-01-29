@@ -20,13 +20,7 @@ const Saturn = () => {
           <nav className="cardNavSaturn">
             <ul className="navUlSaturn">
               <li className="navLiSaturn">
-                <a href="#size">Size</a>
-              </li>
-              <li className="navLiSaturn">
-                <a href="#characteristics">Key Characteristics</a>
-              </li>
-              <li className="navLiSaturn">
-                <a href="#distance">Distance from the Sun</a>
+                <a href="#size">Distance from the Sun</a>
               </li>
             </ul>
           </nav>
@@ -90,12 +84,6 @@ const Saturn = () => {
             <ul className="navUlSaturn">
               <li className="navLiSaturn">
                 <a href="#distance">Distance from the Sun</a>
-              </li>
-              <li className="navLiSaturn">
-                <a href="#size">Size</a>
-              </li>
-              <li className="navLiSaturn">
-                <a href="#characteristics">Key Characteristics</a>
               </li>
             </ul>
           </nav>

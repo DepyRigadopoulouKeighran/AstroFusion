@@ -15,19 +15,13 @@ const Venus = () => {
         onClick={handleSide}
       >
         <div className="card cardFront">
-          <h1 className="cardHeaderFrontVenus">
+          <h1 onClick={handleSide} className="cardHeaderFrontVenus">
             Venus <i className="fa-solid fa-right-long arrow"></i>
           </h1>
           <nav className="cardNavVenus">
             <ul className="navUlVenus">
               <li className="navLi">
                 <a href="#distance">Distance from the Sun</a>
-              </li>
-              <li className="navLiVenus">
-                <a href="#size">Size</a>
-              </li>
-              <li className="navLiVenus">
-                <a href="#characteristics">Key Characteristics</a>
               </li>
             </ul>
           </nav>
@@ -84,17 +78,13 @@ const Venus = () => {
 
         {/* From here starts the Back Card */}
         <div className="card cardBack">
-          <h1 className="cardHeaderBackVenus">Venus</h1>
+          <h1 onClick={handleSide} className="cardHeaderBackVenus">
+            Venus <i className="fa-solid fa-right-long arrow"></i>
+          </h1>
           <nav className="cardNavVenus">
             <ul className="navUlVenus">
               <li className="navLiVenus">
                 <a href="#distance">Distance from the Sun</a>
-              </li>
-              <li className="navLiVenus">
-                <a href="#size">Size</a>
-              </li>
-              <li className="navLiVenus">
-                <a href="#characteristics">Key Characteristics</a>
               </li>
             </ul>
           </nav>

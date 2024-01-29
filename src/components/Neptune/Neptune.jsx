@@ -20,12 +20,6 @@ const Neptune = () => {
               <li className="navLiNeptune">
                 <a href="#distance">Distance from the Sun</a>
               </li>
-              <li className="navLiNeptune">
-                <a href="#size">Size</a>
-              </li>
-              <li className="navLiNeptune">
-                <a href="#characteristics">Key Characteristics</a>
-              </li>
             </ul>
           </nav>
           <img
@@ -87,12 +81,6 @@ const Neptune = () => {
             <ul className="navUlNeptune">
               <li className="navLiNeptune">
                 <a href="#size">Size</a>
-              </li>
-              <li className="navLiNeptune">
-                <a href="#characteristics">Key Characteristics</a>
-              </li>
-              <li className="navLiNeptune">
-                <a href="#distance">Distance from the Sun</a>
               </li>
             </ul>
           </nav>

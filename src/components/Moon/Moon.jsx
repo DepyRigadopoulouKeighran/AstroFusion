@@ -3,7 +3,6 @@ import './moon.css';
 import solarSystem4 from '../../images/solarSystem4.gif';
 
 import moon from '../../images/moonPhases.gif';
-import solarSystem4 from '../../images/solarSystem4.gif';
 
 const Moon = () => {
   const [showFront, setShowFront] = useState(true);
@@ -15,7 +14,7 @@ const Moon = () => {
       {/* THIS IS THE FRONT SIDE - ITS ABOUT MOON */}
       <div className={`card-container${showFront ? '' : ' flipped'}`}>
         <div className="card cardFront">
-          <h1 onClick={handleSide} className="cardHeaderFrontMoon">
+          <h1 className="cardHeaderFrontMoon">
             Moon <i className="fa-solid fa-right-long arrow"></i>
           </h1>
 
