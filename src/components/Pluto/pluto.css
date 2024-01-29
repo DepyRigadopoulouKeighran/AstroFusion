@@ -90,3 +90,59 @@ body {
 .cardBack {
   transform: rotateY(180deg);
 }
+@media (max-width: 780px) {
+  .navUlParticles {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    margin: 0;
+  }
+  .navLiParticles {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    margin: 0;
+  }
+}
+
+@media (max-width: 780px) {
+  .navUl {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .navLi {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .cardHeaderFront {
+    margin-top: 25%;
+    font-size: 55px;
+  }
+  .cardHeaderBack {
+    margin-top: 25%;
+    font-size: 55px;
+  }
+}
+
+@media (max-width: 484px) {
+  .cardHeaderFront {
+    margin-top: 30%;
+    font-size: 55px;
+  }
+
+  .navUl {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+  }
+
+  .navLi {
+    margin: 0;
+  }
+}

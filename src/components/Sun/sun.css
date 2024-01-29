@@ -132,3 +132,44 @@ body {
 .cardBack {
   transform: rotateY(180deg);
 }
+@media (max-width: 780px) {
+  .navUlSun {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .navLiSun {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .cardHeaderFrontSun {
+    margin-top: 25%;
+    font-size: 55px;
+  }
+  .cardHeaderBackSun {
+    margin-top: 25%;
+    font-size: 55px;
+  }
+}
+
+@media (max-width: 484px) {
+  .cardHeaderFrontSun {
+    margin-top: 30%;
+    font-size: 55px;
+  }
+
+  .navUlSun {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+  }
+
+  .navLiSun {
+    margin: 0;
+  }
+}

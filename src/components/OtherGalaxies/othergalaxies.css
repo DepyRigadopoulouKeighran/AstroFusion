@@ -61,6 +61,7 @@ body {
 .navUlOtherGalaxies {
   display: flex;
   list-style-type: none;
+  /* flex-direction: column; */
   margin-bottom: 1.5rem;
 }
 
@@ -72,11 +73,11 @@ body {
 }
 
 .firstNavLiOtherGalaxies {
-  margin-left: 230px;
+  /* margin-left: 230px; */
 }
 
 .thirdNavLiOtherGalaxies {
-  margin-right: 230px;
+  /* margin-right: 230px; */
 }
 
 .cardImageBackOtherGalaxies {
@@ -152,11 +153,18 @@ body {
   transform: rotateY(180deg);
 }
 
+
+
+
 @media (max-width: 780px) {
+
   .navUlOtherGalaxies {
     display: flex;
     list-style-type: none;
     flex-direction: column;
+
+    /* margin-bottom: 1.5rem; */
+
 
     margin: 0;
   }
@@ -187,5 +195,6 @@ body {
 
   .navLiOtherGalaxies {
     margin: 0;
+
   }
 }
