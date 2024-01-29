@@ -16,6 +16,7 @@ body {
   color: aliceblue;
   font-family: 'Nasalization', sans-serif;
   font-size: 6rem;
+  padding-top: 4rem;
 }
 .cardImageFrontGalaxy {
   display: flex;
@@ -138,4 +139,44 @@ body {
 
 .cardBack {
   transform: rotateY(180deg);
+}
+@media (max-width: 780px) {
+  .navUlGalaxy {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    margin: 0;
+  }
+  .navLiBlackhole {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    margin: 0;
+  }
+  .cardHeaderFrontGalaxy {
+    margin-top: 25%;
+    font-size: 55px;
+  }
+  .cardHeaderBackGalaxy {
+    margin-top: 30%;
+    font-size: 55px;
+  }
+}
+@media (max-width: 484px) {
+  .cardHeaderFrontGalaxy {
+    margin-top: 30%;
+    font-size: 55px;
+  }
+  .cardHeaderBackGalaxy {
+    margin-top: 30%;
+    font-size: 55px;
+  }
+  .navUlGalaxy {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+  }
+  .navLiBlackholes {
+    margin: 0;
+  }
 }

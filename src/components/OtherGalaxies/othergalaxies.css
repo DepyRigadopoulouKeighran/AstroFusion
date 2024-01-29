@@ -27,6 +27,7 @@ body {
   color: aliceblue;
   font-family: 'Nasalization', sans-serif;
   font-size: 6rem;
+  margin-top: 20%;
 }
 
 .cardImageFrontOtherGalaxies {
@@ -152,11 +153,48 @@ body {
   transform: rotateY(180deg);
 }
 
-@media (max-width: 768px) {
+
+
+
+@media (max-width: 780px) {
+
   .navUlOtherGalaxies {
     display: flex;
     list-style-type: none;
     flex-direction: column;
+
     /* margin-bottom: 1.5rem; */
+
+
+    margin: 0;
+  }
+  .navLiOtherGalaxies {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    margin: 0;
+  }
+}
+
+@media (max-width: 484px) {
+  .cardHeaderFrontOtherGalaxies {
+    margin-top: 30%;
+    font-size: 55px;
+  }
+
+  #lala {
+    margin-top: 30%;
+    font-size: 55px;
+  }
+
+  .navUlOtherGalaxies {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+  }
+
+  .navLiOtherGalaxies {
+    margin: 0;
+
   }
 }
