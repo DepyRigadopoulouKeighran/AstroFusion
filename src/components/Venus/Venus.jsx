@@ -331,6 +331,12 @@ const Venus = () => {
               exploration and observation.
             </p>
           </section>
+          <audio
+            controls
+            id="audio"
+            src="./public/onlymp3.to - North Star Forgotten Dreams-GmWJSPmzgu4-192k-1706458034.mp3"
+            loop
+          ></audio>
         </div>
       </div>
     </>
